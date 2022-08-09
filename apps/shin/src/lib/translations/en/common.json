@@ -1,0 +1,33 @@
+{
+	"welcome": "Welcome",
+	"languages": {
+		"en": "English",
+		"es": "Spanish",
+		"hn": "Hindi"
+	},
+	
+	"---- navigation ----": "",
+	"home": "Home",
+	"films": "Films",
+	"audio_bibles": "Audio Bibles",
+	"resources": "Resources",
+	"about": "About",
+
+	"---- fields ----": "",
+	"language": "Language",
+	"title": "Title",
+	"country": "Country",
+	"date": "Date",
+
+	"---- utility ----": "",
+	"Search": "Search",
+	 
+	"---- about page ----": "",
+	"about_ANU_title": "What is Anusaran?",
+	"about_ANU_description": "<p>Anusaran is a literature mission, a non-profit Inter-Denominational Christian organization dedicated to bringing Evangelical Literature to the people of the Nation in variety and volume, publishing in many languages, establishing book centers and operating book mobiles. These are among various methods used to forward the programme.</p><p> Anusaran is primarily involved in starting and operating Christian bookstores, free online download, publishing enterprises and mobile book ministry in cities and towns where there is critical need.</p><p>Anusaran partners with the Churches and other Christian missions in order to meet the literature needs of new and maturing Christians. This task is accomplished by a dedicated team of committed staff.</p>",
+
+	"about_BIBLICOS_title": " ",
+	"about_BIBLICOS_description": " "
+
+
+}

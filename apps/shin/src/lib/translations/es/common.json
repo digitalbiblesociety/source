@@ -1,0 +1,29 @@
+{
+	"welcome": "Bienvenidos",
+	"languages": {
+		"en": "inglés",
+		"es": "español",
+		"hn": "hindi"
+	},
+
+	"---- navigation ----": " ",
+	"home": "Hogar",
+	"films": "Película's",
+	"audio_bibles": "Biblias en audio",
+	"resources": "Recursos",
+	"about": "Sobre",
+
+	"---- fields ----": "",
+	"language": "Idioma",
+	"title": "Título",
+	"country": "País",
+	"date": "Fecha",
+
+	"---- utility ----": " ",
+	"Search": "Buscar",
+
+	"---- about page ----": " ",
+	"about_BIBLICOS_title": " ",
+	"about_BIBLICOS_description": " "
+
+}

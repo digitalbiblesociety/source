@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#proposals #breadcrumbs a, #proposals #breadcrumbs span, #proposals #breadcrumbs a, #proposals #breadcrumbs svg {
+	color: #fff;
+}
+
+#desktop-menu button[aria-expanded="true"] {
+	@apply rounded-tr-lg rounded-tl-lg border-b-0 bg-gray-100 text-black dark:bg-gray-700 dark:text-gray-200;
+}
+.dbs-tab {
+	@apply flex flex-row flex-wrap justify-center text-sm sm:inline-flex;
+}
+.dbs-tab a {
+	@apply mx-2 mb-2 flex w-auto rounded border border-gray-400 py-2 px-2.5 uppercase
+	leading-none text-gray-800 hover:bg-gray-50 hover:text-blue-800 hover:underline dark:text-gray-300 dark:hover:text-primary-300 sm:-mx-0.5
+	sm:rounded-tl-2xl sm:rounded-tr sm:border sm:border-2
+	sm:border-gray-400 sm:bg-gray-100 sm:px-3 sm:py-2 dark:sm:bg-gray-800 md:px-4
+	md:py-2 lg:py-2.5 lg:px-5 lg:text-base;
+}
+
+.dbs-tab a.selected {
+	@apply rounded border-b-0 bg-blue-500 text-white dark:text-white sm:mx-0.5 sm:rounded-b-none
+	sm:rounded-tl-2xl sm:rounded-tr sm:bg-transparent sm:text-primary-600 sm:dark:text-gray-50;
+}
+
+.dbs-heading {
+	@apply mx-9 mb-2 flex items-center text-primary-700 dark:text-gray-300 md:mb-6;
+}
+.dbs-heading .title {
+	@apply w-full text-center sm:text-left md:w-1/3;
+}
+.dbs-heading h1 {
+	@apply text-xl font-semibold leading-5 md:text-2xl lg:text-3xl;
+}
+.dbs-heading h2 {
+	@apply mt-2 text-xs font-normal sm:hidden md:block md:text-sm lg:text-base;
+}
+.dbs-heading .caption {
+	@apply hidden dark:text-gray-300 sm:block md:w-2/3 md:leading-5;
+}
+
+.section-description {
+	@apply mx-auto mt-3 mb-4 max-w-3xl text-center text-lg text-gray-500 dark:text-gray-400;
+}
+
+.button-dbs {
+	@apply mx-auto my-4 block max-w-sm rounded-lg bg-primary-400 py-2 px-12 text-center text-sm text-white
+	no-underline drop-shadow-md hover:bg-primary-500 dark:bg-primary-900 dark:hover:bg-primary-700 md:text-base;
+}
+
+.button-bible {
+	@apply my-4 block  rounded-lg border border-gray-400 bg-primary-400 p-4 text-white
+	drop-shadow-lg hover:bg-primary-500 dark:bg-gray-800;
+}
+
+.button-buy {
+	@apply mx-auto my-1 block max-w-sm rounded-lg bg-primary-400 p-2 text-center text-white no-underline
+	shadow  shadow-xl hover:bg-primary-500 dark:bg-primary-900 dark:hover:bg-primary-700;
+}
+.caption {
+	@apply text-xs italic leading-4
+	text-primary-700 dark:text-primary-300 sm:pl-3 md:text-sm lg:px-2 lg:text-base;
+}
+
+.icon-dbs {
+	@apply float-left my-4 mr-6 w-16;
+}
+
+.info {
+	@apply ml-3 rounded-xl bg-primary-400 px-2.5 py-1 text-xs text-gray-200;
+}
+.link {
+	@apply text-primary-700 no-underline hover:underline dark:text-primary-300;
+}
+
+.pageFilter {
+	@apply mx-auto mb-6 block rounded-lg border border-gray-400 py-2 px-2 text-sm dark:bg-gray-300 md:w-1/3;
+}
+
+.verse {
+	@apply mx-auto mb-6 block px-8 text-base italic text-primary-700 dark:text-primary-300;
+}
+
+.tiny-lc svg {
+	width: 100%;
+	height: auto;
+}
+
+.text-shadow {
+	text-shadow: 0px 0px 1px rgb(0 0 0 / 20%), 0px 0px 1px rgb(1 0 5 / 10%);
+}
+.text-shadow-sm {
+	text-shadow: 1px 1px 3px rgb(36 37 47 / 25%);
+}
+.text-shadow-md {
+	text-shadow: 0px 1px 2px rgb(30 29 39 / 19%), 1px 2px 4px rgb(54 64 147 / 18%);
+}
+.text-shadow-lg {
+	text-shadow: 3px 3px 6px rgb(0 0 0 / 26%), 0 0 5px rgb(15 3 86 / 22%);
+}
+.text-shadow-xl {
+	text-shadow: 1px 1px 3px rgb(0 0 0 / 29%), 2px 4px 7px rgb(73 64 125 / 35%);
+}
+
+.button {
+	@apply block rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white drop-shadow hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+.button-dark {
+	@apply block rounded-md bg-gray-800 py-3 px-4 text-white drop-shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+table {
+	@apply relative w-full;
+}
+
+#svelte-simple-datatable {
+	@apply relative mt-6;
+}
+.datatable tbody {
+	@apply dark:text-white;
+}
+
+.datatable thead {
+	@apply h-12 border border-primary-200 bg-gray-50 text-gray-600 dark:border-gray-500;
+}
+.datatable thead th:before {
+	content: "▲";
+	position: absolute;
+	opacity: 0.5;
+	left: 7px;
+	top: 11px;
+}
+.datatable thead th:after {
+	content: "▼";
+	position: absolute;
+	opacity: 0.5;
+	left: 7px;
+	top: 21px;
+}
+
+.datatable thead th.desc:before,
+.datatable thead th.asc:after {
+	opacity: 1;
+}
+.datatable table thead th {
+	@apply relative px-6 py-3 text-left text-xs uppercase tracking-wider text-gray-500 dark:bg-gray-700 dark:text-gray-100;
+}
+
+.datatable tbody td {
+	@apply whitespace-nowrap border-r border-gray-100 px-3 py-2 text-sm text-gray-900 dark:border-gray-600 dark:text-gray-200;
+}
+
+.datatable tr:nth-child(even) {
+	@apply bg-gradient-to-b from-gray-200 to-slate-200 dark:bg-none;
+}
+.datatable td:last-child {
+	@apply rounded-r-md border-none;
+}
+.datatable td:nth-child(2) {
+	@apply rounded-l-md;
+}
+.datatable td:last-child {
+	@apply rounded-r-md border-none;
+}
+
+.c {
+	break-after: avoid-column;
+	color: #222;
+	font-size: 1.25rem;
+	letter-spacing: -1pt;
+	line-height: 1.5rem;
+	text-align: center;
+	display: block;
+	float: left;
+	padding: 0.5rem 0.75rem;
+}
+
+.ss .s,
+.ss .s1,
+.ss .s2,
+.ss .s3,
+.ss .s4 {
+	@apply p-4 text-center text-2xl;
+	break-inside: avoid-column;
+	break-after: avoid-column;
+}
+
+.ss p {
+	@apply prose prose-lg prose-indigo mx-auto mt-6 text-gray-700 dark:text-gray-300;
+}
+
+.ss .s1 {
+	@apply text-center text-2xl;
+}
+
+.ss .v {
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+	height: 5pt;
+	width: 5pt;
+	text-align: center;
+	line-height: 0;
+	font-size: 0.75em;
+	letter-spacing: -0.25pt;
+	font-weight: bold;
+	white-space: nowrap;
+	display: inline;
+}
+
+.ss .v:after {
+	content: "\00a0";
+}
+
+#svelte-simple-datatable nav section button {
+	@apply relative inline-flex items-center border border-gray-300 bg-gray-100 px-4 py-2 text-sm text-gray-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-200;
+}
+
+#svelte-simple-datatable nav button.active {
+	@apply z-10 bg-primary-500 font-bold text-white;
+}
+
+#svelte-simple-datatable nav section button:first-child {
+	@apply rounded-l-md text-primary-600 dark:text-gray-200;
+}
+
+#svelte-simple-datatable nav section button:last-child {
+	@apply rounded-r-md text-primary-600 dark:text-gray-200;
+}

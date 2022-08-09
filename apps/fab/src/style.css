@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+	@apply block rounded-md bg-gradient-to-r from-primary-500 to-secondary-600 py-3 px-4 text-white shadow hover:from-primary-600 hover:to-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+.button-dark {
+	@apply block rounded-md bg-gray-800 py-3 px-4 text-white shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+@media print {
+	@page {
+		margin-left: 0.5in;
+		margin-right: 0.5in;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#page-footer,
+	#page-header {
+		display: none;
+	}
+}
+
+.datatable tbody td {
+	@apply whitespace-nowrap px-6 py-4 text-sm text-gray-900 dark:text-gray-300;
+}
+
+.datatable thead {
+	@apply h-12 bg-gray-50 text-gray-600 dark:bg-gray-700 dark:text-gray-400;
+}
+
+.datatable table thead th {
+	@apply relative cursor-pointer px-6 py-3 text-xs uppercase tracking-wider text-gray-500 dark:bg-gray-900 dark:text-gray-100;
+}
+
+.datatable .even {
+	@apply bg-gray-200 dark:bg-gray-600;
+}
+
+.datatable thead th.desc:before {
+	content: "▲";
+}
+
+.datatable thead th.asc:before {
+	content: "▼";
+}
+
+/* Wiki Sidebar */
+
+.infobox tbody {
+	@apply sm:divide-y sm:divide-gray-200;
+}
+.infobox tbody tr {
+	@apply py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6;
+}
+
+.infobox tbody tr th {
+	@apply text-sm font-medium text-gray-500;
+}
+
+.infobox .infobox-header {
+	@apply text-lg font-semibold text-gray-900;
+}
+
+.infobox tbody tr td {
+	@apply mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0;
+}
+
+.mw-collapsible-content li {
+	@apply inline-block;
+}
+.mw-collapsible-content li:after {
+	content: ", ";
+}
+
+.mw-collapsible-content li:last-child:after {
+	content: "";
+}

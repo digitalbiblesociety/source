@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.history
+
+# Dependency directory
+**/node_modules/**
+
+**/static/data/**

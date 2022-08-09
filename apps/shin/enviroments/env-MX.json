@@ -1,0 +1,9 @@
+{
+	"site_title":"Biblicos",
+	"colors": {
+		"primary": "purple",
+		"secondary": "violet"
+	},
+	"iso_excluded": ["apc","ajp","cmn","fra","ita","jpn","kor","rus","por"],
+	"i18n_languages": ["en","es"]
+}

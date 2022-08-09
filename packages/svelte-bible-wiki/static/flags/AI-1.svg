@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.8 38.2">
+  <defs>
+    <clipPath id="a" transform="translate(1.8 -3.8)">
+      <rect width="19.2" height="14.4" y="5.8" fill="none" rx="2.4"/>
+    </clipPath>
+  </defs>
+  <rect width="48" height="36" x="1.8" y="2.2" fill="#05a" rx="2"/>
+  <path fill="#eee" d="M42.2 21.3c-2.3 0-2.6-1-2.6-1s-.4 1-2.7 1-3-.7-3.3-1l.3 6c0 6 5.7 8.3 5.7 8.3s5.6-2.3 5.6-8.3l.4-6c-.4.3-1 1-3.4 1Z"/>
+  <path fill="#3ad" d="M39.6 29.9h-4c.3 2 4 4.4 4 4.4s3.6-2.4 4-4.4Z"/>
+  <path fill="#fc5" d="M41.6 22.9s2 2.7.6 4-1.6-.6-1-1.3Zm-5 3s.3-3 2.3-3 1 1.7 0 1.7-2.3 1.3-2.3 1.3Zm5 2.4s-2.7 2-4 .3.6-1.7 1-1 3 .7 3 .7Z"/>
+  <g fill="#020202" stroke-miterlimit="4.8" clip-path="url(#a)">
+    <path stroke="#fff" stroke-width="3.6" d="M1.8 1.4 21 15.8m-.7-14.4L1.1 15.8"/>
+    <path stroke="#e56" stroke-width="2.4" d="M1.8 1.4 21 15.8m-.7-14.4L1.1 15.8"/>
+    <path stroke="#fff" stroke-width="6" d="M11.4 1.4v14.4M1.8 8.6H21"/>
+    <path stroke="#e56" stroke-width="3.6" d="M11.4 1.4v14.4M1.8 8.6H21"/>
+  </g>
+</svg>
