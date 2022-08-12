@@ -5,9 +5,10 @@
 
 	export let key
 </script>
+
 {#if $columns[key]}
 <section 
-	class="relative z-0 dark:bg-gray-800 dark:text-gray-200"
+	class="relative z-0 dark:bg-stone-800 dark:text-stone-200"
 	style="width:{100 / $columns.length}%;font-size:{$preferences.font.size[0]}pt"
 	bind:this={$columnWrap[key]}>
 	{#if $columns[key].type === 'bible'}

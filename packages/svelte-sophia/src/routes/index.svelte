@@ -1,10 +1,9 @@
 <script>
 	import {columns, preferences} from '$lib/store'
-	import Column from '$lib/Columns/Column.svelte'
+	import Column from '$lib/columns/Column.svelte'
 	import TopBar from '$lib/partials/TopBar.svelte'
 	import '../style.css'
 </script>
-
 <TopBar />
 <div
 	class:hide-titles={!$preferences.distraction.titles}

@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import CoverArt from './img/CoverArt.svelte';
+	import CoverArt from './CoverArt.svelte';
 
 	export let key;
 	export let country_id;

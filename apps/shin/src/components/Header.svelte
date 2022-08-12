@@ -1,7 +1,7 @@
 <script>
 	import { Menu, MenuButton, MenuItems, MenuItem, Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@rgossiaux/svelte-headlessui';
 	import I18n from '$lib/i18n.svelte';
-
+	import {DarkToggle} from '@dbs/svelte-dbs-ui'
 	export let nav;
 	export let logo;
 
@@ -121,6 +121,7 @@
 			</nav>
 
 			<div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+				<DarkToggle />
 				{#if nav.aside}
 					{#each nav.aside as link}
 						<a

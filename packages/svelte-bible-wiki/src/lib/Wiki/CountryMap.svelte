@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@rgossiaux/svelte-headlessui';
-	import { Datatable } from 'svelte-simple-datatables';
+	import { Datatable } from '@dbs/svelte-datatables';
 	import countryShapes from '../Map/country-shapes.js';
 	import FetchWikiSidebar from '../API/FetchWikiSidebar.js';
 

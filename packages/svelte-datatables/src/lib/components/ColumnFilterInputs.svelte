@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import { context as store } from '../app/Context.js';
 	export let id = 'svelte-simple-datatable';
 	const context = store.get(id);
@@ -8,11 +9,14 @@
 	let pageWidth;
 	let opened = [];
 	let active_filters = [];
-	if ($options.customFilters) {
-		$options.customFilters.forEach((filter) => {
-			checkDefaults(filter, true);
-		});
-	}
+
+	onMount(async () => {
+		if ($options.customFilters) {
+			$options.customFilters.forEach((filter) => {
+				checkDefaults(filter, true);
+			});
+		}
+	})
 
 	// Set default values for the filter inputs to checked by default
 	function checkDefaults(filter, isChecked) {
@@ -93,6 +97,7 @@
 															name={column.key + '[]'}
 															value={option.value}
 															bind:checked={active_filters[column.name + '_' + index]}
+															data-filter={column.name + '_' + index}
 															type="checkbox"
 															class="h-4 w-4 border-gray-300 rounded"
 														/>

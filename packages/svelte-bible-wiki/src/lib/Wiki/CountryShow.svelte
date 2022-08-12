@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 	import { browser } from '$app/env'
-	import { Datatable } from 'svelte-datatables'
+	import { Datatable } from '@dbs/svelte-datatables'
 	import FetchWikiSidebar from '../API/FetchWikiSidebar.js'
 
 	let infobox;
@@ -22,7 +22,7 @@
 		<td class="whitespace-nowrap px-6 text-gray-900 dark:text-gray-200">
 			<a href=/${locale}/languages/${row.iso}>
 				<div>${row.name}</div>
-				<div class="text-xs italic text-gray-500 dark:text-gray-300">${row.autonym}</div>
+				<div class="text-xs italic text-gray-500 dark:text-gray-300">${row.autonym ?? ''}</div>
 			</a>
 		</td>
 		<td class="hidden whitespace-nowrap px-6 sm:table-cell">${row.iso}</td>

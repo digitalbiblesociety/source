@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte"
 	import { browser } from '$app/env'
-	import { Datatable } from "svelte-datatables"
+	import { Datatable } from "@dbs/svelte-datatables"
 
 	export let locale
 	export let alphabets

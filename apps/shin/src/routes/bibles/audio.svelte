@@ -1,5 +1,5 @@
 <script>
-	import { AudioPlayer } from "svelte-bible-brain"
+	import { AudioPlayer } from "@dbs/svelte-bible-brain"
 </script>
 	
 	

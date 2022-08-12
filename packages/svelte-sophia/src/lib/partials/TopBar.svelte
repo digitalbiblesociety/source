@@ -3,7 +3,7 @@
 
 </script>
 
-<div class="flex flex-row justify-between h-12 bg-gray-700 text-white">
+<div class="flex flex-row justify-between h-12 bg-stone-700 text-white">
 	<div class="flex flex-row my-3 mx-4">
 		<TopMenu />
 		<h1 class="ml-2">Sophia</h1>
@@ -19,9 +19,9 @@
 	</div>
 
 	<div class="my-1 relative flex items-center">
-	  <input type="text" name="search" id="search" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-12 sm:text-sm border-gray-300 rounded-md">
+	  <input type="text" name="search" id="search" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-12 sm:text-sm border-stone-300 dark:border-stone-900 dark:bg-stone-800 rounded-md">
 	  <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
-		<kbd class="inline-flex items-center border border-gray-200 rounded px-2 text-sm font-sans font-medium text-gray-400"> ⌘K </kbd>
+		<kbd class="inline-flex items-center border border-stone-200 rounded px-2 text-sm font-sans font-medium text-stone-400"> ⌘K </kbd>
 	  </div>
 	</div>
   

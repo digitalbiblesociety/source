@@ -18,11 +18,9 @@
 	}
 </script>
 <script>
-	import {Datatable} from 'svelte-datatables'
+	import {Datatable} from '@dbs/svelte-datatables'
 	import {t} from '$lib/translations'
 	export let bibles
-
-	console.log(bibles)
 
 	let rows
 </script>

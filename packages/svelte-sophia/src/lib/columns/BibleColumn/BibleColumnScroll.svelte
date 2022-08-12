@@ -51,7 +51,7 @@
 
 <div />
 <div
-	class="book-wrap absolute inset-0 top-12 px-4 lg:px-8 overflow-y-scroll"
+	class="book-wrap absolute inset-0 top-14 px-4 lg:px-8 overflow-y-scroll"
 	bind:this={column}
 	on:scroll={parseScroll}
 >

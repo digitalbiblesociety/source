@@ -74,7 +74,7 @@
 
 	<div
 		class="text-gray-700 dark:text-gray-100 mt-6 px-4 sm:px-6 pt-4 md:pt-8 flex flex-col
-				items-center justify-between border-t border-gray-200 dark:border-gray-500 "
+				items-center justify-between border-t border-gray-200 dark:border-gray-500"
 	>
 		<nav class="relative z-0 inline-flex mx-auto rounded-md -space-x-px" aria-label="Pagination">
 			<PaginationButtons {context} />

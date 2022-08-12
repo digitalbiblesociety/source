@@ -1,6 +1,6 @@
 	<script>
 		import { onMount } from "svelte"
-		import { Datatable } from "svelte-datatables"
+		import { Datatable } from "@dbs/svelte-datatables"
 		import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@rgossiaux/svelte-headlessui';
 		import { page } from "$app/stores"
 

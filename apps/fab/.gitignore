@@ -1,11 +1,8 @@
 .DS_Store
 node_modules
-/.svelte
+/build
 /.svelte-kit
 /package
-/build
-/functions
 .env
-
-# Language Maps to be moved to an external host?
-static/img/lang-maps/*
+.env.*
+!.env.example

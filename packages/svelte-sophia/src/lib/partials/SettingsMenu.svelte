@@ -31,19 +31,19 @@ let open = false
 </div>
 
 {#if open}
-<div class="absolute inset-0 top-10 bg-gray-200 dark:bg-gray-900 h-full z-50" transition:slide>
+<div class="absolute inset-0 top-10 bg-stone-200 dark:bg-stone-900 h-full z-50" transition:slide>
 
 	<div>
 		<div class="px-4 py-5 space-y-6 sm:p-6">
 			
 
 			<div>
-				<label for="share-url" class="block text-sm font-medium text-gray-700"> Share </label>
-				<p class="text-xs dark:text-gray-300">Copy the current position as a sharable url</p>
+				<label for="share-url" class="block text-sm font-medium text-stone-700"> Share </label>
+				<p class="text-xs dark:text-stone-300">Copy the current position as a sharable url</p>
 				<div class="mt-1 flex rounded-md shadow-sm max-w-md mx-auto">
-					<input id="share-url" type="text" bind:value={shareUrl} class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 text-gray-800" placeholder={shareUrl}>
+					<input id="share-url" type="text" bind:value={shareUrl} class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-stone-300 text-stone-800" placeholder={shareUrl}>
 					<CopyToClipboard text={shareUrl} let:copy>
-						<button type="button" on:click={copy} class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+						<button type="button" on:click={copy} class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-stone-300 text-sm font-medium rounded-r-md text-stone-700 bg-stone-50 hover:bg-stone-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
 						<span>Copy Sharable URL</span>
 						</button>
 					</CopyToClipboard>
@@ -52,17 +52,17 @@ let open = false
 
 
 		  <div>
-			<label for="about" class="block text-sm text-gray-700 dark:text-gray-300"> Font Size </label>
+			<label for="about" class="block text-sm text-stone-700 dark:text-stone-300"> Font Size </label>
 			<RangeSlider pips min={10} max={20} bind:values={$preferences.font.size} />
 		  </div>
 
 		  <div>
-			<label for="about" class="block text-sm text-gray-700 dark:text-gray-300"> Dark Mode </label>
+			<label for="about" class="block text-sm text-stone-700 dark:text-stone-300"> Dark Mode </label>
 			<DarkToggle />
 		  </div>
 
 		  <div>
-			<label for="about" class="block text-sm text-gray-700 dark:text-gray-300"> Filter Distractions </label>
+			<label for="about" class="block text-sm text-stone-700 dark:text-stone-300"> Filter Distractions </label>
 			<div class="flex flex-row justify-around max-w-md">
 				<div 
 					class="w-6 h-6"
@@ -71,7 +71,7 @@ let open = false
 					<img src="/img/chapters.svg" alt="chapters" />
 				</div>
 				<div 
-					class="w-6 h-6 dark:text-gray-100"
+					class="w-6 h-6 dark:text-stone-100"
 					class:opacity-50={!$preferences.distraction.verses}
 					on:click={() => $preferences.distraction.verses = !$preferences.distraction.verses}>
 					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">

@@ -20,7 +20,7 @@ export async function load({ params, fetch }) {
 
 <script>
 import { t } from "$lib/translations"
-import { CountryShow } from "svelte-bible-wiki"
+import { CountryShow } from "@dbs/svelte-bible-wiki"
 
 export let country
 </script>

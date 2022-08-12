@@ -17,7 +17,7 @@ export async function load({ fetch }) {
 </script>
 
 <script>
-import { AlphabetList } from "svelte-bible-wiki"
+import { AlphabetList } from "@dbs/svelte-bible-wiki"
 import { t } from "$lib/translations"
 
 export let alphabets

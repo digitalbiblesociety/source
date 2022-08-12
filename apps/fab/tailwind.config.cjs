@@ -4,7 +4,7 @@ module.exports = {
 	content: [
 		"src/app.html",
 		"src/**/*.{svelte,css}",
-		"node_modules/**/*.svelte",
+		"node_modules/**/*.svelte"
 	],
 	darkMode: "class", // or 'media' or false
 	theme: {

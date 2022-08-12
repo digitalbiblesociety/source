@@ -6,7 +6,7 @@ export async function load({ fetch }) {
 </script>
 
 <script>
-import { CountryList } from "svelte-bible-wiki"
+import { CountryList } from "@dbs/svelte-bible-wiki"
 import { t } from "$lib/translations"
 
 export let countries

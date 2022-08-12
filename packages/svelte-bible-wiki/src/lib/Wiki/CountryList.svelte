@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte"
 	import { browser } from '$app/env';
-	import { Datatable } from "svelte-datatables"
+	import { Datatable } from "@dbs/svelte-datatables"
 	import Banner from "../Banner.svelte";
 
 	export let locale
@@ -22,7 +22,7 @@
 				</svg>
 				<a class="inline-flex flex-col" href="/${locale}/countries/${row.id}">
 					${row.tt}
-					<div class="text-gray-400 text-sm">${row.co}</div>
+					<div class="text-gray-400 text-sm">${row.co ?? ''}</div>
 				</a>
 			</td>
 			<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 text-center">

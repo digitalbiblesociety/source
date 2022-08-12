@@ -42,7 +42,7 @@
 
 <Menu class="relative">
 	<MenuButton
-		class="text-gray-200 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 
+		class="text-stone-200 rounded-md inline-flex items-center text-base font-medium hover:text-stone-900 
 		focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 	>
 		<svg
@@ -66,17 +66,17 @@
 	>
 		<MenuItems class="absolute z-10 transform mt-3 px-2 w-screen max-w-md sm:px-0 lg:max-w-3xl">
 			<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-				<div class="flex flex-row w-full justify-between bg-gray-200 dark:bg-gray-900">
+				<div class="flex flex-row w-full justify-between bg-stone-200 dark:bg-stone-900">
 				<SettingsMenu />
 				<Login />
 				</div>
-				<div class="relative grid gap-6 bg-white dark:bg-gray-800 px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+				<div class="relative grid gap-6 bg-white dark:bg-stone-800 px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
 					{#each nav as link}
 					{#if link.type === 'window'}
 						<MenuItem>
 							<button
 								on:click={() => openWindow(link.title)}								
-								class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-150"
+								class="-m-3 p-3 flex items-start rounded-lg hover:bg-stone-50 dark:hover:bg-stone-900 transition ease-in-out duration-150"
 							>
 							{#if link.icon}
 								<div
@@ -86,9 +86,9 @@
 								</div>
 								{/if}
 								<div class="ml-4">
-									<p class="text-base font-medium text-gray-900 dark:text-gray-200">{link.title}</p>
+									<p class="text-base font-medium text-stone-900 dark:text-stone-200">{link.title}</p>
 									{#if link.subtitle}
-									<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+									<p class="mt-1 text-sm text-stone-500 dark:text-stone-300">
 										{link.subtitle}
 									</p>
 									{/if}

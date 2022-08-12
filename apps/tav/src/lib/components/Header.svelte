@@ -2,7 +2,7 @@
 import {Disclosure,DisclosureButton,DisclosurePanel,Transition} from "@rgossiaux/svelte-headlessui"
 import { t } from "$lib/translations/index.js"
 import Search from "./Search.svelte"
-import DarkToggle from "./Partials/DarkToggle.svelte"
+import { DarkToggle } from "@dbs/svelte-dbs-ui"
 import CartButton from "./Partials/CartButton.svelte"
 import I18n from "./i18n.svelte"
 

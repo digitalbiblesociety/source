@@ -32,7 +32,7 @@ export async function load({ params, fetch }) {
 
 <script>
 import { t } from "$lib/translations"
-import { AlphabetShow } from "svelte-bible-wiki"
+import { AlphabetShow } from "@dbs/svelte-bible-wiki"
 
 export let alphabet
 export let bibles
