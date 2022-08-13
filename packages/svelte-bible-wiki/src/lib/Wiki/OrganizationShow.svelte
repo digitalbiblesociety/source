@@ -2,7 +2,7 @@
 	import { onMount } from "svelte"
 	import { browser } from '$app/env'
 	import { Datatable } from "@dbs/svelte-datatables"
-	import Breadcrumbs from "$lib/Breadcrumbs.svelte"
+	import Breadcrumbs from "../../lib/Breadcrumbs.svelte"
 
 
 	export let locale

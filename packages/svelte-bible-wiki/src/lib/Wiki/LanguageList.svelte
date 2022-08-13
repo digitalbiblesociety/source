@@ -18,7 +18,7 @@
 	const table_row = (row, locale) =>  `
 	<tr class="${row.bc + row.fc + row.rc > 0 ? '' : 'opacity-40'}">
 						<td class="whitespace-nowrap px-6 py-4 text-sm font-medium">
-							<a href="/${locale}/languages/${row.id}">
+							<a href="/languages/${row.id}">
 								<div class="text-sm text-gray-900 dark:text-gray-300">
 									${row.tt}
 								</div>
@@ -28,9 +28,9 @@
 						<td class="hidden whitespace-nowrap text-sm sm:table-cell">
 							${row.id}
 						</td>
-						<td>${row.po ? row.po.toLocaleString("en") : ""}</td>
+						<td>${row.po ? row.po.toLocaleString(locale) : ""}</td>
 						<td class="whitespace-nowrap text-center sm:text-left">
-							<a href="/${locale}/countries/${row.ci}">
+							<a href="/countries/${row.ci}">
 								<svg class="mx-auto block h-5 w-5 sm:inline-block">
 									<use href="/img/flags.svg#${row.ci}" xlink:href="#${row.ci}"></use>
 								</svg>
@@ -72,6 +72,7 @@
 
 {#if languages}
 <div class="mx-auto w-4/5 pt-8">
+
 	{#if browser}
 	<Datatable classList="relative" data="{languages}" bind:dataRows="{rows}">
 		<thead class="bg-gray-50 text-gray-600">
@@ -81,12 +82,12 @@
 			<th data-key="ci" class="sortable">{translations?.thead?.country ?? 'country'}</th>
 			<th data-key="bc" class="sortable hidden md:table-cell">{translations?.thead?.bibles ?? 'bibles'}</th>
 			<th data-key="rc" class="sortable hidden lg:table-cell">{translations?.thead?.resources ?? 'resources'}</th>
-			<th data-key="rc" class="sortable hidden lg:table-cell">{translations?.thead?.films ?? 'films'}</th>
+			<th data-key="fc" class="sortable hidden lg:table-cell">{translations?.thead?.films ?? 'films'}</th>
 		</thead>
 		<tbody>
 			{#if rows}
 				{#each $rows as row}
-					{@html table_row(row, locale)}
+					{@html table_row(row)}
 				{/each}
 			{/if}
 		</tbody>
@@ -102,7 +103,7 @@
 			<tbody>
 				{#each languages as row}
 					{#if row.bc + row.fc + row.rc > 0}
-						{@html table_row(row, locale)}
+						{@html table_row(row)}
 					{/if}
 				{/each}
 			</tbody>
