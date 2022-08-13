@@ -15,7 +15,7 @@
 		</MenuButton>
 	
 		<MenuItems
-			class="absolute w-28 rounded-md bg-white drop-shadow-lg dark:bg-stone-800">
+			class="absolute z-50 w-28 rounded-md bg-white drop-shadow-lg dark:bg-stone-800">
 			{#each $locales as iso}
 				<MenuItem
 					class="block cursor-pointer py-2 px-4 text-sm text-stone-700 hover:bg-stone-100 dark:bg-stone-800 dark:text-stone-200 dark:hover:bg-stone-700"
