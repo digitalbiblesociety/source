@@ -15,7 +15,7 @@
 	}
 </script>
 <script>
-	import Header from '../components/Header.svelte'
+	import {Header} from '@dbs/svelte-dbs-ui'
 	import '../style.css'
 
 	let logo = ''
@@ -40,8 +40,16 @@
 	];
 </script>
 
-<Header {nav} {logo} />
 
-<main class="dark:bg-stone-800 mx-auto max-w-7xl">
-	<slot />
+<Header header={{
+	'title': 'Anusaran',
+	'nav': nav,
+}} />
+
+<main class="-mt-32">
+	<div class="max-w-7xl mx-auto xl:rounded-lg shadow px-5 py-6 sm:px-6 bg-white dark:bg-stone-800">
+		<div class="lg:relative">
+			<slot />
+		</div>
+	</div>
 </main>
