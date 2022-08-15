@@ -1,8 +1,7 @@
 <script>
 	import {columns, columnWrap, scrollPosition, currentReference, scrolling} from '$lib/store'
-
-	import {infiniteScroll} from '$lib/utilities/ChapterScroll.js'
-	import {fetchBooks} from '$lib/utilities/fetchBooks.js'
+	import {infiniteScroll} from '$lib/utils/ChapterScroll.js'
+	import {fetchBooks} from '$lib/utils/fetchBooks.js'
 
 	export let key
 	let column
@@ -33,6 +32,8 @@
 	let refBot = null
 	let refTop = null
 
+
+	console.log('colKey', $columns[key])
 //	$: {
 //		if (refBot) {
 //			loading = true;

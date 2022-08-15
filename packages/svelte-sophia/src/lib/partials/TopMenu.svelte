@@ -9,7 +9,7 @@
 		{type: 'window', title: 'commentary', icon: '', handleClick() {}},
 		{type: 'window', title: 'search', icon: '', handleClick() {}},
 		{type: 'window', title: 'Map', icon: '', handleClick() {}},
-		{type: 'window', title: 'Media', icon: '', handleClick() {}},
+		{type: 'window', title: 'media', icon: '', handleClick() {}},
 		{type: 'window', title: 'Parallels', icon: '', handleClick() {}},
 		{type: 'window', title: 'Comparison', icon: '', handleClick() {}},
 		{type: 'window', title: 'Audio', icon: '', handleClick() {}},
@@ -23,6 +23,10 @@
 		switch (type) {
 			case 'bible':
 				$columns = [...$columns, {id: 'ENGKJV', type: 'bible', chapters: []}]
+				break
+
+			case 'media':
+				$columns = [...$columns, {type: 'media'}]
 				break
 	
 			default:

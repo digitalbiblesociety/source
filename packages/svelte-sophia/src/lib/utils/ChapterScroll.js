@@ -1,4 +1,4 @@
-import {fetchBooks} from '$lib/utilities/fetchBooks.js'
+import {fetchBooks} from '$lib/utils/fetchBooks.js'
 
 export const infiniteScroll = element => {
 	if (element) {

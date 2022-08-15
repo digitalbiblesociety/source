@@ -2,7 +2,8 @@
 	import {Disclosure, DisclosureButton, DisclosurePanel} from '@rgossiaux/svelte-headlessui'
 	import {columns, columnWrap, currentReference} from '$lib/store'
 	import {books} from '$lib/data/books.js'
-	import {fetchBooks} from '$lib/utilities/fetchBooks.js'
+	import {fetchBooks} from '$lib/utils/fetchBooks.js'
+	import parseCurrentReference from '$lib/utils/parseVerseRef.js'
 
 	export let key
 
@@ -26,15 +27,6 @@
 	
 		open = false
 	}
-
-	function parseCurrentReference(reference) {
-		if (!reference) {
-			return ''
-		}
-	
-		const refparts = reference.split('_')
-		return $columns[key].metadata.books[refparts[0]].book_name + ' ' + refparts[1] + ':' + refparts[2]
-	}
 </script>
 
 
@@ -42,12 +34,11 @@
 	type="text"
 	on:click={() => (open = !open)}
 	class="h-10 ml-4 text-xs dark:text-stone-200 block dark:bg-stone-600 rounded-none rounded-l-md sm:text-sm border-stone-300 dark:border-stone-700"
-	value={parseCurrentReference($currentReference)}
+	value={parseCurrentReference($columns, key, $currentReference)}
 />
 
 {#if open}
 	<div class="absolute top-12 left-0 z-50 w-full h-full overflow-scroll">
-
 		{#each Object.entries($columns[key].metadata.books) as book}
 			<Disclosure class="bg-stone-50 dark:bg-stone-800 border-l-8" let:open style={`border-color:rgb(${books[book[0]]?.color});`}>
 				<div style={open ? `background-color:rgba(${books[book[0]]?.color}, .5)` : ''}>
@@ -56,13 +47,11 @@
 					</DisclosureButton>
 					<DisclosurePanel class="flex flex-row flex-wrap">
 						{#each book[1].chapters as chapter}
-							
 								<span 
 									on:click="{() => navigate(book[0], chapter)}"
 									class="inline-flex justify-center items-center w-10 h-10 mt-1 mr-1 text-center cursor-pointer">
 										{chapter}
 								</span>
-							
 						{/each}
 					</DisclosurePanel>
 				</div>

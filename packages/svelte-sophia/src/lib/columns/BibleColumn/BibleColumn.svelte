@@ -3,7 +3,7 @@
 	import {columns, preferences} from '$lib/store'
 	import BibleColumnHeader from './BibleColumnHeader.svelte'
 	import BibleColumnScroll from './BibleColumnScroll.svelte'
-	import {fetchBooks} from '$lib/utilities/fetchBooks.js'
+	import {fetchBooks} from '$lib/utils/fetchBooks.js'
 
 	export let key
 
@@ -18,6 +18,13 @@
 		console.log('book', book)
 		$columns[key].books = [book]
 	})
+
+	function bookParser(book) {
+		const el = document.createElement('div')
+		el.innerHTML = book
+		console.log('datas', el.querySelector('[data-id]'))
+		// media inserts
+	}
 </script>
 
 
@@ -27,6 +34,8 @@
 		{#each $columns[key].books as column, index}
 			{#if column?.book}
 				{@html column.book}
+				<!--
+				{bookParser(column.book)}-->
 			{/if}
 		{/each}
 	{/if}

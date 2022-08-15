@@ -2,6 +2,7 @@
 	import {columns, columnWrap, preferences} from '$lib/store'
 	import BibleColumn from './BibleColumn/BibleColumn.svelte'
 	import SearchColumn from './SearchColumn/SearchColumn.svelte'
+	import MediaColumn from './MediaColumn/MediaColumn.svelte'
 
 	export let key
 </script>
@@ -16,6 +17,9 @@
 	{/if}
 	{#if $columns[key].type === 'search'}
 		<SearchColumn key={key} />
+	{/if}
+	{#if $columns[key].type === 'media'}
+		<MediaColumn key={key} />
 	{/if}
 </section>
 {/if}
