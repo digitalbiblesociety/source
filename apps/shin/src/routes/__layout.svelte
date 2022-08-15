@@ -27,16 +27,16 @@
 			href: `/`
 		},
 		{
+			label: $t('common.map'),
+			href: `/map`
+		},
+		{
 			label: $t('common.films'),
 			href: `/films`
 		},
 		{
 			label: $t('common.audio_bibles'),
 			href: `/bibles/audio`
-		},
-		{
-			label: $t('common.about'),
-			href: `/about`
 		}
 	];
 </script>

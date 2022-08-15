@@ -4,9 +4,10 @@ MX: [
 		label: "Language Groups",
 		key: "language",
 		class: "",
-		type: "select",
+		type: "radio",
 		operation: "regex",
 		options: [
+			{label: "All",value: ""},
 			{label: "Amuzgo",value: "amu|azm|azg"},
 			{label: "Cahitan",value: "mfy|yaq"},
 			{label: "Castililian",value: "cat|spa"},

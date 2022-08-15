@@ -6,7 +6,6 @@
 		MX:	MX,
 		IN:	IN
 	}
-
 </script>
 
 <svelte:component 

@@ -48,9 +48,9 @@
 				title:bible.title,
 				subtitle: bible.title_vernacular,
 				nav: [
-					{title:'PDF', url: 'https://dbs-web.s3.us-west-2.amazonaws.com/downloads/pdf/{bible.id}/{bible.id}_us_letter.pdf'},
-					{title:'Study Bible', url: 'https://inscript.org/?w1=bible&t1=local%3A{bible.id}&v1=JN1_1'},
-					{title:'Mobile Bible', url: 'https://inscript.bible.cloud/content/texts/{bible.id}/index.html'},
+					{title:'PDF', url: `https://dbs-web.s3.us-west-2.amazonaws.com/downloads/pdf/${bible.id}/${bible.id}_us_letter.pdf`},
+					{title:'Study Bible', url: `https://inscript.org/?w1=bible&t1=local%3A${bible.id}&v1=JN1_1`},
+					{title:'Mobile Bible', url: `https://inscript.bible.cloud/content/texts/${bible.id}/index.html`},
 				]
 			}} />
 			{/if}
