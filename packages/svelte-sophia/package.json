@@ -14,7 +14,7 @@
     "@playwright/test": "^1.21.0",
     "@rgossiaux/svelte-headlessui": "^1.0.2",
     "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "1.0.0-next.405",
+    "@sveltejs/kit": "next",
     "@sveltejs/svelte-scroller": "^2.0.7",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.4.0",
