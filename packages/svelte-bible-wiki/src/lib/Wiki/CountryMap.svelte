@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@rgossiaux/svelte-headlessui';
 	import { Datatable } from '@dbs/svelte-datatables';
-	import countryShapes from '../Map/country-shapes.js';
+	import countryShapes from '../Map/country-shapes.json';
 	import FetchWikiSidebar from '../API/FetchWikiSidebar.js';
 
 	let tabs = [{ name: 'Data' }, { name: 'Maps' }];
