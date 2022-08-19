@@ -1,32 +1,13 @@
 <script>
 	import {Disclosure, DisclosureButton, DisclosurePanel} from '@rgossiaux/svelte-headlessui'
-	import {columns, columnWrap, currentReference} from '$lib/store'
-	import {books} from '$lib/data/books.js'
-	import {fetchBooks} from '$lib/utils/fetchBooks.js'
+	import {columns, currentReference} from '$lib/store'
+	import books from '$lib/data/books.json'
 	import parseCurrentReference from '$lib/utils/parseVerseRef.js'
+	import navigate from '$lib/utils/navigate.js'
 
 	export let key
 
 	let open = false
-
-	async function navigate(bookId, chapter) {
-		for (let i = 0; i < $columns.length; i++) {
-			if ($columns[i]?.type === 'bible') {
-				const book = await fetchBooks($columns[i].metadata.id, bookId)
-				$columns[i].books = [book]
-				console.log('book-nav', book)
-
-				const url = new URL(document.URL)
-				url.hash = '#c' + chapter
-				document.location.href = url.href
-
-				// Console.log('query is', `.m${bookId} #c${chapter}`)
-				// $columnWrap[i].querySelector(`#c${chapter}`).scrollIntoView()
-			}
-		}
-	
-		open = false
-	}
 </script>
 
 
@@ -48,7 +29,10 @@
 					<DisclosurePanel class="flex flex-row flex-wrap">
 						{#each book[1].chapters as chapter}
 								<span 
-									on:click="{() => navigate(book[0], chapter)}"
+									on:click={() => {
+										navigate($columns, book[0], chapter)
+										open = false
+									}}
 									class="inline-flex justify-center items-center w-10 h-10 mt-1 mr-1 text-center cursor-pointer">
 										{chapter}
 								</span>

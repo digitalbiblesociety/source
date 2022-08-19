@@ -4,7 +4,7 @@ import {writable} from 'svelte/store'
 export const columns = writable([
 	{id: 'ENGKJV', type: 'bible', books: []},
 	{id: 'ENGWEB', type: 'bible', books: []},
-	{id: 'ENGKJV', type: 'search'},
+	{id: 'ENGKJV', type: 'search', query: 'God Love'},
 ])
 
 export const columnWrap = writable([])

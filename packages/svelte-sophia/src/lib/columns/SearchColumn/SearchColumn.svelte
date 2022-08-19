@@ -7,7 +7,7 @@ import Fuse from 'fuse.js'
 import query from 'query-store'
 import parseCurrentReference from '$lib/utils/parseVerseRef.js'
 import {Listbox, ListboxOptions, ListboxOption} from '@rgossiaux/svelte-headlessui'
-
+import navigate from '$lib/utils/navigate'
 export let key
 
 const baseUrl = import.meta.env.VITE_API_BASEURL
@@ -30,13 +30,13 @@ onMount(async () => {
 		maxPatternLength: 12,
 		minMatchCharLength: 1,
 	})
+	$query.search = $columns[key].query ?? ''
+	search()
 })
 
 async function search() {
 	const verseResults = []
 	loading = true
-
-	console.log('query:', $query)
 
 	Promise.all(
 		$query.search.toLowerCase().split(' ').map(async term => {
@@ -195,11 +195,18 @@ const highlighter = function (resultItem) {
 			Loading...
 		{:else}
 		{#each Object.entries(verses) as [verse_id, verse]}
-			<div class="ml-5 text-sm text-stone-400 dark:text-stone-200">
-				{parseCurrentReference($columns, key, verse_id)}
-			</div>
-			<div class="search-result py-4">
-				{@html verse }
+			<div 
+			on:click={() => {
+				console.log('nav', verse_id.split('_')[0], verse_id.split('_')[1])
+				navigate(verse_id.split('_')[0], verse_id.split('_')[1])
+}}
+			class="hover:bg-stone-50 hover:dark:bg-stone-800 cursor-pointer">
+				<div class="ml-5 font-bold text-stone-400 dark:text-stone-200">
+					{ parseCurrentReference($columns, key, verse_id) }
+				</div>
+				<div class="search-result py-4">
+					{@html verse }
+				</div>
 			</div>
 		{/each}
 	{/if}

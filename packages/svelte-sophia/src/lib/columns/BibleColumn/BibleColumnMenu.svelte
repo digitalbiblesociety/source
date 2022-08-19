@@ -19,6 +19,7 @@
 	import {onMount} from 'svelte'
 	import BibleColumnInfo from './BibleColumnInfo.svelte'
 	import Fuse from 'fuse.js'
+	import bibleRefParser from './BibleReferenceParser.js'
 
 	export let key
 	let bibles
@@ -26,6 +27,7 @@
 	let open = false
 	let results = []
 	let engine
+
 	onMount(async () => {
 		bibles = await fetch('/data/bibles_dbs.json', {mode: 'no-cors'}).then(res => res.json())
 		results = [...bibles]
@@ -49,7 +51,14 @@ const filter = function () {
 		}
 }
 
+let reference
 </script>
+
+<label>
+<input type="text" 
+	bind:value={reference} 
+	on:change={() => bibleRefParser(reference)} /></label>
+
 
 <div on:click={() => open = !open}>
 	<button type="button" on:click={() => engine.search(query)} class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-stone-300 dark:border-stone-900 text-sm font-medium rounded-r-md text-stone-700 bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
@@ -71,10 +80,13 @@ const filter = function () {
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400" viewBox="0 0 20 20" fill="currentColor">
 						<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
 					  </svg>
-				  </div>
-				  <input type="search"
-				  bind:value="{query}"
-				  on:input="{filter}" class="block w-full dark:bg-stone-800 dark:text-stone-200 pl-10 sm:text-sm border-stone-300 dark:border-stone-900 rounded-md" placeholder="Filter">
+					</div>
+					<input 
+						type="search"
+						bind:value="{query}"
+						on:input="{filter}" 
+						class="block w-full dark:bg-stone-800 dark:text-stone-200 pl-10 sm:text-sm border-stone-300 dark:border-stone-900 rounded-md" 
+						placeholder="Filter" />
 				</div>
 			  </div>
 

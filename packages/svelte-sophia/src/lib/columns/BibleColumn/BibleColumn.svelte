@@ -23,7 +23,6 @@
 		const el = document.createElement('div')
 		el.innerHTML = book
 		console.log('datas', el.querySelector('[data-id]'))
-		// media inserts
 	}
 </script>
 
