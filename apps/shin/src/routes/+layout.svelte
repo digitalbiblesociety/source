@@ -2,15 +2,12 @@
 	import {Header} from '@dbs/svelte-dbs-ui'
 	import I18n from "$lib/i18n.svelte";
 	import '../style.css'
+	import {t} from "$lib/translations/index.js"
 
 	$: nav = [
 		{
 			label: $t('common.resources'),
 			href: `/`
-		},
-		{
-			label: $t('common.map'),
-			href: `/map`
 		},
 		{
 			label: $t('common.films'),

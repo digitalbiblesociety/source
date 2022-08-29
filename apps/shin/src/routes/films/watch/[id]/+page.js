@@ -1,4 +1,3 @@
-<script context="module">
 	// see https://kit.svelte.dev/docs#loading
 	export async function load({ params, fetch }) {
 		const film_id = params.id.split('___')[0];
@@ -9,9 +8,7 @@
 
 		if (res.ok) {
 			return {
-				props: {
-					film: await res.json()
-				}
+				film: await res.json()
 			};
 		}
 		return {
@@ -19,14 +16,3 @@
 			error: new Error(`Could not load JSON for ${film_id}`)
 		};
 	}
-</script>
-
-<script>
-	export let film;
-</script>
-
-<div class="mx-auto max-w-4xl">
-	{#if film}
-		{@html film.webEmbedPlayer}
-	{/if}
-</div>

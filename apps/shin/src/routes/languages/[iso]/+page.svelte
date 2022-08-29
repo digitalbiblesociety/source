@@ -1,32 +1,16 @@
-<script context="module">
-	export async function load({ params, fetch }) {
-		const baseUrl = import.meta.env.VITE_BASE_API;
-		const res = await fetch(`${baseUrl}/languages/${params.iso}.json`);
-		const bibles_dbs = await fetch(`${baseUrl}/bibles_dbs.json`);
-		if (res.ok) {
-			return {
-				props: {
-					language: await res.json(),
-					bibles: await bibles_dbs.json()
-				}
-			};
-		}
-		return {
-			status: res.status,
-			error: new Error(`Could not load JSON for language: ${params.iso}`)
-		};
-	}
-</script>
 <script>
 	import {Card} from "@dbs/svelte-dbs-ui";
 
-	export let bibles;
-	export let language;
+	export let data;
+	$: ({ language } = data);
 
-	bibles = bibles.map(bible => (bible.id))
+	console.log(data)
+
+	let bibles = data.bibles.map(bible => (bible.id))
+	console.log(bibles)
 </script>
 
-<section class="flex h-48 flex-col place-items-center justify-center  overflow-hidden">
+<section class="flex h-48 flex-col place-items-center justify-center  overflow-hidden bg-emerald-400">
 	<h1 class="text-center text-4xl dark:text-stone-100">{language.name}</h1>
 	{#if language.name != language.autonym}
 		<h2 class="dark:text-stone-200">{language.autonym ?? ''}</h2>
