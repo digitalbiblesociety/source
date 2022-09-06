@@ -1,10 +1,8 @@
-
 <script>
 	import { onMount } from "svelte"
-	import { browser } from '$app/env'
-	import { Datatable } from "@dbs/svelte-datatables"
+	//import {Datatable} from "@dbs/svelte-datatables";
+	import Datatable from '../components/datatable/Datatable.svelte'
 	import filters from './bibles/filters.js'
-	import {t} from "$lib/translations/index.js"
 
 	export let data;
 	$: ({ locale, languages, translations } = data);
@@ -47,7 +45,31 @@
 {#if languages}
 <div class="mx-auto w-4/5 pt-8">
 
-	{#if browser}
+
+	<Datatable inputData={languages} />
+
+	<!--
+	<Datatable classList="relative" data={languages} bind:dataRows={rows}>
+		<thead class="bg-gray-50 text-gray-600">
+			<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">{translations?.thead?.title ?? 'title'}</th>
+			<th data-name="language" data-key="id" class="sortable hidden sm:table-cell">iso</th>
+			<th data-key="po" class="sortable">{translations?.thead?.population ?? 'population'}</th>
+		</thead>
+		<tbody>
+			{#if $rows}
+				{#each $rows as row}
+					<tr>
+						{ @html table_row(row) }
+					</tr>
+				{/each}
+			{/if}
+		</tbody>
+	</Datatable>
+	-->
+
+
+
+	<!--
 		<Datatable classList="relative" data="{languages}" bind:dataRows="{rows}" settings={settings}>
 			<thead class="bg-gray-50 text-gray-600">
 				<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">{translations?.thead?.title ?? 'title'}</th>
@@ -57,12 +79,12 @@
 			<tbody>
 				{#if rows}
 					{#each $rows as row}
-						{@html table_row(row)}
+						{ @html table_row(row) }
 					{/each}
 				{/if}
 			</tbody>
 		</Datatable>
-	{/if}
+		-->
 
 	<noscript>
 		<table class="mx-auto w-4/5 pt-8">
@@ -78,7 +100,8 @@
 					{/if}
 				{/each}
 			</tbody>
-			</table>
+		</table>
 	</noscript>
+
 </div>
 {/if}

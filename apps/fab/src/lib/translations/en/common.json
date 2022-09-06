@@ -1,0 +1,28 @@
+{
+	"welcome": "Welcome",
+	"languages": {
+		"en": "English",
+		"es": "Spanish",
+		"hn": "Hindi"
+	},
+	
+	"---- navigation ----": "",
+	"home": "Home",
+	"films": "Films",
+	"audio_bibles": "Audio Bibles",
+	"resources": "Resources",
+	"bibles": "Bibles",
+	"countries": "Countries",
+	"about": "About",
+	"map": "Map",
+
+	"---- fields ----": "",
+	"language": "Language",
+	"title": "Title",
+	"country": "Country",
+	"date": "Date",
+
+	"---- utility ----": "",
+	"Search": "Search"
+
+}

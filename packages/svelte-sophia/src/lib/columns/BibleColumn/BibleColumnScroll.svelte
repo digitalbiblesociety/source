@@ -32,8 +32,6 @@
 	let refBot = null
 	let refTop = null
 
-
-	console.log('colKey', $columns[key])
 //	$: {
 //		if (refBot) {
 //			loading = true;
@@ -48,9 +46,9 @@
 //			loading = false;
 //		}
 //	}
+
 </script>
 
-<div />
 <div
 	class="book-wrap absolute inset-0 top-14 px-4 lg:px-8 overflow-y-scroll"
 	bind:this={column}

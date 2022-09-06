@@ -6,7 +6,6 @@ const config = {
 	kit: {
 		adapter: adapter({
 			// default options are shown
-			precompress: true,
 			fallback: '404.html',
 			pages: 'build',
 			assets: 'build'

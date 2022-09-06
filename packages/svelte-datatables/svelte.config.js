@@ -9,14 +9,7 @@ const config = {
 		})
 	],
 	kit: {
-		adapter: adapter(),
-		browser: {
-			hydrate: false
-		},
-		prerender: {
-			crawl: true,
-			enabled: true
-		}
+		adapter: adapter()
 	}
 };
 

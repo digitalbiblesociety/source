@@ -6,8 +6,6 @@ export async function fetchBooks(BibleID, sectionID) {
 			const parser = new DOMParser()
 			const doc = parser.parseFromString(result, 'text/html')
 
-			console.log('doc', doc)
-
 			return {
 				id: sectionID,
 				book: doc.querySelector('main').outerHTML,

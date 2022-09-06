@@ -1,14 +1,16 @@
 <script>
 	import {onMount} from 'svelte'
-	import {columns, preferences} from '$lib/store'
+	import {columns, currentBookChapter} from '$lib/store'
+	import parseCurrentReference from '$lib/utils/parseVerseRef.js'
 	import ColumnHeader from '../ColumnHeader.svelte'
+
 	export let key
 	const baseUrl = import.meta.env.VITE_API_BASEURL
 	let metadata
+	let libraries
 	onMount(async () => {
 		metadata = await fetch(baseUrl + '/_/media.json').then(res => res.json())
 		$columns[key].metadata = metadata
-		console.log($columns)
 	
 		const results = await Promise.allSettled(
 			metadata.media.map(async mediaLibrary => {
@@ -16,28 +18,20 @@
 				return fetch(infoPath).then(res => res.json())
 			}),
 		)
-		const libraries = results.filter(result => !(result.status === 'rejected'))
+		libraries = results.filter(result => !(result.status === 'rejected'))
 	})
 </script>
 
-<ColumnHeader>
+<ColumnHeader key={key}>
 	<div class="flex rounded-md shadow-sm justify-center items-center">
-		Media
+		<h2>Media</h2>
 	</div>
 </ColumnHeader>
-<!--
-{#each $columns as column}
-	{#if column.type === 'bible'}
 
-	{/if}
-{/each}
--->
-{#if metadata}
-	{#each metadata.media as media}
-	<div>
-		{media.type}
-		{media.folder}
-		{media.name}
-	</div>
+{JSON.stringify($currentBookChapter)}
+
+{#if libraries}
+	{#each libraries as library}
+		{JSON.stringify(library)}
 	{/each}
 {/if}

@@ -8,7 +8,6 @@ export default class Component {
 	init() {
 		this.setColumns();
 		this.resize();
-		this.addEventScrollX();
 		new ResizeObserver(() => {
 			this.resize();
 		}).observe(document.querySelector(`#${this.id}`).parentElement);
@@ -69,10 +68,6 @@ export default class Component {
 		if (!document.querySelector(`#${this.id}`)) return;
 		const size = this.getSize();
 		const tableContainer = document.querySelector(`#${this.id} .dt-table`);
-		//        if ( this.getOptions().scrollY ) {
-		//            tableContainer.style.height = this.setTableContainerHeight(size.parentHeight * size.height) + 'px'
-		//            this.context.getColumns().redraw()
-		//        }
 		this.context.getDatatableWidth().set(size.parentWidth * size.width);
 		if (size.parentWidth * size.width < document.querySelector(`#${this.id} table`).offsetWidth) {
 			tableContainer.style.overflowX = 'auto';
@@ -86,15 +81,6 @@ export default class Component {
 		];
 		const sum = (a, b) => a + b;
 		document.querySelector(`#${this.id} .dt-table`).style.height = height - calc.reduce(sum) + 'px';
-	}
-
-	addEventScrollX() {
-		if (this.getOptions().scrollY) {
-			document.querySelector(`#${this.id} .dt-table`).addEventListener('scroll', (e) => {
-				document.querySelector(`#${this.id} .dt-header`).style.left =
-					-1 * e.target.scrollLeft + 'px';
-			});
-		}
 	}
 
 	setColumns() {

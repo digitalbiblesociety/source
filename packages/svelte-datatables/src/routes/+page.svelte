@@ -102,7 +102,7 @@
 		<th data-name="date" data-key="dt" class="sortable hidden md:table-cell"> date </th>
 	</thead>
 	<tbody>
-		{#if $rows}
+		{#if rows}
 			{#each $rows as row}
 				<tr>
 					<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">

@@ -8,10 +8,7 @@ const config = {
 	},
 	preprocess: preprocess({
 		postcss: true,
-		defaults: {
-			style: "postcss",
-		},
-	}),
+	  }),
 };
 
 export default config;

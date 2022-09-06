@@ -1,9 +1,7 @@
-import {
-	t,
-	locale,
-	locales,
-	loadTranslations,
-} from "$lib/translations/index.js"
+import { t, locale, locales, loadTranslations } from "$lib/translations/index.js"
+
+export const csr = false;
+export const prerender = true;
 
 export const load = async ({ url }) => {
 	const { pathname } = url

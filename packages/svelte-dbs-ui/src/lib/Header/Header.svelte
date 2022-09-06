@@ -9,10 +9,11 @@
         <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <div class="relative h-16 flex items-center justify-between">
                 <div class="px-2 flex items-center lg:px-0">
-					{#if header.title}
+					{#if header?.title}
 						<a href="/" class="flex-shrink-0 text-white text-lg font-bold">{header.title}</a>
 					{/if}
 					<div class="hidden lg:block lg:ml-10">
+						{#if header?.nav}
 					    <div class="flex space-x-4">
 							{#each header.nav as link}
 							{#if link.children}
@@ -84,6 +85,7 @@
 							{/if}
 						{/each}
 					</div>
+					{/if}
                     </div>
                 </div>
                 <div class="flex-1 px-2 flex justify-center lg:ml-6 lg:justify-end">

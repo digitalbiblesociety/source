@@ -4,11 +4,12 @@ import {columns} from '$lib/store'
 import ColumnHeader from '../ColumnHeader.svelte'
 import shortcut from '$lib/utils/shortcut.js'
 import Fuse from 'fuse.js'
-import query from 'query-store'
 import parseCurrentReference from '$lib/utils/parseVerseRef.js'
 import {Listbox, ListboxOptions, ListboxOption} from '@rgossiaux/svelte-headlessui'
-import navigate from '$lib/utils/navigate'
+import navigate from '$lib/utils/navigate.js'
 export let key
+
+let query
 
 const baseUrl = import.meta.env.VITE_API_BASEURL
 let verses
@@ -30,7 +31,7 @@ onMount(async () => {
 		maxPatternLength: 12,
 		minMatchCharLength: 1,
 	})
-	$query.search = $columns[key].query ?? ''
+	query = $columns[key].query ?? ''
 	search()
 })
 
@@ -39,12 +40,12 @@ async function search() {
 	loading = true
 
 	Promise.all(
-		$query.search.toLowerCase().split(' ').map(async term => {
+		query.toLowerCase().split(' ').map(async term => {
 			term = term.toLowerCase()
 			if (words.indexOf(term) !== -1) {
 				await fetch(`${baseUrl}/${$columns[key].id}/sophia/search/${words.indexOf(term)}.json`)
 					.then(res => res.json()).then(res => {
-						console.log('res', res); verseResults.push(res.verses)
+						verseResults.push(res.verses)
 					})
 			}
 		}),
@@ -92,7 +93,7 @@ function isCommonProp(arr, prop) {
 }
 
 const instantSearch = function () {
-	results = engine.search($query.search).slice(0, 100)
+	results = engine.search(query).slice(0, 100)
 
 	results.forEach(resultItem => {
 		resultItem = highlighter(resultItem)
@@ -140,9 +141,9 @@ const highlighter = function (resultItem) {
 <ColumnHeader key={key}>
 
 	<div class="flex rounded-md shadow-sm h-10 mt-1">
-	  <div class="relative flex flex-col items-stretch flex-grow focus-within:z-10">
+	  <div class="relative flex flex-col items-stretch focus-within:z-10">
 		<input 
-			bind:value="{$query.search}"
+			bind:value="{query}"
 			bind:this="{searchInput}"
 			on:input="{instantSearch}"
 			aria-label="Search"
@@ -150,24 +151,21 @@ const highlighter = function (resultItem) {
 				control: true,
 				code: 'KeyG',
 				callback() {
-					console.log('triggered focus')
 					searchInput.focus()
 				},
 			}}"
 			use:shortcut="{{
 				control: true,
-				code: 40, // Downarrow
+				code: 40,
 				callback() {
-					console.log('triggered')
 					searchInput.focus()
 				},
 			}}"
-			class="h-10 ml-4 pl-4 text-xs dark:text-stone-200 block dark:bg-stone-600 rounded-none rounded-l-md sm:text-sm border-stone-300 dark:border-stone-700">
+			class="h-10 w-full sm:width-auto ml-4 pl-4 text-xs dark:text-stone-200 block dark:bg-stone-600 rounded-none rounded-l-md sm:text-sm border-stone-400 dark:border-stone-700">
 
 			{#if results.length}
 			<Listbox on:change={e => {
-				console.log(e.detail)
-				$query.search = e.detail
+				query = e.detail
 				search(e.detail)
 				results = []
 			}}>
@@ -182,7 +180,7 @@ const highlighter = function (resultItem) {
 			{/if}
 
 	  </div>
-	  <button type="button" on:click={() => search(query)} class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-stone-300 dark:border-stone-900 text-sm font-medium rounded-r-md text-stone-700 bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+	  <button type="button" on:click={() => search(query)} class="-ml-px relative h-10 inline-flex items-center space-x-2 px-4 py-2 rounded-r-md text-stone-700 bg-stone-50 dark:bg-stone-800 hover:bg-stone-100">
 		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 rounded-full p-1 cursor-pointer bg-stone-700 text-stone-100 hover:bg-black hover:text-white" viewBox="0 0 20 20" fill="currentColor">
 			<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
 		</svg>
@@ -190,19 +188,16 @@ const highlighter = function (resultItem) {
 	</div>
 
 {#if verses}
-<div class="flex flex-col overflow-scroll absolute inset-0 top-12">
+<div class="flex flex-col overflow-scroll absolute inset-0 top-14">
 	{#if loading}
 			Loading...
 		{:else}
-		{#each Object.entries(verses) as [verse_id, verse]}
+		{#each Object.entries(verses) as [verseID, verse]}
 			<div 
-			on:click={() => {
-				console.log('nav', verse_id.split('_')[0], verse_id.split('_')[1])
-				navigate(verse_id.split('_')[0], verse_id.split('_')[1])
-}}
+			on:click={() => navigate(verseID.split('_')[0], verseID.split('_')[1])}
 			class="hover:bg-stone-50 hover:dark:bg-stone-800 cursor-pointer">
 				<div class="ml-5 font-bold text-stone-400 dark:text-stone-200">
-					{ parseCurrentReference($columns, key, verse_id) }
+					{ parseCurrentReference($columns, key, verseID) }
 				</div>
 				<div class="search-result py-4">
 					{@html verse }

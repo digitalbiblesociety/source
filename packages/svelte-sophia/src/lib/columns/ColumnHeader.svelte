@@ -5,6 +5,7 @@
 </script>
 
 <header class="bg-stone-200 h-14 dark:bg-stone-900 flex flex-row justify-between items-center">
+
 	<slot />
 
 	{#if $columns.length !== 1}

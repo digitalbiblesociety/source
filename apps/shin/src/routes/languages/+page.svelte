@@ -1,82 +1,86 @@
 <script>
-	import { onMount } from "svelte"
-	import { browser } from '$app/env'
-	import { Datatable } from "@dbs/svelte-datatables"
-	import filters from '../bibles/filters.js'
+	import { readable } from 'svelte/store';
+	import { Render, Subscribe, createTable } from 'svelte-headless-table';
+	import { addColumnFilters, addColumnOrder, addSortBy, addTableFilter, addPagination, addSelectedRows } from 'svelte-headless-table/plugins';
 
-	export let data;
-	$: ({ locale, languages, translations } = data);
+	import {bibleColumns} from './DatatableColumns.js'
+	import DtPagination from './partials/DataTablePagination.svelte'
+	import DtHeader from './partials/DataTableHeader.svelte'
+	import DtSearch from './partials/DataTableSearch.svelte'
+  
 
-	const settings = {
-		labels: {
-			search: "Search",
-			noRows: '',
-			info: "{start} - {end} / {rows} ",
-			previous: "<",
-			next: ">",
-		},
-		customFilters: filters[import.meta.env.VITE_COUNTRY_SITE]
-	}
-	
-	let js = false
-	onMount(async () => {
-		js = true
-	})
+	export let languages
 
-	const table_row = (row, locale) =>  `
-	<tr class="${row.bc + row.fc + row.rc > 0 ? '' : 'opacity-40'}">
-		<td class="whitespace-nowrap px-6 py-4 text-sm font-medium">
-			<a href="/languages/${row.id}">
-				<div class="text-sm text-gray-900 dark:text-gray-300">
-					${row.tt}
-				</div>
-				<div class="text-xs text-gray-500">${row.tv}</div>
-			</a>
-		</td>
-		<td class="hidden whitespace-nowrap text-sm sm:table-cell">
-			${row.id}
-		</td>
-		<td>${row.po ? row.po.toLocaleString(locale) : ""}</td>
-	</tr>`
-
-	let rows
+	const data = readable(languages);
+	const table = createTable(data, {
+		filter: addColumnFilters(),
+		tableFilter: addTableFilter(),
+		sort: addSortBy(),
+		select: addSelectedRows({ initialSelectedDataIds: { 1: true } }),
+		orderColumns: addColumnOrder(),
+		page: addPagination({ initialPageSize: 20 }),
+	});
+  
+	const columns = table.createColumns(
+		[
+		table.column({
+			header: 'Title',
+			id: 'title-block',
+			accessor: (item) => item,
+			cell: ({ value }) => createRender(Cell, {
+				title: value.tt,
+				subtitle: value.iso,
+				href: '/languages/'+value.iso,
+			})
+		}),
+		table.column({
+			header: 'Population',
+			accessor: 'po',
+		}),
+		table.column({
+			header: 'Country',
+			id: 'country-block',
+			accessor: (item) => item,
+			cell: ({ value }) => createRender(Cell, {
+				title: value.cn,
+				subtitle: value.ci,
+				href: '/countries/'+value.ci,
+			})
+		})
+	]
+	);
+  
+	const { flatColumns, headerRows, pageRows, tableAttrs, tableBodyAttrs, pluginStates} = table.createViewModel(columns);
+	const ids = flatColumns.map((c) => c.id);
+  
+	const { columnIdOrder } = pluginStates.orderColumns;
+	$columnIdOrder = ids;
 </script>
 
-{#if languages}
-<div class="mx-auto w-4/5 pt-8">
+<DtSearch pluginStates={pluginStates} />
 
-	{#if browser}
-		<Datatable classList="relative" data="{languages}" bind:dataRows="{rows}" settings={settings}>
-			<thead class="bg-gray-50 text-gray-600">
-				<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">{translations?.thead?.title ?? 'title'}</th>
-				<th data-name="language" data-key="id" class="sortable hidden sm:table-cell">iso</th>
-				<th data-key="po" class="sortable">{translations?.thead?.population ?? 'population'}</th>
-			</thead>
-			<tbody>
-				{#if rows}
-					{#each $rows as row}
-						{@html table_row(row)}
-					{/each}
-				{/if}
-			</tbody>
-		</Datatable>
-	{/if}
+<table class="min-w-full divide-y divide-gray-300 dark:divide-gray-900 rounded-t-lg" {...$tableAttrs}>
+	<DtHeader headerRows={$headerRows} />
+	  <tbody class="divide-y divide-gray-200 dark:divide-gray-900 bg-white dark:bg-stone-700" {...$tableBodyAttrs}>
+		{#each $pageRows as row (row.id)}
+		  <Subscribe attrs={row.attrs()} let:attrs rowProps={row.props()} let:rowProps>
+			<tr {...attrs} class:selected={rowProps.select.selected}>
+			  {#each row.cells as cell (cell.id)}
+				<Subscribe attrs={cell.attrs()} let:attrs props={cell.props()} let:props>
+				  <td
+					class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6"
+					{...attrs}
+					class:sorted={props.sort.order !== undefined}
+					class:matches={props.tableFilter.matches}
+				  >
+					  <Render of={cell.render()} />
+				  </td>
+				</Subscribe>
+			  {/each}
+			</tr>
+		  </Subscribe>
+		{/each}
+	  </tbody>
+</table>
 
-	<noscript>
-		<table class="mx-auto w-4/5 pt-8">
-			<thead class="bg-gray-50 text-gray-600">
-				<th class="sortable">{translations?.thead?.title ?? 'title'}</th>
-				<th class="sortable"></th>
-				<th class="sortable hidden sm:table-cell">iso</th>
-			</thead>
-			<tbody>
-				{#each languages as row}
-					{#if row.bc + row.fc + row.rc > 0}
-						{@html table_row(row)}
-					{/if}
-				{/each}
-			</tbody>
-			</table>
-	</noscript>
-</div>
-{/if}
+<DtPagination {pluginStates} />

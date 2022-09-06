@@ -1,6 +1,6 @@
 <script>
+	import MainSearch from './MainSearch/MainSearch.svelte'
 	import TopMenu from './TopMenu.svelte'
-
 </script>
 
 <div class="flex flex-row justify-between h-12 bg-stone-700 text-white">
@@ -18,12 +18,7 @@
 		</svg>
 	</div>
 
-	<div class="my-1 relative flex items-center">
-	  <input type="text" name="search" id="search" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-12 sm:text-sm border-stone-300 dark:border-stone-900 dark:bg-stone-800 rounded-md">
-	  <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
-		<kbd class="inline-flex items-center border border-stone-200 rounded px-2 text-sm font-sans font-medium text-stone-400"> ⌘K </kbd>
-	  </div>
-	</div>
+	<MainSearch />
   
 	<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-3 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
 		<path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />

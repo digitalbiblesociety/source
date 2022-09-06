@@ -1,23 +1,24 @@
 <script>
 	import {Menu, MenuButton, MenuItems, MenuItem, Transition} from '@rgossiaux/svelte-headlessui'
-	import SettingsMenu from './SettingsMenu.svelte'
+	import SettingsMenu from './Settings/SettingsMenu.svelte'
 	import Login from './Login.svelte'
 	import {columns} from '$lib/store'
 
 	const nav = [
-		{type: 'window', title: 'bible', icon: '', handleClick() {}},
-		{type: 'window', title: 'commentary', icon: '', handleClick() {}},
-		{type: 'window', title: 'search', icon: '', handleClick() {}},
-		{type: 'window', title: 'Map', icon: '', handleClick() {}},
-		{type: 'window', title: 'media', icon: '', handleClick() {}},
-		{type: 'window', title: 'Parallels', icon: '', handleClick() {}},
-		{type: 'window', title: 'Comparison', icon: '', handleClick() {}},
-		{type: 'window', title: 'Audio', icon: '', handleClick() {}},
-		{type: 'window', title: 'Statistics', icon: '', handleClick() {}},
+		{type: 'window', title: 'bible', subtitle: 'Read the Bible', icon: ''},
+		{type: 'window', title: 'search', subtitle: 'Search for a word', icon: ''},
+		{type: 'window', title: 'media', subtitle: 'See Bible related films', icon: ''},
+		{type: 'window', title: 'commentary', inactive: true, icon: ''},
+		{type: 'window', title: 'Map', inactive: true, icon: ''},
+		{type: 'window', title: 'Parallels', inactive: true, icon: ''},
+		{type: 'window', title: 'Comparison', inactive: true, icon: ''},
+		{type: 'window', title: 'Audio', inactive: true, icon: ''},
+		{type: 'window', title: 'Statistics', inactive: true, icon: ''},
 //		{type:'options',title:'Settings',icon:''},
 //		{type:'options',title:'About',icon:''},
 //		{type:'options',title:'Feedback',icon:''}
 	]
+	let open = false
 
 	function openWindow(type) {
 		switch (type) {
@@ -32,6 +33,8 @@
 			default:
 				break
 		}
+	
+		open = false
 	}
 
 	let shareUrl = '?'
@@ -44,8 +47,9 @@
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 
-<Menu class="relative">
+<Menu class="relative" let:open>
 	<MenuButton
+		data-test-id="settings-menu"
 		class="text-stone-200 rounded-md inline-flex items-center text-base font-medium hover:text-stone-900 
 		focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 	>
@@ -60,6 +64,7 @@
 			<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 		</svg>
 	</MenuButton>
+	{#if open}
 	<Transition
 		enter="transition duration-100 ease-out"
 		enterFrom="transform scale-95 opacity-0"
@@ -70,7 +75,7 @@
 	>
 		<MenuItems class="absolute z-10 transform mt-3 px-2 w-screen max-w-md sm:px-0 lg:max-w-3xl">
 			<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-				<div class="flex flex-row w-full justify-between bg-stone-200 dark:bg-stone-900">
+				<div class="flex flex-row w-full justify-between bg-stone-700 dark:bg-stone-900">
 				<SettingsMenu />
 				<Login />
 				</div>
@@ -79,24 +84,23 @@
 					{#if link.type === 'window'}
 						<MenuItem>
 							<button
-								on:click={() => openWindow(link.title)}								
-								class="-m-3 p-3 flex items-start rounded-lg hover:bg-stone-50 dark:hover:bg-stone-900 transition ease-in-out duration-150"
+								on:click={() => openWindow(link.title)}
+								data-test-id={link.type + '_column_add'}
+								class:opacity-50={link.inactive}
+								class="-m-3 p-3 flex items-start rounded-lg hover:bg-stone-50 dark:hover:bg-stone-900 transition ease-in-out duration-150  w-full"
 							>
-							{#if link.icon}
-								<div
-									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
-								>
-								{@html link.icon}
-								</div>
+							<div>
+								{#if link.icon}
+									<div class="flex-shrink-0 flex h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+										{@html link.icon}
+									</div>
 								{/if}
-								<div class="ml-4">
-									<p class="text-base font-medium text-stone-900 dark:text-stone-200">{link.title}</p>
-									{#if link.subtitle}
-									<p class="mt-1 text-sm text-stone-500 dark:text-stone-300">
-										{link.subtitle}
-									</p>
-									{/if}
-								</div>
+								<p class="text-base font-medium text-stone-900 dark:text-stone-200">{link.title}</p>
+								<p class="block mt-1 text-sm text-stone-500 dark:text-stone-300">
+									{link.subtitle ?? ''}
+									{#if link.inactive} Coming Soon {/if}
+								</p>
+							</div>
 							</button>
 						</MenuItem>
 						{/if}
@@ -106,8 +110,8 @@
 
 			</div>
 		</MenuItems>
-
 	</Transition>
+	{/if}
 </Menu>
 
 <!--

@@ -4,6 +4,10 @@ export default function (cols, key, reference) {
 	}
 
 	const refParts = reference.split('_')
+	if (!refParts.length > 1) {
+		return ''
+	}
+
 	const book = (cols[key].metadata?.books[refParts[0]]?.book_name ?? refParts[0])
 
 	return book + ' ' + refParts[1] + ':' + refParts[2]

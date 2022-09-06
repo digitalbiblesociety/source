@@ -1,0 +1,25 @@
+{
+	"welcome": "Welcome",
+	"languages": {
+		"en": "अंग्रेज़ी",
+		"es": "स्पैनिश",
+		"hn": "हिन्दी"
+	},
+
+	"---- navigation ----": "",
+	"home": "घर",
+	"films": "फिल्में",
+	"audio_bibles": "ऑडियो बाईबिल",
+	"resources": "साधन",
+	"about": "के बारे में",
+	"map": "नक्शा",
+
+	"---- fields ----": "",
+	"language": "भाषा",
+	"title": "शीर्षक",
+	"country": "देश",
+	"date": "दिनांक",
+
+	"---- utility ----": "",
+	"Search": "खोज"
+}

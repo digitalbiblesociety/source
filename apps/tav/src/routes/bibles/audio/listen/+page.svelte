@@ -1,7 +1,7 @@
 <script>
 import { t } from "$lib/translations"
 import Banner from "$lib/components/Banner.svelte"
-import { AudioPlayer } from "svelte-bible-brain"
+import { AudioPlayer } from "@dbs/svelte-bible-brain"
 import Breadcrumbs from "$lib/Breadcrumbs.svelte"
 </script>
 

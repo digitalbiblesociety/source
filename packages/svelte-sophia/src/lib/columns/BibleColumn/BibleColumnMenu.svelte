@@ -19,7 +19,6 @@
 	import {onMount} from 'svelte'
 	import BibleColumnInfo from './BibleColumnInfo.svelte'
 	import Fuse from 'fuse.js'
-	import bibleRefParser from './BibleReferenceParser.js'
 
 	export let key
 	let bibles
@@ -51,22 +50,18 @@ const filter = function () {
 		}
 }
 
-let reference
 </script>
 
-<label>
-<input type="text" 
-	bind:value={reference} 
-	on:change={() => bibleRefParser(reference)} /></label>
 
-
-<div on:click={() => open = !open}>
-	<button type="button" on:click={() => engine.search(query)} class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-stone-300 dark:border-stone-900 text-sm font-medium rounded-r-md text-stone-700 bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+	<button type="button" on:click={() => {
+		engine.search(query)
+		open = !open
+	}} class="-ml-px relative h-10 inline-flex items-center space-x-2 px-4 py-2 rounded-r-md text-stone-700 bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 border border-stone-400 dark:border-stone-700">
 		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 rounded-full p-1 cursor-pointer bg-stone-700 text-stone-100 hover:bg-black hover:text-white" viewBox="0 0 20 20" fill="currentColor">
 			<path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
 		</svg>
 	  </button>
-</div>
+
 
 	{#if bibles}
 		<div class:hidden={!open} class="absolute inset-0 top-14 p-4 text-xs rounded-sm bg-white dark:bg-stone-700 dark:text-stone-200 overflow-y-scroll z-50">

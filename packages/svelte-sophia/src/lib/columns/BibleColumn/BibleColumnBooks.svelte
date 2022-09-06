@@ -11,10 +11,17 @@
 </script>
 
 
+<button type="button" on:click={() => open = !open} 
+	class="-ml-px relative h-10 inline-flex sm:hidden items-center space-x-2 px-4 py-2 rounded-l-md text-stone-700 bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 border border-stone-400 dark:border-stone-700">
+	<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 rounded-full p-1 cursor-pointer bg-stone-700 text-stone-100 hover:bg-black hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+		<path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+	</svg>
+  </button>
+
 <input
 	type="text"
 	on:click={() => (open = !open)}
-	class="h-10 ml-4 text-xs dark:text-stone-200 block dark:bg-stone-600 rounded-none rounded-l-md sm:text-sm border-stone-300 dark:border-stone-700"
+	class="h-10 hidden sm:flex lg:ml-4 text-xs dark:text-stone-200 dark:bg-stone-600 rounded-none rounded-l-md sm:text-sm border-stone-400 dark:border-stone-700"
 	value={parseCurrentReference($columns, key, $currentReference)}
 />
 

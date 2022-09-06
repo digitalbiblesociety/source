@@ -38,8 +38,6 @@
 			}
 		});
 
-		console.log(languages)
-
 		return {
 			languages: languages,
 		}
