@@ -40,17 +40,17 @@
 							</a>
 						</td>
 						<td class="hidden whitespace-nowrap px-6 py-4 md:table-cell">
-							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 text-gray-700">
+							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-gray-100 text-gray-700">
 								${row.bc}
 							</span>
 						</td>
 						<td class="hidden whitespace-nowrap px-6 py-4 lg:table-cell">
-							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 text-gray-700">
+							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-gray-100 text-gray-700">
 								${row.rc}
 							</span>
 						</td>
 						<td class="hidden whitespace-nowrap px-6 py-4 lg:table-cell">
-							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 text-gray-700">
+							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-gray-100 text-gray-700">
 								${row.fc}
 							</span>
 						</td>

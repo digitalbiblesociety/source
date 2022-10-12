@@ -7,9 +7,9 @@
 	{#each stat_block as stat}
 	{#if stat.value}
 	  <div class="flex flex-col px-8 pt-8 place-items-center">
-		<dt class="order-2 text-base font-medium text-gray-500">{stat.title}</dt>
+		<dt class="order-2 text-gray-500">{stat.title}</dt>
 		{#if stat.href}
-			<dd class="order-1 text-2xl font-extrabold text-primary-600 sm:text-3xl">
+			<dd class="order-1 text-2xl font-extrabold text-blue-600 sm:text-3xl">
 				<a href={stat.href}> {stat.value} </a>
 			</dd>
 		{:else}

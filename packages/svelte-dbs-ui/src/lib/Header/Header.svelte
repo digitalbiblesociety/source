@@ -4,8 +4,8 @@
 	export let header
 </script>
 
-<div class="bg-gradient-to-r from-primary-400 to-secondary-500 pb-32">
-    <nav class="bg-gradient-to-r from-primary-400 to-secondary-500">
+<div class="bg-gradient-to-r from-blue-400 to-secondary-500 pb-32">
+    <nav class="bg-gradient-to-r from-blue-400 to-secondary-500">
         <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <div class="relative h-16 flex items-center justify-between">
                 <div class="px-2 flex items-center lg:px-0">
@@ -20,7 +20,7 @@
 								<div class="relative">
 									<Menu>
 										<MenuButton
-											class="group inline-flex items-center rounded-md bg-white text-stone-500 hover:text-stone-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+											class="group inline-flex items-center rounded-md bg-white text-stone-500 hover:text-stone-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
 										>
 											<span>{link.label}</span>
 											<svg
@@ -63,7 +63,7 @@
 																			{@html child.icon}
 																		{/if}
 																		<div class="ml-4">
-																			<p class="text-base font-medium text-stone-900">{child.label}</p>
+																			<p class="text-stone-900">{child.label}</p>
 																			{#if child.description}
 																				<p class="mt-1 text-sm text-stone-500">{child.description}</p>
 																			{/if}

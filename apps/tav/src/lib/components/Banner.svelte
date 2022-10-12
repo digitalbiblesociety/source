@@ -1,6 +1,6 @@
 <script>
-	import MenuSubnav from "./Partials/MenuSubnav.svelte";
-	import Breadcrumbs from "$lib/Breadcrumbs.svelte";
+	import MenuSubnav from "$lib/components/Navigation/MenuSubnav.svelte";
+	import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte";
 
 	export let title
 	export let subtitle
@@ -15,7 +15,7 @@
 	{/if}
 	<div class="border-b-2 border-transparent  ">
 		<div class="ml-8 md:ml-32">
-			<h2 class="hidden md:block text-sm font-normal mt-2 ">{@html subtitle }</h2>
+			<h2 class="hidden md:block text-sm mt-2 ">{@html subtitle }</h2>
 			<h1 class="font-bold text-xl lg:text-2xl text-center md:text-left">{@html title }</h1>
 		</div>
 		{#if subnav}

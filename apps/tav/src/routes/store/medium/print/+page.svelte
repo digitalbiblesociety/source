@@ -14,7 +14,7 @@ let variations = [
 
 <div class="mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
 	<div class="max-w-3xl">
-		<h2 id="features-heading" class="font-medium text-gray-500">
+		<h2 id="features-heading" class="text-gray-500">
 			Variations for Print on Demand
 		</h2>
 		<p
@@ -29,7 +29,7 @@ let variations = [
 			<div
 				class="xs:w-1/2 flex flex-col-reverse justify-between sm:w-1/3 md:w-1/5">
 				<div class="mt-6">
-					<h3 class="text-sm font-medium text-gray-900">{variation.title}</h3>
+					<h3 class="text-sm text-gray-900">{variation.title}</h3>
 					<p class="mt-2 text-sm text-gray-500">{variation.description}</p>
 				</div>
 				<div

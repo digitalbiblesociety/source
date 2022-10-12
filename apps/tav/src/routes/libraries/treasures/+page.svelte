@@ -1,6 +1,6 @@
 <script>
 	import Banner from "$lib/components/Banner.svelte"
-	import { t } from "$lib/translations"
+	import { t } from "$lib/Translations"
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -22,7 +22,7 @@
 		subnav={[
 			{title:$t("common.Overview"),url:'/libraries/'},
 			{title:$t("common.Treasures Libraries"),url:'/libraries/treasures',selected:true},
-			{title:$t("common.Bible") + " " + $t("common.Libraries"),url:'/libraries/bible'},
+			//{title:$t("common.Bible") + " " + $t("common.Libraries"),url:'/libraries/bible'},
 			{title:$t("common.FAQs"),url:'/libraries/faqs'},
 		]} />
 
@@ -59,7 +59,7 @@
 								<a
 									target="_blank"
 									href="http://downloads.dbs.org/treasures/{library.iso.toUpperCase()}/index.html"
-									class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-white">
+									class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-white">
 									<svg
 										class="h-5 w-5 text-gray-400"
 										xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@
 							<div class="-ml-px flex w-0 flex-1">
 								<a
 									href="https://dbs-web.s3.us-west-2.amazonaws.com/downloads/treasureslibraries/{library.iso.toUpperCase()}.zip"
-									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-white">
+									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-white">
 									<svg
 										class="h-5 w-5 text-gray-400"
 										xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@
 							<div class="-ml-px flex w-0 flex-1">
 								<a
 									href="/libraries/treasures/{library.id}"
-									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-white">
+									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-white">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										class="h-5 w-5 text-gray-400"

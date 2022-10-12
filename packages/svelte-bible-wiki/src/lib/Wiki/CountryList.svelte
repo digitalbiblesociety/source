@@ -16,7 +16,7 @@
 
 	const table_row = (row, locale) =>  `
 		<tr>
-			<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
+			<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
 				<svg class="mr-4 inline-flex h-5 w-5">
 					<use href="/img/flags.svg#${row.id}" xlink:href="#${row.ci}"></use>
 				</svg>
@@ -25,7 +25,7 @@
 					<div class="text-gray-400 text-sm">${row.co ?? ''}</div>
 				</a>
 			</td>
-			<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 text-center">
+			<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900 text-center">
 				${row.po ? row.po.toLocaleString("en") : ""}
 			</td>
 		</tr>`

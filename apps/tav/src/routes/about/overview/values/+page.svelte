@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 $: values = [
@@ -80,7 +80,7 @@ $: values = [
 							<p class="text-lg font-semibold text-gray-900 dark:text-gray-300">
 								{value.title}
 							</p>
-							<p class="mt-3 text-base text-gray-500 dark:text-gray-400">
+							<p class="mt-3 text-gray-500 dark:text-gray-400">
 								{value.description}
 							</p>
 						</span>

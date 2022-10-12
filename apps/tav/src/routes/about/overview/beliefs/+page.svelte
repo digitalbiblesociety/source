@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 $: beliefs = [
@@ -95,7 +95,7 @@ $: beliefs = [
 								</span>
 								&nbsp;
 								<span
-									class="mt-3 text-base leading-5 text-gray-600 dark:text-gray-400">
+									class="mt-3 leading-5 text-gray-600 dark:text-gray-400">
 									{believe.long}
 								</span>
 							</p>

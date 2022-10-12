@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -27,7 +27,7 @@ import Banner from "$lib/components/Banner.svelte"
 
 
 <div id="copy"
-	class="prose px-4 md:px-6 lg:px-8 m-auto mt-8 max-w-none text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+	class="prose px-4 md:px-6 lg:px-8 m-auto mt-8 max-w-none leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
 	<img
 		src="/img/about/projects_players.png"
 		alt="Audio Players"

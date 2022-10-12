@@ -1,8 +1,8 @@
 <script>
 import { Datatable } from "@dbs/svelte-datatables"
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import { Tabs, Tab, TabList, TabPanel } from "$lib/Tabs"
-import Breadcrumbs from "$lib/Breadcrumbs.svelte"
+import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 import IconArrowRight from "~icons/heroicons-outline/arrow-right"
 
 /** @type {import('./$types').PageData} */
@@ -97,7 +97,7 @@ let rows
 					<div
 						class="flex flex-col border-b border-gray-100 p-6 text-center dark:border-gray-900 sm:border-0 sm:border-r">
 						<dt
-							class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
+							class="order-2 mt-2 text-lg leading-6 text-gray-500">
 							{$t("common.Resources")}
 						</dt>
 						<dd class="order-1 text-5xl font-extrabold text-blue-600">
@@ -107,7 +107,7 @@ let rows
 					<div
 						class="flex flex-col border-t border-b border-gray-100 p-6 text-center dark:border-gray-900 sm:border-0 sm:border-l sm:border-r">
 						<dt
-							class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
+							class="order-2 mt-2 text-lg leading-6 text-gray-500">
 							{$t("common.Audio Lessons")}
 						</dt>
 						<dd class="order-1 text-5xl font-extrabold text-blue-600">
@@ -119,7 +119,7 @@ let rows
 					<div
 						class="flex flex-col border-t border-gray-100 p-6 text-center dark:border-gray-900 sm:border-0 sm:border-l">
 						<dt
-							class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
+							class="order-2 mt-2 text-lg leading-6 text-gray-500">
 							{$t("common.Scripture Films")}
 						</dt>
 						<dd class="order-1 text-5xl font-extrabold text-blue-600">

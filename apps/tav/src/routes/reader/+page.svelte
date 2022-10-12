@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import { Datatable } from "@dbs/svelte-datatables"
 
 	/** @type {import('./$types').PageData} */
@@ -37,7 +37,7 @@ const subMonths = (input, months) => {
 			{#each $rows as row}
 				<tr class="{row.bibles_count > 0 ? 'text-green-600' : 'text-gray-400'}">
 					<td
-						class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
+						class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
 						<a href="{`/reader/${row.id}`}">
 							<div class="text-sm text-gray-900 dark:text-gray-200">
 								{row.name}
@@ -46,18 +46,18 @@ const subMonths = (input, months) => {
 						</a>
 					</td>
 					<td
-						class="hidden whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 sm:table-cell">
+						class="hidden whitespace-nowrap px-6 py-4 text-sm text-gray-900 sm:table-cell">
 						{row.abbreviation}
 					</td>
 					<td
-						class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
+						class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
 						<div class="text-sm text-gray-900 dark:text-gray-200">
 							{row.language.name}
 						</div>
 						<div class="text-xs text-gray-500">{row.language.id}</div>
 					</td>
 					<td
-						class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
+						class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
 						<div class="text-xs text-gray-500">{row.language.script}</div>
 					</td>
 					<td>

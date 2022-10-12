@@ -58,13 +58,13 @@ $: ({ art } = data);
 							<input
 								name="mobile-search-field"
 								id="mobile-search-field"
-								class="h-full w-full border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-gray-200 sm:hidden"
+								class="h-full w-full border-transparent py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-gray-200 sm:hidden"
 								placeholder="Search"
 								type="search" />
 							<input
 								name="desktop-search-field"
 								id="desktop-search-field"
-								class="hidden h-full w-full border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-gray-200 sm:block"
+								class="hidden h-full w-full border-transparent py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-gray-200 sm:block"
 								placeholder="Search all files"
 								type="search" />
 						</div>
@@ -129,7 +129,7 @@ $: ({ art } = data);
 							<select
 								id="tabs"
 								name="tabs"
-								class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10  text-base focus:border-blue-500 focus:outline-none focus:ring-blue-500 dark:border-slate-900 sm:text-sm">
+								class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10  focus:border-blue-500 focus:outline-none focus:ring-blue-500 dark:border-slate-900 sm:text-sm">
 								<option selected>Recently Viewed</option>
 								<option>Recently Added</option>
 								<option>Favorited</option>
@@ -144,17 +144,17 @@ $: ({ art } = data);
 									<!-- Current: "border-blue-500 text-blue-600", Default: "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:border-gray-300  dark:border-slate-900" -->
 									<span
 										aria-current="page"
-										class="whitespace-nowrap border-b-2 border-blue-500 py-4 px-1 text-sm font-medium text-blue-600">
+										class="whitespace-nowrap border-b-2 border-blue-500 py-4 px-1 text-sm text-blue-600">
 										Recently Viewed
 									</span>
 
 									<span
-										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400">
+										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400">
 										Recently Added
 									</span>
 
 									<span
-										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400">
+										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400">
 										Favorited
 									</span>
 								</nav>
@@ -223,11 +223,11 @@ $: ({ art } = data);
 										</button>
 									</div>
 									<p
-										class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900 dark:text-gray-200">
+										class="pointer-events-none mt-2 block truncate text-sm text-gray-900 dark:text-gray-200">
 										IMG_4985.HEIC
 									</p>
 									<p
-										class="pointer-events-none block text-sm font-medium text-gray-500 dark:text-gray-400">
+										class="pointer-events-none block text-sm text-gray-500 dark:text-gray-400">
 										3.9 MB
 									</p>
 								</li>
@@ -254,11 +254,11 @@ $: ({ art } = data);
 						<div class="mt-4 flex items-start justify-between">
 							<div>
 								<h2
-									class="text-lg font-medium text-gray-900 dark:text-gray-200">
+									class="text-lg text-gray-900 dark:text-gray-200">
 									<span class="sr-only">Details for</span>
 									IMG_4985.HEIC
 								</h2>
-								<p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+								<p class="text-sm text-gray-500 dark:text-gray-400">
 									3.9 MB
 								</p>
 							</div>
@@ -285,7 +285,7 @@ $: ({ art } = data);
 						</div>
 					</div>
 					<div>
-						<h3 class="font-medium text-gray-900 dark:text-gray-200">
+						<h3 class="text-gray-900 dark:text-gray-200">
 							Information
 						</h3>
 						<dl
@@ -317,7 +317,7 @@ $: ({ art } = data);
 						</dl>
 					</div>
 					<div>
-						<h3 class="font-medium text-gray-900 dark:text-gray-200">
+						<h3 class="text-gray-900 dark:text-gray-200">
 							Description
 						</h3>
 						<div class="mt-2 flex items-center justify-between">
@@ -343,7 +343,7 @@ $: ({ art } = data);
 						</div>
 					</div>
 					<div>
-						<h3 class="font-medium text-gray-900 dark:text-gray-200">
+						<h3 class="text-gray-900 dark:text-gray-200">
 							Shared with
 						</h3>
 						<ul
@@ -355,13 +355,13 @@ $: ({ art } = data);
 										alt="Aimee Douglas"
 										class="h-8 w-8 rounded-full" />
 									<p
-										class="ml-4 text-sm font-medium text-gray-900 dark:text-gray-200">
+										class="ml-4 text-sm text-gray-900 dark:text-gray-200">
 										Aimee Douglas
 									</p>
 								</div>
 								<button
 									type="button"
-									class="ml-6 rounded-md text-sm font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+									class="ml-6 rounded-md text-sm text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
 									Remove
 									<span class="sr-only">Aimee Douglas</span>
 								</button>
@@ -374,13 +374,13 @@ $: ({ art } = data);
 										alt="Andrea McMillan"
 										class="h-8 w-8 rounded-full" />
 									<p
-										class="ml-4 text-sm font-medium text-gray-900 dark:text-gray-200">
+										class="ml-4 text-sm text-gray-900 dark:text-gray-200">
 										Andrea McMillan
 									</p>
 								</div>
 								<button
 									type="button"
-									class="ml-6 rounded-md text-sm font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+									class="ml-6 rounded-md text-sm text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
 									Remove
 									<span class="sr-only">Andrea McMillan</span>
 								</button>
@@ -407,7 +407,7 @@ $: ({ art } = data);
 										</svg>
 									</span>
 									<span
-										class="ml-4 text-sm font-medium text-blue-600 group-hover:text-blue-500">
+										class="ml-4 text-sm text-blue-600 group-hover:text-blue-500">
 										Share
 									</span>
 								</button>

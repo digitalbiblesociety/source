@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -21,7 +21,7 @@ import Banner from "$lib/components/Banner.svelte"
 		subnav={[
 			{title:$t("common.Overview"),url:'/libraries/'},
 			{title:$t("common.Treasures Libraries"),url:'/libraries/treasures'},
-			{title:$t("common.Bible") + " " + $t("common.Libraries"),url:'/libraries/bible'},
+			//{title:$t("common.Bible") + " " + $t("common.Libraries"),url:'/libraries/bible'},
 			{title:$t("common.FAQs"),url:'/libraries/faqs',selected:true},
 		]} />
 
@@ -30,7 +30,7 @@ import Banner from "$lib/components/Banner.svelte"
 	<div
 		id="copy"
 		class="prose  m-auto mt-8 max-w-none leading-tight text-gray-600 dark:prose-invert dark:text-gray-300">
-		<h3 class="w-full bg-primary-400 px-2 text-white">
+		<h3 class="w-full bg-blue-400 px-2 text-white">
 			{$t("libraries.faq_1")}
 		</h3>
 
@@ -49,7 +49,7 @@ import Banner from "$lib/components/Banner.svelte"
 		<h4>{$t("libraries.faq_q5")}</h4>
 		<p>{$t("libraries.faq_a5")}</p>
 
-		<h3 class="w-full bg-primary-400 px-2 text-white">
+		<h3 class="w-full bg-blue-400 px-2 text-white">
 			{$t("libraries.faq_2")}
 		</h3>
 
@@ -68,7 +68,7 @@ import Banner from "$lib/components/Banner.svelte"
 		<h4>{$t("libraries.faq_q10")}</h4>
 		<p>{$t("libraries.faq_a10")}</p>
 
-		<h3 class="w-full bg-primary-400 px-2 text-white">
+		<h3 class="w-full bg-blue-400 px-2 text-white">
 			{$t("libraries.faq_3")}
 		</h3>
 

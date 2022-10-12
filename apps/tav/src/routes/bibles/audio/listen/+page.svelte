@@ -1,8 +1,8 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
 import { AudioPlayer } from "@dbs/svelte-bible-brain"
-import Breadcrumbs from "$lib/Breadcrumbs.svelte"
+import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 </script>
 
 <svelte:head>

@@ -6,8 +6,8 @@
 	// $: ({ bible } = data);
 
 import { onMount } from "svelte"
-import { t } from "$lib/translations/index.js"
-import Breadcrumbs from "$lib/Breadcrumbs.svelte"
+import { t } from "$lib/Translations/index.js"
+import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 
 //	import { Tabs, Tab, TabList, TabPanel } from '$lib/Tabs'
 
@@ -83,7 +83,7 @@ onMount(async () => {
 		<h2 class="title-font tracking-widest">{bible.title_vernacular}</h2>
 	{/if}
 	<h1
-		class="title-font mb-8 text-3xl font-medium text-gray-900 dark:text-gray-200">
+		class="title-font mb-8 text-3xl text-gray-900 dark:text-gray-200">
 		{bible.title}
 		<span class="block text-sm sm:hidden">
 			{bible.date} |
@@ -265,7 +265,7 @@ onMount(async () => {
 							<h2 class="text-sm title-font text-gray-500 tracking-widest">
 								{bible.title_vernacular}
 							</h2>
-							<h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
+							<h1 class="text-gray-900 text-3xl title-font mb-1">
 								{bible.title}
 							</h1>
 							<p class="leading-relaxed">
@@ -364,7 +364,7 @@ onMount(async () => {
 							</label>
 
 							<div class="flex">
-								<span class="title-font font-medium text-2xl text-gray-900"
+								<span class="title-font text-2xl text-gray-900"
 									>$14.20</span>
 								<button
 									class="flex ml-auto text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
@@ -485,7 +485,7 @@ onMount(async () => {
 					</div>
 
 					<div class="mt-4 space-y-6">
-						<p class="text-base text-gray-500 dark:text-gray-400"></p>
+						<p class="text-gray-500 dark:text-gray-400"></p>
 					</div>
 
 					<div class="mt-6 flex items-center">
@@ -528,7 +528,7 @@ onMount(async () => {
 
 							<fieldset>
 								<legend
-									class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+									class="block text-sm text-gray-700 dark:text-gray-300">
 									Size
 								</legend>
 								<div class="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -544,7 +544,7 @@ onMount(async () => {
 												aria-describedby="size-choice-0-description" />
 											<p
 												id="size-choice-0-label"
-												class="text-base font-medium text-gray-900 dark:text-gray-300">
+												class="text-gray-900 dark:text-gray-300">
 												{audio_player.title}
 											</p>
 											<p
@@ -585,7 +585,7 @@ onMount(async () => {
 							<button type="submit" class="button w-full">Add to bag</button>
 						</div>
 						<div class="mt-6 text-center">
-							<a href="#" class="group inline-flex text-base font-medium">
+							<a href="#" class="group inline-flex font-medium">
 
 								<svg
 									class="shrink-0 mr-2 h-6 w-6 text-gray-400 group-hover:text-gray-500"

@@ -1,7 +1,7 @@
 <div class="overflow-hidden py-16 px-4 sm:px-6 lg:px-8 xl:py-36">
 	<div class="mx-auto max-w-max lg:max-w-7xl">
 		<div class="relative z-10 mb-8 md:mb-2 md:px-6">
-			<div class="max-w-prose text-base lg:max-w-none">
+			<div class="max-w-prose lg:max-w-none">
 				<h2
 					class="font-semibold uppercase leading-6 tracking-wide text-blue-600">
 					Bible Reader

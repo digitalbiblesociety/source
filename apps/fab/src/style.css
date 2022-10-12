@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .button {
-	@apply block rounded-md bg-gradient-to-r from-primary-500 to-secondary-600 py-3 px-4 text-white shadow hover:from-primary-600 hover:to-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+	@apply block rounded-md bg-gradient-to-r from-blue-500 to-secondary-600 py-3 px-4 text-white shadow hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900;
 }
 
 .button-dark {
-	@apply block rounded-md bg-gray-800 py-3 px-4 text-white shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+	@apply block rounded-md bg-gray-800 py-3 px-4 text-white shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900;
 }
 
 @media print {
@@ -58,7 +58,7 @@
 }
 
 .infobox tbody tr th {
-	@apply text-sm font-medium text-gray-500;
+	@apply text-sm text-gray-500;
 }
 
 .infobox .infobox-header {

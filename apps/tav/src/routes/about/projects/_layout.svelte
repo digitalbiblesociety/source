@@ -1,6 +1,6 @@
 <script>
-	import MenuSubNav from "$lib/components/Partials/MenuSubnav.svelte"
-	import { t } from "$lib/translations/index.js"
+	import MenuSubNav from "$lib/components/Navigation/MenuSubnav.svelte"
+	import { t } from "$lib/Translations/index.js"
 </script>
 
 	<MenuSubNav links={[

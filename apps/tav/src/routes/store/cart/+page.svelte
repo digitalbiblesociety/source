@@ -1,9 +1,9 @@
 <script>
 import { onMount } from "svelte"
 import { goto } from "$app/navigation"
-import { fetchCart, client } from "../shopifyClient"
-import { t } from "$lib/translations"
-import Breadcrumbs from "$lib/Breadcrumbs.svelte"
+import { client, fetchCart } from "$lib/store/shopifyClient"
+import { t } from "$lib/Translations"
+import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 
 import { cartQuantity } from "$lib/store"
 
@@ -74,7 +74,7 @@ function checkout() {
 	<h1
 		class="flex items-center text-2xl font-bold text-gray-900 dark:text-gray-200 ">
 		{$t("store.shopping")}
-		<IconShoppingCart class="ml-3 h-5 w-5 text-primary-500" />
+		<IconShoppingCart class="ml-3 h-5 w-5 text-blue-500" />
 	</h1>
 	<div
 		class="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
@@ -101,7 +101,7 @@ function checkout() {
 											<div class="flex justify-between">
 												<h3 class="text-sm">
 													<span
-														class="font-medium text-gray-700 hover:text-gray-800 dark:text-gray-300">
+														class="text-gray-700 hover:text-gray-800 dark:text-gray-300">
 														{cart.lineItems[key].title}
 													</span>
 												</h3>
@@ -113,7 +113,7 @@ function checkout() {
 												</p>
 											</div>
 											<p
-												class="mt-1 text-sm font-medium text-gray-900 dark:text-gray-200">
+												class="mt-1 text-sm text-gray-900 dark:text-gray-200">
 												${cart.lineItems[key]["variant"]?.price}
 											</p>
 										</div>
@@ -130,7 +130,7 @@ function checkout() {
 														e.target.value
 													)}"
 												value="{cart.lineItems[key]['quantity']}"
-												class="max-w-full rounded-md border border-gray-300 py-1.5 text-left text-base font-medium leading-5 text-gray-700 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300 sm:text-sm" />
+												class="max-w-full rounded-md border border-gray-300 py-1.5 text-left leading-5 text-gray-700 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300 sm:text-sm" />
 
 											<div class="absolute top-0 right-0">
 												<button
@@ -179,14 +179,14 @@ function checkout() {
 			class="mt-16 rounded-lg bg-gray-50 px-4 py-6 dark:bg-gray-800 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8">
 			<h2
 				id="summary-heading"
-				class="text-lg font-medium text-gray-900 dark:text-gray-200">
+				class="text-lg text-gray-900 dark:text-gray-200">
 				{$t("store.order_summary")}
 			</h2>
 
 			<dl class="mt-6 space-y-4">
 				<div class="flex items-center justify-between">
 					<dt class="text-sm text-gray-600">{$t("store.subtotal")}</dt>
-					<dd class="text-sm font-medium text-gray-900 dark:text-gray-200">
+					<dd class="text-sm text-gray-900 dark:text-gray-200">
 						${cart.subtotalPrice}
 					</dd>
 				</div>
@@ -203,7 +203,7 @@ function checkout() {
 						</span>
 					</dt>
 					-->
-					<dd class="text-xs font-medium text-gray-800">
+					<dd class="text-xs text-gray-800">
 						{$t("store.shipping_checkout")}
 					</dd>
 				</div>
@@ -212,13 +212,13 @@ function checkout() {
 			<div class="mt-8">
 				<button
 					on:click="{() => checkout()}"
-					class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-4 text-lg font-medium text-white drop-shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50">
+					class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-4 text-lg text-white drop-shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50">
 					<IconShoppingCart class="mr-2 h-5 w-5" />
 					{$t("store.checkout")}
 				</button>
 			</div>
 			<button
-				class="mt-4 flex w-full items-center justify-center rounded-md border border-transparent bg-primary-400 py-1 px-3 text-sm font-medium text-white drop-shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+				class="mt-4 flex w-full items-center justify-center rounded-md border border-transparent bg-blue-400 py-1 px-3 text-sm text-white drop-shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
 				onclick="history.back()">
 				<IconArrowLeft class="mr-2 h-4 w-4" />
 				{$t("store.shopping_continue")}

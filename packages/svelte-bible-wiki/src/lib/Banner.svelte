@@ -39,5 +39,5 @@
 		<img class="object-cover h-full w-full inset-0 absolute z-10" src="/img/{background}.jpg" role="presentation" />
 	</picture>
 
-	<div class="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-r from-primary-500 via-primary-800 to-secondary-500 opacity-80 z-20"></div>
+	<div class="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-r from-blue-500 via-blue-800 to-secondary-500 opacity-80 z-20"></div>
 </div>

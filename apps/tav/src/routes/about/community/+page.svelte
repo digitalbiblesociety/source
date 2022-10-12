@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 
 import Banner from "$lib/components/Banner.svelte"
 import Fuse from "fuse.js"
@@ -21,10 +21,7 @@ let contributors = [
 	{ name: "Bible.org", website: "http://www.Bible.org/" },
 	{ name: "Bible Gateway", website: "http://www.BibleGateway.com/" },
 	{ name: "Bible League Canada", website: "http://www.BibleLeague.ca/" },
-	{
-		name: "Bible League International",
-		website: "http://www.BibleLeague.org/",
-	},
+	{ name: "Bible League International",website: "http://www.BibleLeague.org/"},
 	{ name: "Bible Lessons Int.", website: "http://www.BibleLessonsIntl.com/" },
 	{ name: "Bible Project", website: "https://bibleproject.com/" },
 	{ name: "Bible Visuals", website: "http://www.BibleVisuals.org/" },
@@ -35,36 +32,18 @@ let contributors = [
 	{ name: "Call Of Hope", website: "http://www.Call-of-Hope.com/" },
 	{ name: "Charisma Media", website: "http://www.charismamedia.com/" },
 	{ name: "Child Evangelism Fellowship", website: "http://www.CEFonline.com/" },
-	{
-		name: "China Christian Books",
-		website: "http://www.ChinaChristianBooks.com/",
-	},
-	{
-		name: "Chinese Christian Internet Mission",
-		website: "http://www.CCIM.org/",
-	},
-	{
-		name: "Christian Aid Ministries",
-		website: "https://christianaidministries.org/",
-	},
+	{ name: "China Christian Books",website: "http://www.ChinaChristianBooks.com/"},
+	{ name: "Chinese Christian Internet Mission",website: "http://www.CCIM.org/"},
+	{ name: "Christian Aid Ministries",website: "https://christianaidministries.org/"},
 	{ name: "Christian Broadcasting Network", website: "http://www.CBN.com/" },
 	{ name: "Christian Communications Int.", website: "http://www.cc-ca.org/" },
 	{ name: "Christian Digest", website: "http://www.ccBibleStudy.org/" },
 	{ name: "Christian Life Quarterly", website: "https://www.cclifefl.org/" },
-	{
-		name: "Christianity Explored Ministries",
-		website: "https://www.ceministries.org/",
-	},
+	{ name: "Christianity Explored Ministries",website: "https://www.ceministries.org/"},
 	{ name: "Coptology.com", website: "http://www.Coptology.com/" },
-	{
-		name: "Create International",
-		website: "http://www.CreateInternational.com/",
-	},
+	{ name: "Create International",website: "http://www.CreateInternational.com/"},
 	{ name: "Crossway", website: "https://www.crossway.org/" },
-	{
-		name: "D.O.O.R. International",
-		website: "http://www.doorinternational.com/",
-	},
+	{ name: "D.O.O.R. International",website: "http://www.doorinternational.com/"},
 	{ name: "Dariuhs & Marya Worship", website: "http://www.DariushMarya.com/" },
 	{ name: "Davar Partners", website: "http://www.davarpartners.com/" },
 	{ name: "David C. Cook", website: "http://www.DavidCCook.com/" },
@@ -78,29 +57,17 @@ let contributors = [
 	{ name: "Equipping the Saints", website: "http://www.etsusa.org/" },
 	{ name: "Ethno-Radio", website: "http://www.EthnoRadio.com/" },
 	{ name: "Ethnos 360", website: "http://www.NTM.org/" },
-	{
-		name: "Every Tribe Every Nation (ETEN)",
-		website: "http://www.everytribeeverynation.org/",
-	},
+	{ name: "Every Tribe Every Nation (ETEN)",website: "http://www.everytribeeverynation.org/"},
 	{ name: "Faith Comes by Hearing", website: "http://www.FCBH.org/" },
 	{ name: "Fariborz Khandani Ministries", website: "http://www.Icorh.com/" },
 	{ name: "Farsi Praise", website: "http://www.FarsiPraise.net/" },
-	{
-		name: "Fellowship for Faith for the Muslims",
-		website: "http://www.FFMNA.org/",
-	},
+	{ name: "Fellowship for Faith for the Muslims",website: "http://www.FFMNA.org/"},
 	{ name: "Forumn of Bible Agencies", website: "http://www.forum-intl.org/" },
 	{ name: "Freedom in Christ", website: "http://www.FICM.org/" },
 	{ name: "Glasgow Iranian Church", website: "http://www.GIchurch.org&lt;/" },
-	{
-		name: "Global Media Outreach",
-		website: "http://www.GlobalMediaOutreach.com/",
-	},
+	{ name: "Global Media Outreach",website: "http://www.GlobalMediaOutreach.com/"},
 	{ name: "Global Partners", website: "https://www.globalpartnersonline.org/" },
-	{
-		name: "Global Recordings Network",
-		website: "http://www.GlobalRecordings.net/",
-	},
+	{ name: "Global Recordings Network",website: "http://www.GlobalRecordings.net/"},
 	{ name: "Good News Productions (GNPI)", website: "https://gnpi.org/" },
 	{ name: "Good Seed International", website: "http://www.Goodseed.com/" },
 	{ name: "Gospel Comics", website: "http://www.GospelComics.com/" },
@@ -108,84 +75,44 @@ let contributors = [
 	{ name: "Got Questions", website: "http://www.GotQuestions.org/" },
 	{ name: "Hayate Abadi", website: "http://www.HayateAbadi.org/" },
 	{ name: "Hellios Project", website: "http://theheliosprojects.org/" },
-	{
-		name: "Holman Bible Publishers",
-		website: "http://www.bhpublishinggroup.com/",
-	},
-	{
-		name: "Home for Bible Translators",
-		website: "https://bibletranslators.org/",
-	},
+	{ name: "Holman Bible Publishers",website: "http://www.bhpublishinggroup.com/"},
+	{ name: "Home for Bible Translators",website: "https://bibletranslators.org/"},
 	{ name: "Hong Kong Bible Society", website: "http://www.HKBS.org/" },
 	{ name: "HonorShame", website: "https://honorshame.com/" },
 	{ name: "Iaganack Productions", website: "https://www.iaganack.com/" },
 	{ name: "IMB", website: "http://www.IMB.org/" },
-	{
-		name: "Inspirational Films, Inc",
-		website: "https://worldcat.org/identities/viaf-187538762/",
-	},
+	{ name: "Inspirational Films, Inc",website: "https://worldcat.org/identities/viaf-187538762/"},
 	{ name: "Institute for Bible Translation", website: "http://ibt.org.ru/" },
-	{
-		name: "Int. Lutheran Laymen’s League",
-		website: "http://www.Luthasia.net/",
-	},
-	{
-		name: "International Media Ministries",
-		website: "http://agtv.ag.org/international_media_ministries",
-	},
-	{
-		name: "Iran Alive Ministries",
-		website: "http://www.IranAliveMinistries.org/",
-	},
-	{
-		name: "Jason Hildebrand Creative Arts",
-		website: "http://jasonhildebrand.com/",
-	},
+	{ name: "Int. Lutheran Laymen’s League",website: "http://www.Luthasia.net/"},
+	{ name: "International Media Ministries",website: "http://agtv.ag.org/international_media_ministries"},
+	{ name: "Iran Alive Ministries",website: "http://www.IranAliveMinistries.org/"},
+	{ name: "Jason Hildebrand Creative Arts",website: "http://jasonhildebrand.com/"},
 	{ name: "Jesus Film", website: "http://www.JesusFilm.org/" },
 	{ name: "Joseph Films", website: "http://www.Hovsepian.com/" },
 	{ name: "Josh McDowell Ministries", website: "http://www.Josh.org/" },
 	{ name: "KDEC Presbyterian Church Egypt", website: "http://www.kdec.net/" },
 	{ name: "KRIN", website: "https://krin.info/" },
-	{
-		name: "Life Giving Resources",
-		website: "http://www.lifegivingresources.org/",
-	},
+	{ name: "Life Giving Resources",website: "http://www.lifegivingresources.org/"},
 	{ name: "LifeGate Gospel", website: "http://www.GodsSimplePlan.org/" },
-	{
-		name: "LifeAgape International",
-		website: "https://www.alignable.com/wheaton-il/lifeagape-international",
-	},
+	{ name: "LifeAgape International",website: "https://www.alignable.com/wheaton-il/lifeagape-international"},
 	{ name: "LifeWords (SGM)", website: "http://www.SGMlifewords.com/" },
 	{ name: "Ligonier", website: "http://www.ligonier.org/" },
-	{
-		name: "Literacy and Evangelism",
-		website: "http://www.LiteracyEvangelism.org/",
-	},
+	{ name: "Literacy and Evangelism",website: "http://www.LiteracyEvangelism.org/"},
 	{ name: "Lockman Foundation", website: "http://www.Lockman.org/" },
-	{
-		name: "LUMO Project",
-		website:
-			"https://www.bible.com/videos/collections/6-lumo-project-the-complete-collection",
-	},
+	{ name: "LUMO Project",website:"https://www.bible.com/videos/collections/6-lumo-project-the-complete-collection"},
 	{ name: "Lutheran Bible Translators", website: "http://www.lbt.org/" },
 	{ name: "Lutheran Bible Translators", website: "https://lbt.org/" },
 	{ name: "Mars Hill Productions", website: "http://www.Mars-Hill.org/" },
 	{ name: "Media to Movements", website: "https://www.mediatomovements.org/" },
 	{ name: "MegaVoice", website: "http://www.Megavoice.com/" },
 	{ name: "Middle East Media", website: "https://www.mem.org/" },
-	{
-		name: "Military Bible Association",
-		website: "https://www.charitynavigator.org/ein/371554282",
-	},
+	{ name: "Military Bible Association",website: "https://www.charitynavigator.org/ein/371554282"},
 	{ name: "Mission Aviation Fellowship (MAF)", website: "http://www.maf.org/" },
 	{ name: "Mission India", website: "http://www.MissionIndia.org/" },
 	{ name: "Mohabat TV", website: "http://www.Mohabat.tv/" },
 	{ name: "More than Dreams", website: "http://www.MorethanDreams.org/" },
 	{ name: "Muhammadanism.org", website: "http://www.Muhammadanism.org/" },
-	{
-		name: "Multiplication Network",
-		website: "http://www.MultiplicationNetwork.com/",
-	},
+	{ name: "Multiplication Network",website: "http://www.MultiplicationNetwork.com/"},
 	{ name: "Nejat Production", website: "http://www.NejatMusic.com/" },
 	{ name: "One Hope", website: "http://www.OneHope.net/" },
 	{ name: "Open Scriptures", website: "http://www.OpenScriptures.org/" },
@@ -194,20 +121,11 @@ let contributors = [
 	{ name: "Pacific Garden Mission", website: "http://www.Unshackled.org/" },
 	{ name: "Partners International", website: "http://www.PartnersIntl.org/" },
 	{ name: "Persian World Outreach", website: "http://www.Persianwo.org/" },
-	{
-		name: "Persians for Christ",
-		website: "http://www.farsinet.com/persians4jesus",
-	},
-	{
-		name: "Pioneer Bible Translators",
-		website: "http://www.Pioneerbible.org/",
-	},
+	{ name: "Persians for Christ",website: "http://www.farsinet.com/persians4jesus"},
+	{ name: "Pioneer Bible Translators",website: "http://www.Pioneerbible.org/"},
 	{ name: "Pioneers Ministries", website: "http://www.Pioneers.org/" },
 	{ name: "PNG Scripture Association", website: "http://pngscriptures.org/" },
-	{
-		name: "Pray for China Ministries",
-		website: "http://www.PrayforChina.net/",
-	},
+	{ name: "Pray for China Ministries",website: "http://www.PrayforChina.net/"},
 	{ name: "Radio Réveil", website: "http://www.Paroles.fm/" },
 	{ name: "RBC Ministries", website: "http://www.rbc.com/" },
 	{ name: "Rock International", website: "http://www.Rockintl.org/" },
@@ -229,34 +147,16 @@ let contributors = [
 	{ name: "Talking Bibles Intl.", website: "http://www.talkingbibles.org/" },
 	{ name: "The God’s Story Project", website: "http://www.Gods-story.org/" },
 	{ name: "The Visualized Bible", website: "http://www.BibleVisuals.org/" },
-	{
-		name: "The Word for the World",
-		website: "http://www.thewordfortheworld.org/",
-	},
-	{
-		name: "Third Millennium Ministries",
-		website: "http://www.ThirdMill.org&lt;/",
-	},
-	{
-		name: "Tucson Chinese Bible Society",
-		website: "http://www.TucsonChineseBible.org/",
-	},
-	{
-		name: "United Bible Societies",
-		website: "http://www.UnitedBibleSocieties.org/",
-	},
+	{ name: "The Word for the World",website: "http://www.thewordfortheworld.org/"},
+	{ name: "Third Millennium Ministries",website: "http://www.ThirdMill.org&lt;/"},
+	{ name: "Tucson Chinese Bible Society",website: "http://www.TucsonChineseBible.org/"},
+	{ name: "United Bible Societies",website: "http://www.UnitedBibleSocieties.org/"},
 	{ name: "Virtual Storehouse", website: "http://www.VirtualStorehouse.org/" },
-	{
-		name: "Voice of Christ Media",
-		website: "http://www.VoiceofChristMedia.org/",
-	},
+	{ name: "Voice of Christ Media",website: "http://www.VoiceofChristMedia.org/"},
 	{ name: "Voice of the Martyrs", website: "http://www.persecution.com/" },
 	{ name: "WoodsEdge Community Church", website: "https://www.woodsedge.org/" },
 	{ name: "Word Project", website: "http://www.WordProject.org/" },
-	{
-		name: "World Christian Broadcasting",
-		website: "http://www.WorldChristian.org/",
-	},
+	{ name: "World Christian Broadcasting",website: "http://www.WorldChristian.org/"},
 	{ name: "World Mission", website: "http://www.worldmission.cc/" },
 	{ name: "World Wide Bible Society", website: "http://www.wwBible.org/" },
 	{ name: "Wycliffe Bible Translators", website: "http://www.Wycliffe.org/" },
@@ -316,9 +216,9 @@ let filter = function () {
 		<div class="grid grid-cols-2 md:grid-cols-4 md:px-12 lg:grid-cols-4">
 			{#each results as contributor}
 				<a
-					class="mx-2 my-1 flex items-center justify-between rounded-lg border border-transparent bg-primary-400 py-2
-					pl-3 pr-1 text-sm leading-4 text-white shadow-lg hover:bg-primary-500
-					focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-primary-700 dark:hover:bg-primary-400"
+					class="mx-2 my-1 flex items-center justify-between rounded-lg border border-transparent bg-blue-400 py-2
+					pl-3 pr-1 text-sm leading-4 text-white shadow-lg hover:bg-blue-500
+					focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-400"
 					rel="noopener noreferrer"
 					href="{contributor.website ?? contributor.item.website}"
 					target="_blank">

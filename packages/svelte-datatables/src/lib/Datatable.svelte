@@ -58,10 +58,7 @@
 			<div class="absolute inset-y-0 left-0 flex items-center">
 				<RowsPerPage />
 			</div>
-			<SearchInput
-				classList="h-12 block w-full pl-16 text-sm border-gray-300 rounded-md border-gray-300 text-gray-700 dark:bg-gray-300
-									md:bg-[url('/img/icons/filter.png')] md:bg-[length:15px_15px] bg-no-repeat md:bg-[top_10px_right_8px]"
-			/>
+			<SearchInput />
 		</div>
 	</div>
 
@@ -79,7 +76,7 @@
 		<nav class="relative z-0 inline-flex mx-auto rounded-md -space-x-px" aria-label="Pagination">
 			<PaginationButtons {context} />
 		</nav>
-		<section class="mx-auto mt-2 text-primary-600 dark:text-primary-300" class:css={$options.css}>
+		<section class="mx-auto mt-2 text-blue-600 dark:text-blue-300" class:css={$options.css}>
 			<RowCount {id} />
 		</section>
 	</div>

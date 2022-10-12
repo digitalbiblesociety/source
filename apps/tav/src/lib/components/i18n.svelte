@@ -5,7 +5,7 @@ import {
 	MenuItems,
 	MenuItem,
 } from "@rgossiaux/svelte-headlessui"
-import { t, locale, locales } from "$lib/translations/index.js"
+import { t, locale, locales } from "$lib/Translations/index.js"
 import IconTranslate from "~icons/heroicons-outline/translate"
 </script>
 

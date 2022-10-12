@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 let features = [
@@ -81,7 +81,7 @@ subnav={[
 					</p>
 					<a
 						href="http://biblewebapp.com"
-						class="mt-8 inline-flex items-center rounded-md border border-transparent bg-blue-100 py-3 px-6 text-base font-medium text-blue-600 shadow hover:text-blue-500">
+						class="mt-8 inline-flex items-center rounded-md border border-transparent bg-blue-100 py-3 px-6 text-blue-600 shadow hover:text-blue-500">
 						Check it out
 					</a>
 				</div>
@@ -131,12 +131,12 @@ subnav={[
 								src="/img/icons/{feature.id}.svg" />
 						</div>
 						<p
-							class="ml-9 text-lg font-medium leading-6 text-gray-900 dark:text-slate-200">
+							class="ml-9 text-lg leading-6 text-gray-900 dark:text-slate-200">
 							{feature.name}
 						</p>
 					</dt>
 					<!--
-						<dd class="mt-2 ml-9 text-base text-gray-500">{ feature.description }</dd>
+						<dd class="mt-2 ml-9 text-gray-500">{ feature.description }</dd>
 						-->
 				</div>
 			{/each}

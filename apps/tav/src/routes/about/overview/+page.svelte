@@ -1,5 +1,5 @@
 <script>
-	import { t } from "$lib/translations/index.js"
+	import { t } from "$lib/Translations/index.js"
 	import Banner from "$lib/components/Banner.svelte"
 </script>
 

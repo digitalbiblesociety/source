@@ -1,6 +1,5 @@
 fetch(
-	import.meta.env.VITE_LULU_URL +
-		"auth/realms/glasstree/protocol/openid-connect/token",
+	import.meta.env.VITE_LULU_URL + "auth/realms/glasstree/protocol/openid-connect/token",
 	{
 		method: "POST",
 		headers: {

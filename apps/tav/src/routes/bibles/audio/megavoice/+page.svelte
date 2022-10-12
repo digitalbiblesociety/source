@@ -1,7 +1,7 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
-import { client } from "../../../store/shopifyClient"
+import { client } from "$lib/store/shopifyClient"
 import {
 	Dialog,
 	DialogOverlay,
@@ -61,16 +61,16 @@ client.collection
 		background-color: #efefef;
 	}
 	tbody th {
-		@apply text-xs text-primary-600 lg:text-sm;
+		@apply text-xs text-blue-600 lg:text-sm;
 	}
 	th.title {
-		@apply text-xs text-primary-600 dark:text-gray-800 md:text-lg;
+		@apply text-xs text-blue-600 dark:text-gray-800 md:text-lg;
 	}
 	td.cost {
-		@apply text-sm text-gray-800 dark:text-primary-800 md:text-base;
+		@apply text-sm text-gray-800 dark:text-blue-800 md:text-base;
 	}
 	td.txt {
-		@apply text-xs text-gray-800 dark:text-primary-600 lg:text-sm;
+		@apply text-xs text-gray-800 dark:text-blue-600 lg:text-sm;
 	}
 	.button-buy {
 		@apply mx-4 my-1 p-0.5 text-xs sm:text-sm md:mx-8 md:p-1 lg:text-base;
@@ -237,9 +237,9 @@ client.collection
 							</div>
 
 							<div
-								class="inline-flex items-center text-primary-500 hover:underline"
+								class="inline-flex items-center text-blue-500 hover:underline"
 								on:click="{() => (videoDialog.isOpen = true)}">
-								<IconVideoCamera class=" mr-2 h-5 w-5 text-primary-500" />
+								<IconVideoCamera class=" mr-2 h-5 w-5 text-blue-500" />
 								{$t("common.Demo")}
 							</div>
 						{/if}
@@ -252,7 +252,7 @@ client.collection
 				<td>&nbsp</td>
 				<td>&nbsp</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 			</tr>
 			<tr>
@@ -261,7 +261,7 @@ client.collection
 				<td>&nbsp</td>
 				<td>&nbsp</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 			</tr>
 			<tr>
@@ -270,7 +270,7 @@ client.collection
 				<td>&nbsp</td>
 				<td>&nbsp</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 			</tr>
 

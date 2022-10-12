@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 let birthday =
@@ -211,7 +211,7 @@ let events = [
 					<div class="bg-white px-4 py-5 dark:bg-black sm:rounded-lg sm:px-6">
 						<h2
 							id="timeline-title"
-							class="text-lg font-medium text-gray-900 dark:text-gray-200">
+							class="text-lg text-gray-900 dark:text-gray-200">
 							Timeline
 						</h2>
 
@@ -240,7 +240,7 @@ let events = [
 														<p class="text-sm text-gray-500 dark:text-gray-400">
 															{event.action}
 															<span
-																class="font-medium text-gray-900 dark:text-gray-200">
+																class="text-gray-900 dark:text-gray-200">
 																{event.title}
 															</span>
 														</p>

@@ -1,5 +1,5 @@
 <script>
-	import { t } from "$lib/translations/index.js"
+	import { t } from "$lib/Translations/index.js"
 	import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -23,7 +23,7 @@
 	]} />
 
 <section class="mx-auto px-4 my-12">
-	<div class="prose mx-auto px-4 mt-8 max-w-none text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300 overflow-hidden">
+	<div class="prose mx-auto px-4 mt-8 max-w-none leading-6 text-gray-500 dark:prose-invert dark:text-gray-300 overflow-hidden">
 		<p>{$t("about.work_proposals_1")}</p>
 		<p>{$t("about.work_proposals_2")}</p>
 		<p>{$t("about.work_proposals_3")}</p>

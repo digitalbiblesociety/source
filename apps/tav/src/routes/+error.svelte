@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import { t } from "$lib/translations/index.js"
+	import { t } from "$lib/Translations/index.js"
 
 </script>
 
@@ -17,7 +17,7 @@
 						class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">
 						Something Went Wrong
 					</h1>
-					<p class="mt-1 text-base text-gray-500 dark:text-gray-200">
+					<p class="mt-1 text-gray-500 dark:text-gray-200">
 						{$page.error.message}
 					</p>
 				</div>

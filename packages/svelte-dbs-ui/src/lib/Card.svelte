@@ -10,7 +10,7 @@
 	{/if}
 	{#if details.nav && !details.url}
 	<div class="min-w-0 flex-1">
-		<p class="text-sm font-medium text-stone-900 dark:text-stone-200">{details.title ?? ''}</p>
+		<p class="text-sm text-stone-900 dark:text-stone-200">{details.title ?? ''}</p>
 		<p class="truncate text-sm text-stone-500 dark:text-stone-400">{details.subtitle ?? ''}</p>
 		<div class="flex justify-around pt-4 text-sm">
 			{#each details.nav as link}
@@ -24,7 +24,7 @@
 	{/if}
 	{#if !details.nav && details.url}
 	<a class="min-w-0 flex-1" href={details.url}>
-		<p class="text-sm font-medium text-stone-900 dark:text-stone-200">{details.title ?? ''}</p>
+		<p class="text-sm text-stone-900 dark:text-stone-200">{details.title ?? ''}</p>
 		<p class="truncate text-sm text-stone-500 dark:text-stone-400">{details.subtitle ?? ''}</p>
 	</a>
 	{/if}

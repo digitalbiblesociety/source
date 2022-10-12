@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 import Fuse from "fuse.js"
@@ -3243,8 +3243,8 @@ let filter = function () {
 		{#each results as print}
 			<a
 				href="{print.link ?? print.item.link}"
-				class="flex rounded border border-gray-300 bg-white text-base font-medium text-primary-700 shadow-xl hover:text-primary-600 dark:border-black
-											dark:bg-gray-800 dark:text-white dark:hover:text-primary-800"
+				class="flex rounded border border-gray-300 bg-white text-blue-700 shadow-xl hover:text-blue-600 dark:border-black
+											dark:bg-gray-800 dark:text-white dark:hover:text-blue-800"
 				target="_blank"
 				rel="noopener noreferrer">
 				<img src="{print.cover ?? print.item.cover}" alt="Cover" class="m-2 w-14" />

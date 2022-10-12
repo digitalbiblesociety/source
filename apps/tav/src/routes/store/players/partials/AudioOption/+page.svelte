@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import AudioPreview from "../AudioPreview.svelte"
 import { selected } from "$lib/store"
 
@@ -50,7 +50,7 @@ const addToSelected = () => {
 			</div>
 
 			<div
-				class="mt-0.5 flex justify-between p-0 text-[9px] text-primary-500 md:text-xs">
+				class="mt-0.5 flex justify-between p-0 text-[9px] text-blue-500 md:text-xs">
 				<span>
 					{bible.cn ?? ""}
 				</span>

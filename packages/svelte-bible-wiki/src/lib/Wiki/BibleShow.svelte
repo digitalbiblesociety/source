@@ -76,7 +76,7 @@
 				  <div class="mt-2 leading-6 text-gray-500">Language</div>
 				  
 					  <a 
-						  class="text-lg font-extrabold text-primary-600" 
+						  class="text-lg font-extrabold text-blue-600" 
 						  href="/{locale}/languages/{bible.iso}">
 							{bible.language.name}
 							{bible.language.autonym ?? ''}
@@ -88,7 +88,7 @@
 				  {#if bible.alphabet}
 				  <div class="flex flex-col border-b border-gray-100 px-6 py-2 text-center sm:border-0 sm:border-l sm:border-r">
 					  <div class="mt-2 leading-6 text-gray-500">Alphabet</div>
-					  <a class="text-lg font-extrabold text-primary-600"
+					  <a class="text-lg font-extrabold text-blue-600"
 					  href="/{locale}/alphabets/{bible.script}">
 					  {bible.alphabet.name ?? bible.script}
 					  </a>
@@ -98,7 +98,7 @@
 				  {#if bible.date}
 				  <div class="flex flex-col border-t border-b border-gray-100 px-6 py-2 text-center sm:border-0 sm:border-l sm:border-r">
 					  <dt class="mt-2 leading-6 text-gray-500">Date</dt>
-					  <dd class="text-lg font-extrabold text-primary-600">{bible.date}</dd>
+					  <dd class="text-lg font-extrabold text-blue-600">{bible.date}</dd>
 				  </div>
 				  {/if}
 	
@@ -107,7 +107,7 @@
 				  <dt class="mt-2 leading-6 text-gray-500">Country</dt>
 				  
 					  <a 
-						  class="text-lg font-extrabold text-primary-600" 
+						  class="text-lg font-extrabold text-blue-600" 
 						  href="/{locale}/countries/{bible.country_id}">
 						  {bible.country.name}
 					  </a>
@@ -133,7 +133,7 @@
 					{#if translations['link_sections'][link_group_type[0].type]}
 					<div class="bg-gray-50 my-4 rounded shadow-md">
 					<div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-						<h3 class="text-lg leading-6 font-medium text-gray-900">{ translations['link_sections'][link_group_type[0].type]['title'] }</h3>
+						<h3 class="text-lg leading-6 text-gray-900">{ translations['link_sections'][link_group_type[0].type]['title'] }</h3>
 						<p class="mt-1 text-sm text-gray-500">{ translations['link_sections'][link_group_type[0].type]['description'] ?? '' }</p>
 					</div>
 					<div>

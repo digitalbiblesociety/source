@@ -1,5 +1,5 @@
 <script>
-	import { t } from "$lib/translations/index.js"
+	import { t } from "$lib/Translations/index.js"
 	import Banner from "$lib/components/Banner.svelte"
 
 import IconBookmark from "~icons/heroicons-outline/bookmark"
@@ -93,30 +93,25 @@ $: projects = [
 	aria-labelledby="contact-heading">
 	<div class="mt-8">
 		{#each projects as project}
-			<a href="{project.url}"
-				class=" text-base font-medium text-blue-700 hover:text-blue-600 dark:text-white dark:hover:text-blue-800 drop-shadow-lg">
-				<div
-					class="mb-8 flex flex-col rounded-xl rounded-bl-xl rounded-br-xl border border-gray-300 bg-gray-100 dark:bg-gray-800">
-					<div
-						class="relative flex rounded-tl-xl rounded-tr-xl px-4 pt-5 pb-1 md:px-8 bg-gray-200 dark:bg-gray-600">
-						<div
-							class="dark:text-invert absolute top-3 right-4 flex -translate-y-1/2 transform rounded-xl border
-								border-gray-500 bg-primary-600 p-2.5 dark:bg-gray-800 text-gray-200">
+			<a href="{project.url}" class="text-blue-700 hover:text-blue-600 dark:text-white dark:hover:text-blue-800">
+				<div class="mb-8 flex flex-col rounded-xl rounded-bl-xl rounded-br-xl border border-gray-300 bg-gray-100 dark:bg-gray-800">
+					<div class="relative flex rounded-tl-xl rounded-tr-xl px-4 pt-5 pb-1 md:px-8 bg-gray-200 dark:bg-gray-600">
+						<div class="dark:text-invert absolute top-3 right-4 flex -translate-y-1/2 transform rounded-xl border border-gray-500 bg-blue-600 p-2.5 dark:bg-gray-800 text-gray-200">
 							{#if project.icon}
 								<svelte:component this="{project.icon}" />
 							{/if}
 						</div>
 
-						<div class="flex  w-3/12 items-center">
+						<div class="flex w-3/12 items-center">
 							<img src="{project.picture}" alt="{project.picture}" class="w-[100px] h-[80px] md:w-[125px] md:h-[95px]" />
 						</div>
 
 						<div class="w-9/12  pl-4">
-							<h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">
+							<h3 class="text-lg text-gray-800 dark:text-gray-100">
 								{project.title}
 							</h3>
 							<p
-								class="mt-2 text-sm font-normal leading-tight text-gray-800 dark:text-gray-100">
+								class="mt-2 text-sm leading-tight text-gray-800 dark:text-gray-100">
 								{@html project.description}
 							</p>
 						</div>
@@ -124,8 +119,7 @@ $: projects = [
 
 					<div>
 						<div
-							class="rounded-bl-xl rounded-br-xl bg-primary-500 p-1 text-right font-normal text-white
-									hover:bg-black dark:bg-gray-400 dark:hover:bg-gray-200 md:px-8 {project.class}">
+							class="rounded-bl-xl rounded-br-xl bg-blue-500 p-1 text-right text-white hover:bg-black dark:bg-gray-400 dark:hover:bg-gray-200 md:px-8 {project.class}">
 							{project.action}
 							<span aria-hidden="true">&rarr;</span>
 						</div>

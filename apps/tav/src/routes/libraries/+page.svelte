@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -21,14 +21,14 @@ import Banner from "$lib/components/Banner.svelte"
 		subnav={[
 			{title:$t("common.Overview"),url:'/libraries/',selected:true},
 			{title:$t("common.Treasures Libraries"),url:'/libraries/treasures'},
-			{title:$t("common.Bible Libraries"),url:'/libraries/bible'},
+			//{title:$t("common.Bible Libraries"),url:'/libraries/bible'},
 			{title:$t("common.FAQs"),url:'/libraries/faqs'},
 		]} />
 
 <section id="container" class="mx-auto max-w-5xl">
 	<div
 		id="copy"
-		class="prose m-auto mt-8 max-w-none text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose m-auto mt-8 max-w-none leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
 		<img
 			src="/img/about/projects_libraries.png"
 			alt="{$t('Treasures')}"
@@ -44,7 +44,7 @@ import Banner from "$lib/components/Banner.svelte"
 
 		<h3>
 			{$t("common.Bible Libraries")}
-			<span class="text-base font-medium">{$t("libraries.overview_h2")}</span>
+			<span class="font-medium">{$t("libraries.overview_h2")}</span>
 		</h3>
 		<p>{$t("libraries.overview_b1")}</p>
 		<p>{$t("libraries.overview_b2")}</p>
@@ -60,7 +60,7 @@ import Banner from "$lib/components/Banner.svelte"
 
 		<h3>
 			{$t("common.Treasures Libraries")}
-			<span class="text-base font-medium">{$t("libraries.overview_h3")}</span>
+			<span class="font-medium">{$t("libraries.overview_h3")}</span>
 		</h3>
 		<p>{$t("libraries.overview_t1")}</p>
 		<p>{$t("libraries.overview_t2")}</p>

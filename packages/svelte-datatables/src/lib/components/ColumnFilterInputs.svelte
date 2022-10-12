@@ -50,13 +50,13 @@
 						{#each $columns as column}
 							{#if column.name === filter.key}
 								<div
-									class="relative inline-block text-center mx-2 lg:border lg:border-primary-200 w-4/5 rounded-md mb-6"
+									class="relative inline-block text-center mx-2 lg:border lg:border-blue-200 w-4/5 rounded-md mb-6"
 								>
 									<div
 										on:click={() => {
 											opened[filter.key] = !opened[filter.key];
 										}}
-										class="inline-flex justify-center text-sm font-medium text-primary-600 dark:text-gray-100 uppercase hover:text-gray-900"
+										class="inline-flex justify-center text-sm text-blue-600 dark:text-gray-100 uppercase hover:text-gray-900"
 									>
 										<span>{filter.label}</span>
 										<svg
@@ -74,7 +74,7 @@
 										</svg>
 									</div>
 									<div
-										class:hidden={!opened[filter.key] && pageWidth < 1025}
+										class:hidden={!opened[filter.key]}
 										class="origin-top-right absolute lg:relative right-0  bg-white lg:bg-transparent rounded-md px-4 py-2"
 									>
 										<form class="space-y-2">
@@ -87,7 +87,7 @@
 													);
 													checkDefaults(filter, !e.target.checked);
 												}}
-												class="mt-1 block w-full pl-3  py-2 pr-4 text-base border-gray-300 focus:outline-none sm:text-sm rounded-md
+												class="mt-1 block w-full pl-3  py-2 pr-4 border-gray-300 focus:outline-none sm:text-sm rounded-md
                                                     dark:text-gray-200 "
 											>
 												{#each filter.options as option, index}
@@ -103,7 +103,7 @@
 														/>
 														<label
 															for={column.name + index}
-															class="ml-3 pr-4 text-sm font-medium text-gray-700 dark:text-gray-200  whitespace-nowrap"
+															class="ml-3 pr-4 text-sm text-gray-700 dark:text-gray-200  whitespace-nowrap"
 														>
 															{option.label}
 														</label>

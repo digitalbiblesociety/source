@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
 import IconCheck from "~icons/heroicons-outline/check"
 </script>
@@ -19,16 +19,16 @@ import IconCheck from "~icons/heroicons-outline/check"
 		background-color: #efefef;
 	}
 	tbody th {
-		@apply text-sm text-primary-600;
+		@apply text-sm text-blue-600;
 	}
 	th.title {
-		@apply text-xl text-primary-600 dark:text-gray-800;
+		@apply text-xl text-blue-600 dark:text-gray-800;
 	}
 	td.cost {
-		@apply text-xl text-gray-800 dark:text-primary-800;
+		@apply text-xl text-gray-800 dark:text-blue-800;
 	}
 	td.txt {
-		@apply text-gray-800 dark:text-primary-600;
+		@apply text-gray-800 dark:text-blue-600;
 	}
 	.button-buy {
 		@apply m-0 p-2;
@@ -204,35 +204,35 @@ import IconCheck from "~icons/heroicons-outline/check"
 					<div class="flex justify-center">
 						<Icon
 							name="information-circle"
-							class="mr-2 h-5 w-5 text-primary-500" />{$t("common.More Info")}
+							class="mr-2 h-5 w-5 text-blue-500" />{$t("common.More Info")}
 					</div>
 				</td>
 				<td>
 					<div class="flex justify-center">
 						<Icon
 							name="information-circle"
-							class="mr-2 h-5 w-5 text-primary-500" />{$t("common.More Info")}
+							class="mr-2 h-5 w-5 text-blue-500" />{$t("common.More Info")}
 					</div>
 				</td>
 				<td>
 					<div class="flex justify-center">
 						<Icon
 							name="information-circle"
-							class="mr-2 h-5 w-5 text-primary-500" />{$t("common.More Info")}
+							class="mr-2 h-5 w-5 text-blue-500" />{$t("common.More Info")}
 					</div>
 				</td>
 				<td>
 					<div class="flex justify-center">
 						<Icon
 							name="information-circle"
-							class="mr-2 h-5 w-5 text-primary-500" />{$t("common.More Info")}
+							class="mr-2 h-5 w-5 text-blue-500" />{$t("common.More Info")}
 					</div>
 				</td>
 				<td>
 					<div class="flex justify-center">
 						<Icon
 							name="information-circle"
-							class="mr-2 h-5 w-5 text-primary-500" />{$t("common.More Info")}
+							class="mr-2 h-5 w-5 text-blue-500" />{$t("common.More Info")}
 					</div>
 				</td>
 			</tr>
@@ -240,10 +240,10 @@ import IconCheck from "~icons/heroicons-outline/check"
 				<th scope="row" class="">{$t("bible.audio_label_lcdScreen")}</th>
 				<td>&nbsp;</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td></td>
 				<td></td>
@@ -252,10 +252,10 @@ import IconCheck from "~icons/heroicons-outline/check"
 				<th scope="row" class="">{$t("bible.audio_label_microSD")}</th>
 				<td>&nbsp;</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td></td>
 				<td></td>
@@ -264,24 +264,24 @@ import IconCheck from "~icons/heroicons-outline/check"
 				<th scope="row" class="">{$t("common.Light")}</th>
 				<td>&nbsp;</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td></td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row" class="">{$t("bible.audio_label_fmRadio")}</th>
 				<td>&nbsp;</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 				<td></td>
 				<td></td>
@@ -293,7 +293,7 @@ import IconCheck from "~icons/heroicons-outline/check"
 				<td></td>
 				<td></td>
 				<td>
-					<IconCheck class="mx-auto block h-6 w-6 text-primary-500" />
+					<IconCheck class="mx-auto block h-6 w-6 text-blue-500" />
 				</td>
 			</tr>
 

@@ -1,7 +1,7 @@
 <script>
 import { onMount } from "svelte"
-import MenuSubNav from "$lib/components/Partials/MenuSubnav.svelte"
-import { t } from "$lib/translations/index.js"
+import MenuSubNav from "$lib/components/Navigation/MenuSubnav.svelte"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 let article = undefined
@@ -56,7 +56,7 @@ onMount(async () => {
 							<p class="text-xl font-semibold text-gray-900 dark:text-gray-200">
 								{@html article.title.rendered}
 							</p>
-							<p class="mt-3 text-base text-gray-500 dark:text-gray-300">
+							<p class="mt-3 text-gray-500 dark:text-gray-300">
 								{@html article.excerpt.rendered}
 							</p>
 						</div>

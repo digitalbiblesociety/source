@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -23,7 +23,7 @@ import Banner from "$lib/components/Banner.svelte"
 	]} />
 
 	<div
-		class="prose mx-auto max-w-5xl mt-8 text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose mx-auto max-w-5xl mt-8 leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
 		<h3>{$t("about.work_bibles_h1")}</h3>
 		<img
 			src="/img/about/projects_biblecloud.png"

@@ -52,7 +52,7 @@
 {#if country}
 	<TabGroup as="div">
 		<div
-			class="flex flex-col bg-gradient-to-br from-primary-500 to-secondary-500 dark:from-primary-700 dark:to-secondary-700 xl:rounded-tl-xl xl:rounded-tr-xl text-gray-100 text-2xl text-center">
+			class="flex flex-col bg-gradient-to-br from-blue-500 to-secondary-500 dark:from-blue-700 dark:to-secondary-700 xl:rounded-tl-xl xl:rounded-tr-xl text-gray-100 text-2xl text-center">
 			<h1
 				class="text-center text-3xl font-extrabold leading-8 tracking-wider text-white-900 sm:text-4xl pt-6">
 				{country.name_long ?? ''}
@@ -72,7 +72,7 @@
 								tabIdx === 0 ? 'rounded-l-lg' : '',
 								tabIdx === tabs.length - 1 ? 'rounded-r-lg' : '',
 								tab.disabled && 'opacity-50',
-								'group relative min-w-0 flex-1 overflow-hidden py-4 px-4 text-sm font-medium text-center focus:z-10'
+								'group relative min-w-0 flex-1 overflow-hidden py-4 px-4 text-sm text-center focus:z-10'
 							)}
 						let:selected
 					>
@@ -83,7 +83,7 @@
 						<span
 							aria-hidden="true"
 							class={classNames(
-								selected ? 'bg-primary-900' : 'bg-transparent',
+								selected ? 'bg-blue-900' : 'bg-transparent',
 								'absolute inset-x-0 bottom-0 h-0.5'
 							)}
 						/>
@@ -179,7 +179,7 @@
 									{#if rows}
 										{#each $rows as row}
 											<tr>
-												<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
+												<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
 													<a href={'/' + locale + '/languages/' + row.iso}>
 														<div class="text-sm text-gray-900 dark:text-gray-200">
 															{row.name}
@@ -190,7 +190,7 @@
 													</a>
 												</td>
 												<td
-													class="hidden whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 sm:table-cell"
+													class="hidden whitespace-nowrap px-6 py-4 text-sm text-gray-900 sm:table-cell"
 												>
 													{row.iso}
 												</td>
@@ -223,7 +223,7 @@
 											class="focus:outline-none"
 										>
 											<span class="absolute inset-0" aria-hidden="true" />
-											<p class="text-sm font-medium text-gray-900 dark:text-gray-200">
+											<p class="text-sm text-gray-900 dark:text-gray-200">
 												{country_map.title}
 											</p>
 											<p class="truncate text-sm text-gray-500" />

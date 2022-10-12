@@ -3,7 +3,7 @@
 	let site_id = import.meta.env.VITE_SITE_PREFIX;
 </script>
 
-<h1 class="text-primary-200">{$t(`about_${site_id}_title`)}</h1>
+<h1 class="text-blue-200">{$t(`about_${site_id}_title`)}</h1>
 <div class="prose mx-auto max-w-prose">
 	
 	{@html $t(`about_${site_id}_description`)}

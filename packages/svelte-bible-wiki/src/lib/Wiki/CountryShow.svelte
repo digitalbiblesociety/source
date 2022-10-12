@@ -31,7 +31,7 @@
 	let rows;
 </script>
 
-	<div class="flex flex-col bg-gradient-to-br from-primary-500 to-secondary-500 dark:from-primary-700 dark:to-secondary-700 xl:rounded-tl-xl xl:rounded-tr-xl text-gray-100 text-2xl text-center h-32">
+	<div class="flex flex-col bg-gradient-to-br from-blue-500 to-secondary-500 dark:from-blue-700 dark:to-secondary-700 xl:rounded-tl-xl xl:rounded-tr-xl text-gray-100 text-2xl text-center h-32">
 		{#if country}
 		<h1 class="text-center text-3xl font-extrabold leading-8 tracking-wider text-white-900 sm:text-4xl pt-6">
 			{country.name_long ?? ''} <div class="text-sm text-gray-200">{country.region_name}</div>

@@ -1,12 +1,12 @@
 <script>
 	import { onMount } from "svelte"
-	import { browser } from '$app/env'
+	import { browser } from '$app/enviroment'
 	import { Datatable } from "@dbs/svelte-datatables"
 
 	export let locale
 	export let alphabets
 
-	onMount(async () => {
+	onMount(async () => 
 		if(!alphabets) {
 			alphabets = await fetch(`/data/alphabets.json`).then(response => response.json())
 		}

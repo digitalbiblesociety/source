@@ -1,5 +1,5 @@
 <script xmlns="http://www.w3.org/1999/html">
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 let about_quotes = [

@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
 
 const videos = [
@@ -163,7 +163,7 @@ const videos = [
 			<div
 				class="w-full rounded-xl border border-gray-300 bg-gray-200 text-center
                             text-gray-800 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-100">
-				<h3 class="overflow:hidden my-2 text-sm font-medium text-gray-800">
+				<h3 class="overflow:hidden my-2 text-sm text-gray-800">
 					{project.title}
 				</h3>
 				<div class="relative mx-auto mt-2 w-full" style="padding-top: 56.25%">
@@ -185,7 +185,7 @@ const videos = [
 
 				<div class="mx-auto w-72 py-2 text-center md:w-64 lg:w-72">
 					<div
-						class="max-h-16 p-2 text-xs font-normal leading-tight text-gray-800 ">
+						class="max-h-16 p-2 text-xs leading-tight text-gray-800 ">
 						{@html project.caption}
 					</div>
 				</div>

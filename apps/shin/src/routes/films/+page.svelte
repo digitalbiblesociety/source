@@ -47,7 +47,7 @@
 				href="/films/{language.iso3 ?? language.item.iso3}-{language.languageId ??
 					language.item.languageId}"
 			>
-				<p class="truncate text-sm font-medium text-gray-900">
+				<p class="truncate text-sm text-gray-900">
 					{language.name ?? language.item.name}
 				</p>
 				<p class="truncate text-sm text-gray-500">

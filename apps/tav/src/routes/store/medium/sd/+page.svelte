@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 let specs = [
 	{ attribute: "Brand", value: "SanDisk" },
 	{ attribute: "Flash Memory", value: "SDXC" },
@@ -32,7 +32,7 @@ let specs = [
 			class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
 			{#each specs as spec}
 				<div class="border-t border-gray-200 pt-4">
-					<dt class="font-medium text-gray-900">{spec.attribute}</dt>
+					<dt class="text-gray-900">{spec.attribute}</dt>
 					<dd class="mt-2 text-sm text-gray-500">{spec.value}</dd>
 				</div>
 			{/each}

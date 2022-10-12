@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 </script>
 
 <div class="relative z-10 flex px-2 lg:px-0">

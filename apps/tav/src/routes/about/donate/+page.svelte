@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 import Endorsements from "./endorsements.svelte"
 import IconExternalLink from "~icons/heroicons-outline/external-link"
@@ -45,8 +45,8 @@ import IconLockedClosed from "~icons/heroicons-outline/lock-closed"
 							<button
 								type="submit"
 								formtarget="_blank"
-								class="space-between flex h-full items-center rounded-lg bg-gradient-to-r from-primary-400
-									to-primary-600 px-2 py-1 text-center dark:bg-gray-800">
+								class="space-between flex h-full items-center rounded-lg bg-gradient-to-r from-blue-400
+									to-blue-600 px-2 py-1 text-center dark:bg-gray-800">
 								{$t("about.donate_paypal")}
 								<IconExternalLink class="ml-2 h-5 w-5" />
 							</button>

@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Endorsements from "../endorsements.svelte"
 
 import Banner from "$lib/components/Banner.svelte"
@@ -31,13 +31,13 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 			<div
 				class="relative rounded-lg border bg-gray-50 p-4 mb-6 leading-tight drop-shadow dark:border-gray-400 dark:bg-black lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_wire_1")}:</h2>
-				<div class="absolute right-2 -top-2 text-gray-50 bg-primary-400 dark:bg-primary-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
 					<IconLibrary class="h-8 w-8" />
 				</div>
 				<p>
 					{$t("about.donate_wire_2")}
 					<a
-						class="font-semibold text-primary-500 hover:underline"
+						class="font-semibold text-blue-500 hover:underline"
 						href="mailto:donate@dbs.org"
 						aria-label="send an email to donate@dbs.org">
 						donate@dbs.org
@@ -49,12 +49,12 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 			<div
 				class="relative rounded-lg border bg-gray-50 p-4 mb-6 leading-tight drop-shadow dark:border-gray-400 dark:bg-black lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_mail")}:</h2>
-				<div class="absolute right-2 -top-2 text-gray-50 bg-primary-400 dark:bg-primary-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
 					<IconMail class="h-8 w-8" />
 				</div>
 				<p>{$t("about.donate_mail_1")}</p>
 				<div class="m-4">
-					<p class="font-semibold text-primary-500">Digital Bible Society</p>
+					<p class="font-semibold text-blue-500">Digital Bible Society</p>
 					<p>PO Box 2881</p>
 					<p>Conroe, Texas 77303 USA</p>
 				</div>
@@ -64,14 +64,14 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 			<div
 				class="relative rounded-lg border bg-gray-50 p-4 mb-6 leading-tight drop-shadow dark:border-gray-400 dark:bg-gray-800 lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_stock")}:</h2>
-				<div class="absolute right-2 -top-2 text-gray-50 bg-primary-400 dark:bg-primary-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
 					<IconChartLine class="h-8 w-8" />
 				</div>
 
 				<p>
 					{$t("about.donate_stock_1")}
 					<a
-						class="font-semibold text-primary-500 hover:underline"
+						class="font-semibold text-blue-500 hover:underline"
 						href="mailto:donate@dbs.org"
 						aria-label="send an email to donate@dbs.org">
 						donate@dbs.org
@@ -84,7 +84,7 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 				class="relative rounded-lg border bg-gray-50 p-4 mb-4 leading-tight drop-shadow dark:border-gray-400 dark:bg-black lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_crypto")}:</h2>
 
-				<div class="absolute right-2 -top-2 text-gray-50 bg-primary-400 dark:bg-primary-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
 					<svg
 						class="h-8 w-8"
 						xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 				<p>
 					{$t("about.donate_crypto_1")}
 					<a
-						class="font-semibold text-primary-500 hover:underline"
+						class="font-semibold text-blue-500 hover:underline"
 						href="mailto:donate@dbs.org"
 						aria-label="send an email to donate@dbs.org">
 						donate@dbs.org

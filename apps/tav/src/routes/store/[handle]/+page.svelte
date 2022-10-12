@@ -1,8 +1,8 @@
 <script>
 import { onMount } from "svelte"
-import { client, fetchCart } from "../shopifyClient"
+import { client, fetchCart } from "$lib/store/shopifyClient"
 import { goto } from "$app/navigation"
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import { cartQuantity } from "$lib/store"
 
 /** @type {import('./$types').PageData} */
@@ -52,7 +52,7 @@ function price(itemPrice) {
 				<li>
 					<div class="flex items-center">
 						<span
-							class="mr-4 text-sm font-medium text-gray-900 dark:text-gray-400">
+							class="mr-4 text-sm text-gray-900 dark:text-gray-400">
 							{product.productType}
 						</span>
 						<svg
@@ -71,7 +71,7 @@ function price(itemPrice) {
 				<li class="text-sm">
 					<span
 						aria-current="page"
-						class="font-medium text-gray-500 hover:text-gray-600 dark:text-gray-200">
+						class="text-gray-500 hover:text-gray-600 dark:text-gray-200">
 						{product.title}
 					</span>
 				</li>
@@ -82,10 +82,10 @@ function price(itemPrice) {
 			<div class="lg:grid lg:auto-rows-min lg:grid-cols-12 lg:gap-x-8">
 				<div class="lg:col-span-5 lg:col-start-8">
 					<div class="flex justify-between">
-						<h1 class="text-xl font-medium text-gray-900 dark:text-gray-200">
+						<h1 class="text-xl text-gray-900 dark:text-gray-200">
 							{product.title}
 						</h1>
-						<p class="text-xl font-medium text-gray-900 dark:text-gray-200">
+						<p class="text-xl text-gray-900 dark:text-gray-200">
 							{current_price}
 						</p>
 					</div>
@@ -114,7 +114,7 @@ function price(itemPrice) {
 						<div class="mt-8">
 							<div class="flex items-center justify-between">
 								<h2
-									class="text-sm font-medium text-gray-900 dark:text-gray-200">
+									class="text-sm text-gray-900 dark:text-gray-200">
 									{$t("common.Medium")}
 								</h2>
 							</div>
@@ -137,8 +137,8 @@ function price(itemPrice) {
 													current_price = price(variant.priceV2.amount)
 												}}"
 												class="{current_variation == variant.id
-													? 'bg-primary-600 text-white'
-													: 'text-gray-800 dark:text-gray-300'} mx-1 flex cursor-pointer flex-col items-center justify-center rounded-md p-3 text-sm font-medium uppercase focus:outline-none dark:bg-gray-800 sm:flex-1">
+													? 'bg-blue-600 text-white'
+													: 'text-gray-800 dark:text-gray-300'} mx-1 flex cursor-pointer flex-col items-center justify-center rounded-md p-3 text-sm uppercase focus:outline-none dark:bg-gray-800 sm:flex-1">
 												{variant.title}
 												<div class="text-sm">
 													{price(variant.priceV2.amount)}
@@ -153,7 +153,7 @@ function price(itemPrice) {
 						</div>
 
 						<label
-							class="mt-4 text-sm font-medium text-gray-900 dark:text-gray-200">
+							class="mt-4 text-sm text-gray-900 dark:text-gray-200">
 							{$t("common.Quantity")}
 							<input
 								class="mt-4 w-full rounded-md border dark:border-gray-700 dark:bg-gray-800"

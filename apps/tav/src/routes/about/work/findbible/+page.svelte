@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 let link_counts = [
@@ -55,18 +55,18 @@ function percentage(count, count_old) {
 		class="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-2 md:divide-y-0 md:divide-x">
 		{#each link_counts as link_count}
 			<div class="px-4 py-5 sm:p-6">
-				<dt class="text-base font-normal text-gray-900">{link_count.title}</dt>
+				<dt class="font-normal text-gray-900">{link_count.title}</dt>
 				<dd class="mt-1 flex items-baseline justify-between md:block lg:flex">
 					<div
 						class="text-stone-400 flex items-baseline text-2xl font-semibold">
 						{Number(link_count.count).toLocaleString()}
-						<span class="ml-2 text-sm font-medium text-gray-500">
+						<span class="ml-2 text-sm text-gray-500">
 							from {link_count.count_old}
 						</span>
 					</div>
 
 					<div
-						class="inline-flex items-baseline rounded-full px-2.5 py-0.5 text-sm font-medium md:mt-2 lg:mt-0 {percentage(
+						class="inline-flex items-baseline rounded-full px-2.5 py-0.5 text-sm md:mt-2 lg:mt-0 {percentage(
 							link_count.count,
 							link_count.count_old
 						) > 0

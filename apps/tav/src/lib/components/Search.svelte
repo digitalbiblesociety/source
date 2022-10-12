@@ -1,7 +1,7 @@
 <script>
 import { onMount } from "svelte"
-import { t } from "$lib/translations/index.js"
-import { shortcut } from "$lib/utils"
+import { t } from "$lib/Translations/index.js"
+import { shortcut } from "$lib/utils.js"
 
 import IconSearch from "~icons/heroicons-outline/search"
 
@@ -99,7 +99,7 @@ let highlighter = function (resultItem) {
 			</div>
 			<input
 				type="search"
-				placeholder="{$t('Search')}"
+				placeholder="{$t('common.Search')}"
 				bind:this="{search_input}"
 				bind:value="{$query.search}"
 				on:input="{instantSearch}"
@@ -127,7 +127,7 @@ let highlighter = function (resultItem) {
 						class="rounded-2xl bg-white px-4 py-8 dark:bg-gray-800 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
 						<div>
 							<h3
-								class="text-sm font-medium uppercase tracking-wide text-gray-500">
+								class="text-sm uppercase tracking-wide text-gray-500">
 								{$t("common.Bibles")}
 							</h3>
 							<ul class="mt-6 space-y-6">
@@ -135,15 +135,13 @@ let highlighter = function (resultItem) {
 									{#each result_ordered["bibles"].slice(0, 10) as bible}
 										<li class="flow-root">
 											<a
-												on:click="{() => {
-													dropdown_visible = false
-												}}"
+												on:click="{() => { dropdown_visible = false }}"
 												href="/bibles/{bible.item.id}"
 												class="-m-3 flex justify-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900">
 												<div class="hidden shrink-0 sm:block"></div>
 												<div class="min-w-0 flex-1 sm:ml-8">
 													<h4
-														class="truncate text-base font-medium text-gray-900 dark:text-gray-200">
+														class="truncate text-gray-900 dark:text-gray-200">
 														{bible.item.tt}
 													</h4>
 													<p

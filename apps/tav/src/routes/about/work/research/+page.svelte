@@ -1,5 +1,5 @@
 <script>
-	import { t } from "$lib/translations/index.js"
+	import { t } from "$lib/Translations/index.js"
 	import Banner from "$lib/components/Banner.svelte"
 </script>
 	
@@ -24,7 +24,7 @@
 
 	<div
 		id="copy"
-		class="prose mx-auto max-w-5xl mt-8 text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose mx-auto max-w-5xl mt-8 leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
 		<img src="/img/about/projects_fab.png" alt="FAB" class="float-right w-1/2" />
 		<p>{$t("about.work_research_1")}</p>
 		<h3>{$t("about.work_research_h1")}</h3>

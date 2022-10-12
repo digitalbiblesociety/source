@@ -87,3 +87,23 @@
 		</section>
 	{/if}
 {/if}
+
+<style lang="postcss">
+
+#svelte-simple-datatable nav section button {
+	@apply relative inline-flex items-center border border-gray-300 bg-gray-100 px-4 py-2 text-sm text-gray-800;
+}
+
+#svelte-simple-datatable nav section button.active {
+	@apply z-10 bg-blue-800 font-bold text-white;
+}
+
+#svelte-simple-datatable nav section button:first-child {
+	@apply rounded-l-md text-stone-800;
+}
+
+#svelte-simple-datatable nav section button:last-child {
+	@apply rounded-r-md text-stone-800;
+}
+
+</style>

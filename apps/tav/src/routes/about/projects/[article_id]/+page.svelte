@@ -1,8 +1,8 @@
 <script>
-import Breadcrumbs from "$lib/Breadcrumbs.svelte"
+import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 import { onMount } from "svelte"
 import { page } from "$app/stores"
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 
 let article
 let title
@@ -48,7 +48,7 @@ onMount(async () => {
 		<h1
 			class="z-10 mt-2 md:mt-4 xl:mt-8 block max-w-prose p-4 text-center text-2xl md:text-3xl font-bold text-gray-100">
 			<span
-				class="block text-center text-base font-semibold uppercase tracking-wide">
+				class="block text-center font-semibold uppercase tracking-wide">
 				{new Date(article[0].date).toDateString()}
 			</span>
 			{@html article[0].title ? article[0].title.rendered : ""}
@@ -74,7 +74,7 @@ onMount(async () => {
 
 					<div class="ml-3">
 						<p
-							class="text-sm font-medium text-gray-700 group-hover:text-gray-900 dark:text-gray-300">
+							class="text-sm text-gray-700 group-hover:text-gray-900 dark:text-gray-300">
 							{article[0].author_full_name}
 						</p>
 					</div>

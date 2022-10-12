@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 import Fuse from "fuse.js"
@@ -793,7 +793,7 @@ let filter = function () {
 				target="_blank"
 				rel="noopener noreferrer"
 				class="flex rounded-lg  border border-gray-400 bg-slate-100
-					     text-base  text-gray-700 drop-shadow-lg
+					      text-gray-700 drop-shadow-lg
 					     hover:bg-slate-600 hover:text-white dark:border-black
  						 dark:bg-slate-800 dark:text-gray-200
 						 dark:hover:bg-slate-600">

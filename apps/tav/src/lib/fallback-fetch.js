@@ -1,6 +1,6 @@
-export default async function (fetch, name, file) {
-	const base_url = import.meta.env.VITE_BASE_API ?? "/data/"
-	const res = await fetch(`${base_url}${file ?? name}.json`)
+export default async function (fetch, name) {
+	const base_url = import.meta.env.VITE_BASE_API
+	const res = await fetch(`${base_url}${name}.json`)
 	if (res.ok) {
 		return {
 			props: {
@@ -8,9 +8,18 @@ export default async function (fetch, name, file) {
 			},
 		}
 	} else {
-		return {
-			status: res.status,
-			error: new Error(`Could not load ${file}.json`),
+		const res = await fetch(`/data/${name}.json`)
+		if (res.ok) {
+			return {
+				props: {
+					[name]: await res.json(),
+				},
+			}
+		} else {
+			return {
+				status: res.status,
+				error: new Error(`Could not load ${name}.json`),
+			}
 		}
 	}
 }

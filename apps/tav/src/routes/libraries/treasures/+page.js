@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
 
 export async function load({ fetch }) {

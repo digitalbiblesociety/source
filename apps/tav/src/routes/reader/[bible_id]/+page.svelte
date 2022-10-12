@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import { page } from "$app/stores"
 
 /** @type {import('./$types').PageData} */

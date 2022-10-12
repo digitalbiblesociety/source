@@ -1,5 +1,5 @@
 <script xmlns="http://www.w3.org/1999/html">
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 // import 
@@ -186,7 +186,7 @@ let about_quotes = [
 				<img src="{quote.image}" alt="{quote.name}" class="my-2 ml-24 h-20" />
 				<div>
 					<h3
-						class="pl-5 text-base   font-medium   text-gray-900 dark:text-gray-300 sm:text-lg md:font-semibold">
+						class="pl-5     text-gray-900 dark:text-gray-300 sm:text-lg md:font-semibold">
 						{quote.name}
 					</h3>
 					<p class=" px-5 text-sm text-gray-500 dark:text-gray-300">

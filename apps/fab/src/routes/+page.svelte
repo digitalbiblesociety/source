@@ -61,7 +61,7 @@
 						<div class="relative">
 							<dt>
 								<div
-									class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-white">
+									class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										class="h-6 w-6"
@@ -78,7 +78,7 @@
 								</div>
 
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500">
+							<dd class="mt-2 ml-16 text-gray-500">
 								Are you traveling abroad with plans to share Bibles and resources
 								across regions?
 							</dd>
@@ -87,7 +87,7 @@
 						<div class="relative">
 							<dt>
 								<div
-									class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-white">
+									class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										class="h-6 w-6"
@@ -103,7 +103,7 @@
 									</svg>
 								</div>
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500">
+							<dd class="mt-2 ml-16 text-gray-500">
 								Do you support missionaries who serve among multi-language people
 								groups?
 							</dd>
@@ -112,7 +112,7 @@
 						<div class="relative">
 							<dt>
 								<div
-									class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary-500 text-white">
+									class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										class="h-6 w-6"
@@ -128,7 +128,7 @@
 									</svg>
 								</div>
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500">
+							<dd class="mt-2 ml-16 text-gray-500">
 								Are you seeking to share Bible related Audio or Video resources on
 								your next outreach?
 							</dd>
@@ -158,11 +158,11 @@
 											<h1
 												class="text-xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
 												<div class="mt-2">Free ebooks, audiobooks, and films</div>
-												<div class="text-primary-600">Available for download</div>
+												<div class="text-blue-600">Available for download</div>
 												<div class="mb-2">on find.bible</div>
 											</h1>
 											<p
-												class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
+												class="mx-auto mt-3 max-w-md text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
 											</p>
 										</div>
 									{/each}
@@ -173,7 +173,7 @@
 				</div>
 			</div>
 	
-			<p class="mt-12 ml-16 text-base text-gray-500">
+			<p class="mt-12 ml-16 text-gray-500">
 				Find a Bible seeks to provide comprehensive data on existing Bible
 				resources in the 6000+ language of the world. Would you help us ensure
 				that Bible resources can be discovered, secured, and shared? If you know

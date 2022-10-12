@@ -2,7 +2,7 @@
 import { onMount } from "svelte"
 import { page } from "$app/stores"
 import Banner from "$lib/components/Banner.svelte"
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 const wp_url = import.meta.env.VITE_WORDPRESS_URL
 
 let articles = []
@@ -84,7 +84,7 @@ function roundUp(num, precision) {
 									class="text-xl font-semibold text-gray-900 dark:text-gray-200">
 									{@html article.title.rendered}
 								</p>
-								<p class="mt-3 text-base text-gray-500 dark:text-gray-300">
+								<p class="mt-3 text-gray-500 dark:text-gray-300">
 									{@html article.excerpt.rendered}
 								</p>
 							</div>
@@ -102,14 +102,14 @@ function roundUp(num, precision) {
 							<div class="ml-3">
 								{#if article.author_full_name}
 									<div
-										class="text-sm font-medium text-gray-900 dark:text-gray-300">
+										class="text-sm text-gray-900 dark:text-gray-300">
 										{article.author_full_name}
 									</div>
 								{/if}
 								<div
 									class="flex space-x-1 text-sm text-gray-500 dark:text-gray-400">
 									<p
-										class="text-sm font-medium text-blue-400 dark:text-gray-200">
+										class="text-sm text-blue-400 dark:text-gray-200">
 										<span class="hover:underline">
 											{new Date(article.date).toDateString()}
 										</span>

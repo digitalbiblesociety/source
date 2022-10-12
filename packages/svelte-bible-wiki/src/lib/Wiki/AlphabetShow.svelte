@@ -27,7 +27,7 @@
 	<div class="flex h-48 w-full place-items-center">
 		<h1 class="w-full text-center text-4xl">
 			{alphabet.name}
-			<div class="block text-base leading-loose">
+			<div class="block leading-loose">
 				A writing system of the {alphabet.family} Family
 			</div>
 		</h1>
@@ -61,7 +61,7 @@
 						<div>requires_font: {alphabet.requires_font} </div>
 					{/if}
 				</div>
-				<p class="mx-auto text-base leading-relaxed lg:w-2/3">
+				<p class="mx-auto leading-relaxed lg:w-2/3">
 					{#if alphabet.sample}<div>sample: {alphabet.sample}</div>{/if}
 					{#if alphabet.sample_img}<div>
 							sample_img: {alphabet.sample_img}
@@ -73,7 +73,7 @@
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-24 text-4xl text-gray-400">
-								[ <span class="text-primary-600">
+								[ <span class="text-blue-600">
 									{#if alphabet.baseline === "bottom"}_ {/if}
 									{#if alphabet.baseline === "unspecified"}? {/if}
 									{#if alphabet.baseline === "hanging"}^ {/if}
@@ -93,7 +93,7 @@
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 41.6 62.3"
-								class="mb-3 inline-block h-12 w-12 text-primary-600"
+								class="mb-3 inline-block h-12 w-12 text-blue-600"
 								fill="currentColor">
 								<path
 									fill="#777"
@@ -108,7 +108,7 @@
 				{#if alphabet.white_space}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-12 text-4xl text-primary-600">
+							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								[ ]
 							</div>
 							<p class="leading-relaxed">Utilizes Whitespace</p>
@@ -121,7 +121,7 @@
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 52 87.2"
-								class="mb-3 inline-block h-12 w-12 text-primary-600"
+								class="mb-3 inline-block h-12 w-12 text-blue-600"
 								fill="currentColor">
 								<path
 									fill="#777"
@@ -146,7 +146,7 @@
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 52 87.2"
-								class="mb-3 inline-block h-12 w-12 text-primary-600"
+								class="mb-3 inline-block h-12 w-12 text-blue-600"
 								fill="currentColor">
 								<path
 									fill="#777"
@@ -171,7 +171,7 @@
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 52 87.2"
-								class="mb-3 inline-block h-12 w-12 text-primary-600"
+								class="mb-3 inline-block h-12 w-12 text-blue-600"
 								fill="currentColor">
 								<path
 									fill="#777"
@@ -193,7 +193,7 @@
 				{#if alphabet.direction}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-12 text-4xl text-primary-600">
+							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								{#if alphabet.direction === "ltr"}
 									→
 								{/if}
@@ -212,7 +212,7 @@
 				{#if alphabet.ligatures}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-12 text-4xl text-primary-600">
+							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 							</div>
 	
 							<p class="leading-relaxed">ligatures</p>
@@ -223,7 +223,7 @@
 				{#if alphabet.unicode}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-12 text-4xl text-primary-600">
+							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 							</div>
 	
 							<p class="leading-relaxed">unicode</p>
@@ -237,7 +237,7 @@
 				{#if alphabet.case}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-12 text-4xl text-primary-600">
+							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								{alphabet.case}
 							</div>
 	
@@ -249,7 +249,7 @@
 				{#if alphabet.split_graphs}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
 						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-12 text-4xl text-primary-600">
+							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								{alphabet.split_graphs}
 							</div>
 	
@@ -267,7 +267,7 @@
 				<Tab>
 					Bibles
 					<span
-						class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">
+						class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-800">
 						{bibles.length}
 					</span>
 				</Tab>

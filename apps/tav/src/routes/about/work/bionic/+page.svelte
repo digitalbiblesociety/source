@@ -1,15 +1,15 @@
 <style>
 .bionic {
-	@apply font-normal;
+	@apply;
 }
 
 .enabled .bionic {
-	@apply font-normal text-gray-500;
+	@apply text-gray-500;
 }
 </style>
 
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 
 let bionic_enabled = false
@@ -56,14 +56,14 @@ let bionic_enabled = false
 				<div class="mt-8 border-t border-gray-200 pt-6">
 					<blockquote>
 						<div>
-							<p class="text-base text-gray-500">
+							<p class="text-gray-500">
 								“Your tool [Bionic] is gorgeous, It’s helping me a lot. My sight
 								is reduced because one of my transplanted corneas has become
 								opaque and Bionic Reading is helping me a lot to read easier and
 								comprehend faster.”
 							</p>
 						</div>
-						<footer class="mt-3 text-base font-medium text-gray-700">
+						<footer class="mt-3 text-gray-700">
 							Nestor
 						</footer>
 					</blockquote>
@@ -78,7 +78,7 @@ let bionic_enabled = false
 					<div class="mx-auto mt-12 flex w-3/4 items-center justify-between">
 						<span class="flex flex-grow flex-col">
 							<span
-								class="text-sm font-medium text-gray-900"
+								class="text-sm text-gray-900"
 								id="availability-label">
 								Test Out the Bionic Bible Effect
 							</span>

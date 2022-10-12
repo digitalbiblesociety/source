@@ -1,5 +1,5 @@
 <script>
-	import { t } from "$lib/translations/index.js"
+	import { t } from "$lib/Translations/index.js"
 	import Banner from "$lib/components/Banner.svelte"
 </script>
 	
@@ -25,7 +25,7 @@
 
 	<div
 		id="copy"
-		class="prose mx-auto max-w-5xl mt-8 text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose mx-auto max-w-5xl mt-8 leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
 		<h3>{$t("libraries.overview_h1")}</h3>
 		<img
 			src="/img/about/projects_libraries.png"
@@ -42,7 +42,7 @@
 
 		<h3>
 			{$t("common.Bible Libraries")}
-			<span class="text-base font-medium">{$t("libraries.overview_h2")}</span>
+			<span class="font-medium">{$t("libraries.overview_h2")}</span>
 		</h3>
 		<p>{$t("libraries.overview_b1")}</p>
 		<p>{$t("libraries.overview_b2")}</p>
@@ -58,7 +58,7 @@
 
 		<h3>
 			{$t("common.Treasures Libraries")}
-			<span class="text-base font-medium">{$t("libraries.overview_h3")}</span>
+			<span class="font-medium">{$t("libraries.overview_h3")}</span>
 		</h3>
 		<p>{$t("libraries.overview_t1")}</p>
 		<p>{$t("libraries.overview_t2")}</p>

@@ -96,7 +96,7 @@
 					</svg>
 				</div>
 				<!--
-		  <h1 class="font-medium text-lg mt-6">Built in collaboration with Faith Comes By Hearing</h1>
+		  <h1 class="text-lg mt-6">Built in collaboration with Faith Comes By Hearing</h1>
 		  <p class="text-gray-200 text-sm"></p>
 		  -->
 				<div class="mt-6 flex">
@@ -130,7 +130,7 @@
 						>
 							<div class="flex ml-4">
 								<div class="flex flex-col pl-4">
-									<h2 class="font-medium text-sm">{bible.name}</h2>
+									<h2 class="text-sm">{bible.name}</h2>
 									<h3 class="text-gray-500 text-sm">{bible.vname ?? ''}</h3>
 								</div>
 							</div>
@@ -153,7 +153,7 @@
 							class="bg-gray-100 px-8 py-6 flex items-center border-b border-gray-300">
 							<div class="flex ml-4">
 								<div class="flex flex-col pl-4">
-									<h2 class="font-medium text-sm">{book.name}</h2>
+									<h2 class="text-sm">{book.name}</h2>
 									<h3 class="text-gray-500 text-sm">{book.book_id ?? ''}</h3>
 								</div>
 							</div>
@@ -175,7 +175,7 @@
 						<CoverArt book_id={current_book.book_id} />
 
 						<div class="flex flex-col pl-4">
-							<h2 class="font-medium text-sm">{current_book.name}</h2>
+							<h2 class="text-sm">{current_book.name}</h2>
 							<h3 class="text-gray-500 text-sm">{current_book.book_group}</h3>
 						</div>
 					</div>

@@ -3,12 +3,11 @@ import { onMount } from "svelte"
 import { goto } from "$app/navigation"
 import Fuse from "fuse.js"
 import { orderBy } from "lodash"
-import { t } from "$lib/translations"
-import { client, fetchCart } from "../../shopifyClient"
+import { t } from "$lib/Translations"
+import { client, fetchCart } from "$lib/store/shopifyClient"
 import { selected, cartQuantity } from "$lib/store"
 import AudioOption from "../partials/AudioOption.svelte"
 import Banner from "$lib/components/Banner.svelte"
-import Breadcrumbs from "$lib/Breadcrumbs.svelte"
 import IconArrowLeft from "~icons/heroicons-outline/arrow-left"
 
 	/** @type {import('./$types').PageData} */
@@ -143,7 +142,7 @@ function price(itemPrice) {
 					<ol class="list-decimal">
 						{#each bibles as bible}
 							{#if $selected.includes(bible.aid)}
-								<li class="ml-6 text-sm text-primary-800">{bible.tt}</li>
+								<li class="ml-6 text-sm text-blue-800">{bible.tt}</li>
 							{/if}
 						{/each}
 					</ol>
@@ -170,8 +169,8 @@ function price(itemPrice) {
 											current_price = price(variant.priceV2.amount)
 										}}"
 										class="{current_variation == variant.id
-											? 'bg-primary-600 text-white'
-											: 'text-gray-800 dark:text-gray-100'} mx-1 flex cursor-pointer flex-col items-center justify-center rounded-md p-3 text-sm font-medium uppercase focus:outline-none dark:bg-gray-800 sm:flex-1">
+											? 'bg-blue-600 text-white'
+											: 'text-gray-800 dark:text-gray-100'} mx-1 flex cursor-pointer flex-col items-center justify-center rounded-md p-3 text-sm uppercase focus:outline-none dark:bg-gray-800 sm:flex-1">
 										{variant.title}
 										<div class="text-sm">{price(variant.priceV2.amount)}</div>
 									</label>
@@ -182,7 +181,7 @@ function price(itemPrice) {
 						</div>
 					</fieldset>
 
-					<label class="mt-8 text-sm text-primary-500">
+					<label class="mt-8 text-sm text-blue-500">
 						{$t("common.Quantity")}:
 						<input
 							class="mx-auto mt-0.5 ml-4 w-2/3 rounded-md border bg-[url('/img/icons/shopping_cart.png')] bg-[length:15px_15px] bg-[top_10px_right_8px] bg-no-repeat

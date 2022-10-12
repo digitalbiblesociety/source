@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -14,7 +14,7 @@ import Banner from "$lib/components/Banner.svelte"
 	subnav={[
 		{title:$t("common.Bibles"),url:'/about/work/biblecloud'},
 		{title:$t("common.Libraries"),url:'/about/work/libraries'},
-		{title:$t("common.Audio"),url:'/about/work/audio-bibles',selected:true},
+		{title:$t("common.Audio"),url:'/about/work/audio-bibles'},
 		{title:$t("common.Print"),url:'/about/work/print'},
 		{title:$t("common.Study Bible"),url:'/about/work/sophia'},
 		{title:$t("common.Research"),url:'/about/work/research'},
@@ -25,10 +25,10 @@ import Banner from "$lib/components/Banner.svelte"
 
 	<div
 		id="copy"
-		class="prose m-auto mt-8 max-w-none text-base leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose m-auto mt-8 max-w-none leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
 		<h3>{$t("about.work_audio_h1")}</h3>
 		<div class="ml-6 -mt-6 sm:float-right sm:w-1/2 md:w-1/3 dark:bg-gray-300 rounded-md">
-			<p class="text-center text-sm text-primary-500">
+			<p class="text-center text-sm text-blue-500">
 				{$t("about.work_audio_caption_3")}
 			</p>
 			<img

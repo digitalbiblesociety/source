@@ -1,6 +1,6 @@
 <script>
-import { client } from "../shopifyClient"
-import { t } from "$lib/translations"
+import { client } from "$lib/store/shopifyClient"
+import { t } from "$lib/Translations"
 
 let collection
 client.collection
@@ -34,7 +34,7 @@ client.collection
 					</a>
 				</h3>
 				<p class="mt-1 text-sm text-gray-500">{product.productType}</p>
-				<p class="mt-1 text-xs font-medium text-gray-400">
+				<p class="mt-1 text-xs text-gray-400">
 					{#each product.variants as variant}
 						${variant.price}, {variant.title}
 						<br />

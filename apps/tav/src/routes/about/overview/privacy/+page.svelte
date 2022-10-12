@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 import Banner from "$lib/components/Banner.svelte"
 </script>
 
@@ -30,7 +30,7 @@ import Banner from "$lib/components/Banner.svelte"
 		<div class="mx-auto max-w-prose text-lg">
 			<h4>
 				<span
-					class="block text-center text-base font-semibold uppercase tracking-wide text-blue-600">
+					class="block text-center font-semibold uppercase tracking-wide text-blue-600">
 					Last updated: November 09, 2021
 				</span>
 				<span

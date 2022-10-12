@@ -80,7 +80,7 @@
 						<td class="px-6 py-4">
 							<a
 								href="/bibles/{row.id}"
-								class="text-primary-700 hover:underline dark:text-white">
+								class="text-blue-700 hover:underline dark:text-white">
 								<div class="max-w-sm overflow-hidden text-ellipsis text-sm">{row.tt}</div>
 								<div
 									class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-600 dark:text-stone-400">

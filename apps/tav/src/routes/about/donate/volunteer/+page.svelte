@@ -1,5 +1,5 @@
 <script>
-import { t } from "$lib/translations/index.js"
+import { t } from "$lib/Translations/index.js"
 import Endorsements from "../endorsements.svelte"
 import Banner from "$lib/components/Banner.svelte"
 </script>
@@ -35,7 +35,7 @@ import Banner from "$lib/components/Banner.svelte"
 				<div
 					class="mx-auto mt-24 max-w-md px-8 sm:max-w-2xl sm:p-6 lg:max-w-none lg:px-0">
 					<h2
-						class="text-base font-semibold uppercase tracking-wider text-blue-600 dark:text-gray-200">
+						class="font-semibold uppercase tracking-wider text-blue-600 dark:text-gray-200">
 						{$t("common.index_volunteer_subtitle")}
 					</h2>
 					<p

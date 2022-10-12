@@ -56,7 +56,7 @@
 			<h2 class="title-font tracking-widest dark:text-stone-200">{bible.title_vernacular}</h2>
 		{/if}
 		<h1
-			class="title-font mb-8 text-3xl font-medium text-stone-900 dark:text-stone-200">
+			class="title-font mb-8 text-3xl text-stone-900 dark:text-stone-200">
 			{bible.title}
 			<span class="block text-sm sm:hidden">
 				{bible.date} |

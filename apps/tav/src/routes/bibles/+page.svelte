@@ -1,6 +1,6 @@
 <script>
 import { Datatable } from "@dbs/svelte-datatables"
-import { t } from "$lib/translations"
+import { t } from "$lib/Translations"
 
 /** @type {import('./$types').PageData} */
 export let data;
@@ -151,7 +151,7 @@ const filters = {
 						<td class="px-6 py-4">
 							<a
 								href="/bibles/{row.id}"
-								class="text-primary-700 hover:underline dark:text-white">
+								class="text-blue-700 hover:underline dark:text-white">
 								<div class="max-w-sm overflow-hidden text-ellipsis text-sm">
 									{row.tt}
 								</div>

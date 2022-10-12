@@ -4,8 +4,8 @@ import {
 	DisclosureButton,
 	DisclosurePanel,
 } from "@rgossiaux/svelte-headlessui"
-import { client } from "./shopifyClient"
-import { t } from "$lib/translations"
+import { client } from "$lib/store/shopifyClient"
+import { t } from "$lib/Translations"
 
 let collections = []
 
@@ -44,7 +44,7 @@ $: commitments = [
 				{commitment.icon ?? ""}
 				<div
 					class="ml-4 flex flex-auto flex-col text-gray-900 dark:text-gray-200">
-					<h3 class="font-medium underline-offset-2 dark:underline">
+					<h3 class="underline-offset-2 dark:underline">
 						{commitment.title}
 					</h3>
 					<p class="text-sm">
@@ -64,7 +64,7 @@ $: commitments = [
 			<div class="md:flex md:items-center md:justify-between">
 				<div class="text-gray-800 dark:text-gray-100">
 					<h2
-						class="mb-2 text-base font-semibold tracking-tight md:text-lg lg:text-xl">
+						class="mb-2 font-semibold tracking-tight md:text-lg lg:text-xl">
 						{collection?.title}
 					</h2>
 					<p class="text-sm lg:text-base">{collection?.description}</p>

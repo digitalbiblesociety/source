@@ -637,10 +637,10 @@ const changeContinentFocus = (pos, region) => {
 </svg>
 
 <div
-	class="mx-auto flex max-w-lg flex-row justify-center rounded-tl-lg rounded-tr-lg bg-primary-800 bg-opacity-50 py-2">
+	class="mx-auto flex max-w-lg flex-row justify-center rounded-tl-lg rounded-tr-lg bg-blue-800 bg-opacity-50 py-2">
 	<div
 		on:click="{() => changeContinentFocus('410 120 250 250', 'africa')}"
-		class="mx-4 h-10 w-10 cursor-pointer hover:bg-primary-800">
+		class="mx-4 h-10 w-10 cursor-pointer hover:bg-blue-800">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
 			<path
 				fill="#fff"
@@ -650,7 +650,7 @@ const changeContinentFocus = (pos, region) => {
 	</div>
 	<div
 		on:click="{() => changeContinentFocus('610 170 300 250', 'oceania')}"
-		class="mx-4 h-10 w-10 cursor-pointer hover:bg-primary-800">
+		class="mx-4 h-10 w-10 cursor-pointer hover:bg-blue-800">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 952.4 952.4">
 			<path
 				fill="#fff"
@@ -660,7 +660,7 @@ const changeContinentFocus = (pos, region) => {
 	</div>
 	<div
 		on:click="{() => changeContinentFocus('120 0 250 250', 'america_north')}"
-		class="mx-4 h-10 w-10 cursor-pointer hover:bg-primary-800">
+		class="mx-4 h-10 w-10 cursor-pointer hover:bg-blue-800">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
 			<path
 				fill="#fff"
@@ -672,7 +672,7 @@ const changeContinentFocus = (pos, region) => {
 	</div>
 	<div
 		on:click="{() => changeContinentFocus('200 200 250 250', 'america_south')}"
-		class="mx-4 h-10 w-10 cursor-pointer hover:bg-primary-800">
+		class="mx-4 h-10 w-10 cursor-pointer hover:bg-blue-800">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
 			<path
 				fill="#fff"
@@ -682,7 +682,7 @@ const changeContinentFocus = (pos, region) => {
 	</div>
 	<div
 		on:click="{() => changeContinentFocus('400 60 500 200', 'asia')}"
-		class="mx-4 h-10 w-10 cursor-pointer hover:bg-primary-800">
+		class="mx-4 h-10 w-10 cursor-pointer hover:bg-blue-800">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
 			<path
 				fill="#fff"
@@ -696,7 +696,7 @@ const changeContinentFocus = (pos, region) => {
 	</div>
 	<div
 		on:click="{() => changeContinentFocus('400 40 150 100', 'europe')}"
-		class="mx-4 h-10 w-10 cursor-pointer hover:bg-primary-800">
+		class="mx-4 h-10 w-10 cursor-pointer hover:bg-blue-800">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="#fff">
 			<path
 				d="M496 359.3c-1-3.6 0-6.2 0-6.2l-16-3s-8-4-12.5-9c-4.5-4-11.5-12-11.5-12l-7-4-17.6-10-7-9v-27L412 269s-16.7-7-13-19.6c3.6-12.2-6-27.2-6-27.2h-21.4l-9.4 6.2 8.5 5.2 6.7 4.5v14c-35-16-27.4 13-27.4 13l2 23-23-3-17 8-14 3-10-7-1.3-9-5.3-4-9.3-2v-7l-4-13-10 9c-2 1.7-4 7-4 7v4.4l2 10 5.6 14h-13l-12 1-6 5.4-4 13-2 8-8 5.4-8 7-19 11.6s8 19.3-16.5 15c-25-4.6-26.7 8-19.6 9 7.4.6 25 12 27 27 1.7 15 4.3 34.7-11.7 23-16-11.5-42-2-46 1-5 2.8-1 6.3-5 38s35 28 35 28h8l10-1 7-6s5.4-5.2 11-10c5-4.2 0-2.4 0-2.4l.7-3s-1.8-13.6 0-16c2-3 7-5.6 7-5.6l3.7-1.7 9-4.4 3-2 4-4.3 1.4-8s-2.3-5 0-5h5.7s0 12.5 16 3 20.3 1 20.3 1l-10 9.2v27c0 6 4 5 4 5l6.4 1 .6-3c0-3 5-5.6 5-5.6s-1-5-4-8c-3-2.6 0-8 0-8v-6l4-5.4 4.5 1 12 2 5.3 5.8 9 5.5c4.4 2.4 13 14 13 14l-2.5 9-6 6-10 4.3 4.2 4 3 12.4 8-4.6 3.5-7 3.5-5.2 4.5-5.4 13-20.2-9-9.7-18.4-8s-7-1-14-19.7 9-16 9-16l6 7 11 10.6 5.2 4 10 3 5 4.2v14l4 9v9l4.7 7v5h12l6-6s2.8-10.4.5-16c-2.6-5 5.5-3 5.5-3h9.6l15-4 9-8s-6-17.3 6-21c12.8-3.4 12-8.5 12-8.5 2-26.5 20.5-24 18.7-12.6-2 11 4 10 4 10 16.7 7 14-8 14-8l5.7-10 8-5s8 1 11.8 0c3.8-1 6.4-4 15-9 8.7-4 .7-8-.2-11z">

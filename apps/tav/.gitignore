@@ -1,12 +1,8 @@
 .DS_Store
 node_modules
-/.svelte
+/build
 /.svelte-kit
 /package
-/build
-/functions
-/static/data
-/src/generated
 .env
-.history
-src/generated/translations.js
+.env.*
+!.env.example
