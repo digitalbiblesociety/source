@@ -1,7 +1,6 @@
 <script>
 import { Datatable } from "@dbs/svelte-datatables"
 import { t } from "$lib/Translations/index.js"
-import { Tabs, Tab, TabList, TabPanel } from "$lib/Tabs"
 import IconChevronLeft from "~icons/heroicons-outline/chevron-left"
 import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 

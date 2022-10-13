@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from "svelte"
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import { Datatable } from "@dbs/svelte-datatables"
 	import Banner from "../Banner.svelte";
 

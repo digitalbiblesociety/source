@@ -6,7 +6,7 @@ import { orderBy } from "lodash"
 import { t } from "$lib/Translations"
 import { client, fetchCart } from "$lib/store/shopifyClient"
 import { selected, cartQuantity } from "$lib/store"
-import AudioOption from "../partials/AudioOption.svelte"
+import AudioOption from "./AudioOption.svelte"
 import Banner from "$lib/components/Banner.svelte"
 import IconArrowLeft from "~icons/heroicons-outline/arrow-left"
 

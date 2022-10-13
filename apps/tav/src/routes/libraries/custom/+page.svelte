@@ -1,6 +1,5 @@
 <script>
 import { t } from "$lib/Translations"
-import { Tabs, Tab, TabList, TabPanel } from "$lib/Tabs"
 import { Datatable } from "@dbs/svelte-datatables"
 
 /** @type {import('./$types').PageData} */

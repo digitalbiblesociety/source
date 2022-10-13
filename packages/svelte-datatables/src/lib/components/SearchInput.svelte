@@ -20,7 +20,7 @@
 
 <style>
 input {
-	height: 3rem;
+	height:3rem; 
 	width:100%;
 	display:block;
 	text-indent:4rem;
@@ -31,5 +31,4 @@ input {
 	color: rgb(55 65 81);
 	border-radius: 0.375rem;
 }
-
 </style>

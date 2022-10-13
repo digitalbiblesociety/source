@@ -191,7 +191,6 @@ let filter = function () {
 	<title>{$t("about.partners_title")} | {$t("common.org_title")}</title>
 </svelte:head>
 
-
 <Banner 
 	title={$t("about.partners_title")} 
 	subtitle=""

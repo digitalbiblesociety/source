@@ -1,6 +1,6 @@
 <script>
 import { t } from "$lib/Translations/index.js"
-import AudioPreview from "../AudioPreview.svelte"
+import AudioPreview from "./AudioPreview.svelte"
 import { selected } from "$lib/store"
 
 /** @type {import('./$types').PageData} */

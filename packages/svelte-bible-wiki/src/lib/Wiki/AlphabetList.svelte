@@ -1,16 +1,9 @@
 <script>
-	import { onMount } from "svelte"
-	import { browser } from '$app/enviroment'
+	import { browser } from '$app/environment';
 	import { Datatable } from "@dbs/svelte-datatables"
 
 	export let locale
 	export let alphabets
-
-	onMount(async () => 
-		if(!alphabets) {
-			alphabets = await fetch(`/data/alphabets.json`).then(response => response.json())
-		}
-	})
 
 	const table_row = (row, locale) =>  `
 	<tr>

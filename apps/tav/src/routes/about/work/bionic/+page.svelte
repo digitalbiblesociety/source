@@ -1,8 +1,4 @@
 <style>
-.bionic {
-	@apply;
-}
-
 .enabled .bionic {
 	@apply text-gray-500;
 }

@@ -68,8 +68,6 @@
 		current_chapter = current_chapter['data'][0].path;
 		console.log(current_chapter);
 	}
-
-	export let bg_color = 'bg-gray-600';
 </script>
 
 <div class="container mx-auto py-12 px-8 relative" style="height:calc(100vh - 8rem)">
