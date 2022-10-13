@@ -1,7 +1,7 @@
 <script>
 import { Datatable } from "@dbs/svelte-datatables"
 import { t } from "$lib/Translations"
-import { Tabs, Tab, TabList, TabPanel } from "$lib/Tabs"
+
 import Breadcrumbs from "$lib/components/Navigation/Breadcrumbs.svelte"
 import IconArrowRight from "~icons/heroicons-outline/arrow-right"
 
@@ -16,7 +16,7 @@ let rows
 	<title>{library.title} | {$t("common.org_title")}</title>
 </svelte:head>
 
-<Tabs>
+
 	<div
 		class="border-t-1 relative -mx-9 -mt-1 flex flex-col justify-between rounded-t-xl border-2 border-b-0
 				border-gray-400 bg-cover bg-center bg-no-repeat text-center"
@@ -28,12 +28,6 @@ let rows
 			class="text-shadow-xl pb-8 text-3xl font-extrabold text-gray-300 sm:text-4xl">
 			{library.title}
 		</h2>
-		<TabList>
-			<Tab class="dbs-tab">{$t("common.Overview")}</Tab>
-			{#if library.resources.length != 0}
-				<Tab>{$t("common.Resources")}</Tab>
-			{/if}
-		</TabList>
 	</div>
 
 	<div class="">
@@ -45,7 +39,7 @@ let rows
 			]}" />
 	</div>
 
-	<TabPanel>
+	
 		<div class="mx-auto mt-8 max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="relative mx-auto max-w-4xl">
 				<div class="py-12 sm:flex">
@@ -90,7 +84,7 @@ let rows
 			</div>
 		</div>
 
-		<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-24">
 			<div class="mx-auto max-w-4xl">
 				<dl
 					class="rounded-lg bg-white shadow-lg dark:bg-gray-800 sm:grid sm:grid-cols-3">
@@ -131,59 +125,3 @@ let rows
 				</dl>
 			</div>
 		</div>
-	</TabPanel>
-	<TabPanel>
-		<Datatable
-			classList="relative"
-			data="{library.resources}"
-			bind:dataRows="{rows}">
-			<thead>
-				<th data-key="id" class="hidden">id</th>
-				<th data-key="(row) => row.type + ' ' + row.iso" class="sortable">
-					{$t("common.Type")}
-				</th>
-				<th
-					data-key="(row) => row.title + ' ' + row.title_vernacular"
-					class="sortable">
-					{$t("common.Title")}
-				</th>
-				<th data-key="author" class="sortable hidden md:table-cell">
-					{$t("common.Author")}
-				</th>
-			</thead>
-			<tbody>
-				{#if rows}
-					{#each $rows as row}
-						<tr>
-							<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">
-								{row.id}
-							</td>
-							<td class="whitespace-nowrap px-6 py-4 text-gray-900">
-								<a href="/languages/{row.iso}">
-									<div class="text-sm text-gray-900 dark:text-gray-300">
-										{row.type}
-									</div>
-									<div class="text-xs italic text-gray-500">{row.iso}</div>
-								</a>
-							</td>
-							<td class="px-6 py-4">
-								<span>
-									<div class="text-sm text-gray-900 dark:text-gray-300">
-										{row.title}
-									</div>
-									<div class="text-sm text-gray-500">
-										{row.title_vernacular ?? ""}
-									</div>
-								</span>
-							</td>
-							<td
-								class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
-								{row.author}
-							</td>
-						</tr>
-					{/each}
-				{/if}
-			</tbody>
-		</Datatable>
-	</TabPanel>
-</Tabs>
