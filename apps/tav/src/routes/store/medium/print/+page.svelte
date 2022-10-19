@@ -34,7 +34,7 @@ let variations = [
 				</div>
 				<div
 					class="aspect-w-1 aspect-h-1 mx-2 overflow-hidden rounded-lg bg-gray-100">
-					<img src="{variation.img}" class="object-cover object-center" />
+					<img src="{variation.img}" alt="{variation.title}" class="object-cover object-center" />
 				</div>
 			</div>
 		{/each}

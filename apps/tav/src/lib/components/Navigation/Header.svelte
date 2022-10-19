@@ -23,6 +23,7 @@ import IconUserGroup from "~icons/heroicons-outline/user-group"
 import IconHeart from "~icons/heroicons-outline/heart"
 import IconMap from "~icons/heroicons-outline/map"
 import IconNewspaper from "~icons/heroicons-outline/newspaper"
+import IconMail from "~icons/heroicons-outline/mail"
 import MobileMenu from "./MenuMobile.svelte"
 import { mobileMenuOpen } from "$lib/store.js"
 
@@ -44,7 +45,7 @@ $: pages = [
 			//					title: $t("common.menu.bibles_listen"),
 			//					long: $t("common.menu.bibles_long_listen"),
 			//					href: `#`,
-			////					icon: "play",
+			//					icon: "play",
 			//					class: "text-white bg-purple-600 border",
 			//				},
 			{
@@ -119,13 +120,12 @@ $: pages = [
 				icon: IconMap,
 				class: "text-white bg-sky-800 border",
 			},
-
 			{
 				title: $t("common.menu.about_news"),
 				long: $t("common.menu.about_long_news"),
 				href: `/about/projects`,
 				icon: IconNewspaper,
-				class: "text-white bg-emerald-500 border border-slate-400",
+				class: "text-white bg-teal-600 border border-slate-400",
 			},
 			{
 				title: $t("common.menu.about_community"),
@@ -140,6 +140,13 @@ $: pages = [
 				href: `/about/projects/proposals`,
 				icon: IconGlobe,
 				class: "text-white bg-amber-500",
+			},
+			{
+				title: $t("common.Contact"),
+				long: $t("common.menu.about_long_contact"),
+				href: `/about/contact`,
+				icon: IconMail,
+				class: "text-white bg-green-400",
 			},
 		],
 		floor: [

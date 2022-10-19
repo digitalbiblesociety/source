@@ -788,10 +788,7 @@ let filter = function () {
 	<div
 		class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-7">
 		{#each results as bl}
-			<a
-				href="#"
-				target="_blank"
-				rel="noopener noreferrer"
+			<span
 				class="flex rounded-lg  border border-gray-400 bg-slate-100
 					      text-gray-700 drop-shadow-lg
 					     hover:bg-slate-600 hover:text-white dark:border-black
@@ -816,7 +813,7 @@ let filter = function () {
 						{bl.country ?? bl.item.country}
 					</span>
 				</div>
-			</a>
+			</span>
 		{/each}
 	</div>
 </section>

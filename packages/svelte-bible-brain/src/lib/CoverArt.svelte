@@ -61,4 +61,4 @@
 	
 	</script>
 	
-	<img class="w-20 h-20 object-cover rounded object-top" src={options[book_id]} />
+	<img class="w-20 h-20 object-cover rounded object-top" alt="{book_id}" src={options[book_id]} />

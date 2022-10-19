@@ -80,6 +80,7 @@
 			src="https://player.vimeo.com/video/124872117?h=02e67ddffc"
 			allow="autoplay; fullscreen; picture-in-picture"
 			allowfullscreen
+			title="Libraries Overview"
 			class="absolute inset-0 h-full w-full p-1">
 		</iframe>
 	</div>

@@ -59,7 +59,7 @@ import IconLockedClosed from "~icons/heroicons-outline/lock-closed"
 						</form>
 
 						<a
-							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-tahiti-500 to-tahiti-800 px-2 py-1 text-center text-white  dark:bg-gray-800"
+							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-teal-500 to-teal-800 px-2 py-1 text-center text-white  dark:bg-gray-800"
 							href="/about/donate/gifts">
 							{$t("about.donate_mail")}
 						</a>

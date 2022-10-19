@@ -32,13 +32,12 @@ $: menu_about = [
 		icon: IconHeart,
 		icon_class: "text-white bg-red-400 border border-red-700",
 	},
-
 	{
 		link: `/about/projects`,
 		title: $t("common.menu.about_news"),
 		description: $t("common.menu.about_long_news"),
 		icon: IconNewspaper,
-		icon_class: "text-black bg-tahiti-600 border border-slate-400",
+		icon_class: "text-black bg-teal-600 border border-slate-400",
 	},
 
 	{
@@ -48,7 +47,6 @@ $: menu_about = [
 		icon: IconGlobe,
 		icon_class: "text-white bg-yellow-500",
 	},
-
 	{
 		link: `https://vimeo.com/549313705`,
 		title: $t("common.Video"),

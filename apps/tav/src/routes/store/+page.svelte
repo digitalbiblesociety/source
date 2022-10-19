@@ -89,6 +89,7 @@ $: commitments = [
 							<div
 								class="overflow-hidden rounded-xl border bg-white dark:bg-gray-600 dark:border-gray-900 p-2 text-center group-hover:opacity-75 ">
 								<img
+									alt="{product.variants[0].image.alt}"
 									src="{product.variants[0].image.src}"
 									class=" h-full w-full object-cover object-center" />
 								<h3 class="mt-2">

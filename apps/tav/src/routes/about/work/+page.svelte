@@ -25,7 +25,7 @@ $: projects = [
 		action: $t("about.work_libraries_action"),
 		picture: "/img/about/projects_libraries_thumb.png",
 		url: "/libraries",
-		class: "bg-gradient-to-r from-tahiti-400 to-tahiti-800  dark:bg-gray-800",
+		class: "bg-gradient-to-r from-teal-400 to-teal-800  dark:bg-gray-800",
 		icon: IconLibrary,
 	},
 	{

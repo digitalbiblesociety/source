@@ -23,6 +23,7 @@ client.collection
 					class="h-56 w-full overflow-hidden rounded-md shadow-md group-hover:opacity-75 lg:h-72 xl:h-80">
 					{#if product?.variants[0]?.image}
 						<img
+							alt="{product.variants[0].image.alt}"
 							src="{product.variants[0].image.src}"
 							class="mx-auto h-full object-cover object-center" />
 					{/if}

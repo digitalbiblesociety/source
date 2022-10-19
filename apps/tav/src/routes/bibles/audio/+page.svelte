@@ -51,6 +51,7 @@ import Banner from "$lib/components/Banner.svelte"
 			src="https://www.youtube.com/embed/Bbq9Ke3Xszs"
 			allow="autoplay; fullscreen; picture-in-picture"
 			allowfullscreen
+			title="Pearl Players"
 			class="absolute inset-0 h-full w-full p-1">
 		</iframe>
 	</div>

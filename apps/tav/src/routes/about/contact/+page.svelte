@@ -1,6 +1,5 @@
 <script>
 import { t } from "$lib/Translations/index.js"
-import MenuSubNav from "$lib/components/Navigation/MenuSubnav.svelte";
 import MailingList from "$lib/components/Partials/MailingList.svelte"
 import IconLocationMarker from "~icons/heroicons-solid/location-marker"
 import IconPhone from "~icons/heroicons-solid/phone"
@@ -21,10 +20,10 @@ import Banner from "$lib/components/Banner.svelte"
 		{ link: '#', title: $t("common.Contact") },
 	]}
 	subnav={[
-		{title:$t("common.Donate") + ' ' + $t("common.Online"),url:'/about/donate/'},
-		{title:$t("about.donate_other"),url:'/about/donate/gifts'},
-		{title:$t("common.Volunteer"),url:'/about/donate/volunteer'},
-		{title:$t("common.Contact"),url:'/about/contact',selected:true},
+		{title:$t("common.Donate") + ' ' + $t("common.Online"), url:'/about/donate/'},
+		{title:$t("about.donate_other"), url:'/about/donate/gifts'},
+		{title:$t("common.Volunteer"), url:'/about/donate/volunteer'},
+		{title:$t("common.Contact"), url:'/about/contact',selected:true},
 	]} />
 
 <div class="relative">
@@ -107,4 +106,6 @@ import Banner from "$lib/components/Banner.svelte"
 	</div>
 </div>
 
-<MailingList />
+<div class="pb-12">
+	<MailingList />
+</div>

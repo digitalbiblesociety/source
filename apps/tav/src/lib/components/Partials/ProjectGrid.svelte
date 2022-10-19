@@ -23,7 +23,7 @@
 			action: $t("about.work_libraries_action"),
 			picture: "/img/about/projects_libraries_thumb.webp",
 			url: "/libraries/treasures",
-			class: "bg-gradient-to-r from-tahiti-400 to-tahiti-800  dark:from-tahiti-700 dark:to-tahiti-800",
+			class: "bg-gradient-to-r from-teal-400 to-teal-800  dark:from-teal-700 dark:to-teal-800",
 			icon: IconLibrary,
 		},
 		{
