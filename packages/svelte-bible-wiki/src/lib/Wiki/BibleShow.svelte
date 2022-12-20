@@ -72,8 +72,8 @@
 			  <dl class="rounded-lg bg-white shadow-lg flex flex-row justify-center py-2">
 
 				{#if bible.iso}
-				<div class="flex flex-col border-t border-gray-100 px-6 py-2 text-center sm:border-0">
-				  <div class="mt-2 leading-6 text-gray-500">Language</div>
+				<div class="flex flex-col border-t border-stone-100 px-6 py-2 text-center sm:border-0">
+				  <div class="mt-2 leading-6 text-stone-500">Language</div>
 				  
 					  <a 
 						  class="text-lg font-extrabold text-blue-600" 
@@ -86,8 +86,8 @@
 				{/if}
 	
 				  {#if bible.alphabet}
-				  <div class="flex flex-col border-b border-gray-100 px-6 py-2 text-center sm:border-0 sm:border-l sm:border-r">
-					  <div class="mt-2 leading-6 text-gray-500">Alphabet</div>
+				  <div class="flex flex-col border-b border-stone-100 px-6 py-2 text-center sm:border-0 sm:border-l sm:border-r">
+					  <div class="mt-2 leading-6 text-stone-500">Alphabet</div>
 					  <a class="text-lg font-extrabold text-blue-600"
 					  href="/{locale}/alphabets/{bible.script}">
 					  {bible.alphabet.name ?? bible.script}
@@ -96,15 +96,15 @@
 					{/if}
 	
 				  {#if bible.date}
-				  <div class="flex flex-col border-t border-b border-gray-100 px-6 py-2 text-center sm:border-0 sm:border-l sm:border-r">
-					  <dt class="mt-2 leading-6 text-gray-500">Date</dt>
+				  <div class="flex flex-col border-t border-b border-stone-100 px-6 py-2 text-center sm:border-0 sm:border-l sm:border-r">
+					  <dt class="mt-2 leading-6 text-stone-500">Date</dt>
 					  <dd class="text-lg font-extrabold text-blue-600">{bible.date}</dd>
 				  </div>
 				  {/if}
 	
 				{#if bible.country}
-				<div class="flex flex-col border-t border-gray-100 px-6 py-2 text-center sm:border-0 sm:border-l">
-				  <dt class="mt-2 leading-6 text-gray-500">Country</dt>
+				<div class="flex flex-col border-t border-stone-100 px-6 py-2 text-center sm:border-0 sm:border-l">
+				  <dt class="mt-2 leading-6 text-stone-500">Country</dt>
 				  
 					  <a 
 						  class="text-lg font-extrabold text-blue-600" 
@@ -117,7 +117,7 @@
 			  </dl>
 
 			  {#if bible.copyright}
-				 <div class="mt-4 text-center text-sm text-gray-500">{bible.copyright}</div>
+				 <div class="mt-4 text-center text-sm text-stone-500">{bible.copyright}</div>
 			  {/if}
 			  {#if bible.description}
 			  	<div class="prose mx-auto">{@html bible.description}</div>
@@ -126,23 +126,23 @@
 
 		  </div>
 
-	<section class="overflow-hidden text-gray-600">
+	<section class="overflow-hidden text-stone-600">
 		<div class="container mx-auto px-5">
 				<div class="col-span-2">
 					{#each toArray(groupBy(bible.links, 'type')) as link_group_type}
 					{#if translations['link_sections'][link_group_type[0].type]}
-					<div class="bg-gray-50 my-4 rounded shadow-md">
-					<div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-						<h3 class="text-lg leading-6 text-gray-900">{ translations['link_sections'][link_group_type[0].type]['title'] }</h3>
-						<p class="mt-1 text-sm text-gray-500">{ translations['link_sections'][link_group_type[0].type]['description'] ?? '' }</p>
+					<div class="bg-stone-50 my-4 rounded shadow-md">
+					<div class="px-4 py-5 border-b border-stone-200 sm:px-6">
+						<h3 class="text-lg leading-6 text-stone-900">{ translations['link_sections'][link_group_type[0].type]['title'] }</h3>
+						<p class="mt-1 text-sm text-stone-500">{ translations['link_sections'][link_group_type[0].type]['description'] ?? '' }</p>
 					</div>
 					<div>
 						{#each toArray(groupBy(link_group_type, 'provider')) as link_group_provider}
-							<div class="bg-gray-100 flex flex-row justify-between p-4">
+							<div class="bg-stone-100 flex flex-row justify-between p-4">
 								<div class="flex w-1/5 text-center justify-center place-items-center">{link_group_provider[0].provider}</div>
 								<div class="w-4/5 grid grid-cols-2">
 									{#each link_group_provider as link}
-										<a class="p-2 bg-gray-200 hover:bg-gray-300 m-2 rounded flex flex-row justify-between" href={link.url}>
+										<a class="p-2 bg-stone-200 hover:bg-stone-300 m-2 rounded flex flex-row justify-between" href={link.url}>
 											<span class="px-2 flex-grow truncate">{link.title}</span>
 											{#if link.filesize}
 												<span class="text-xs justify-center place-self-center">{fileSize(link.filesize)}</span>

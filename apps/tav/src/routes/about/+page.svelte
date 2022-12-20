@@ -88,7 +88,7 @@ $: menu_about = [
 				class="hidden w-full max-w-xs dark:block"
 				alt="Digital Bible Society" />
 		</div>
-		<div class="w-6/12 text-gray-700 dark:text-gray-300 sm:w-8/12 md:w-9/12">
+		<div class="w-6/12 text-stone-700 dark:text-stone-300 sm:w-8/12 md:w-9/12">
 			<h2 class="text-lg font-semibold sm:text-xl lg:text-2xl">
 				{$t("common.menu.about_title")}
 			</h2>
@@ -105,14 +105,14 @@ $: menu_about = [
 	class="overflow-hidden px-6 py-1 pb-12 sm:grid sm:grid-cols-2 sm:gap-px md:gap-3 lg:grid-cols-3">
 	{#each menu_about as page}
 		<div
-			class="delay-50 group relative m-1 rounded-lg border border-gray-300 bg-gray-50 p-3 drop-shadow-md
+			class="delay-50 group relative m-1 rounded-lg border border-stone-300 bg-stone-50 p-3 drop-shadow-md
  				ease-in-out hover:border-blue-500 hover:transition-all dark:border-slate-600 dark:bg-slate-800 ">
 			<div class="flex items-center">
-				<div class="hidden sm:flex absolute top-12 md:top-4 left-3 -translate-y-1/2 transform rounded-lg border border-gray-500 p-2.5 md:rounded-xl dark:text-invert {page.icon_class}">
+				<div class="hidden sm:flex absolute top-12 md:top-4 left-3 -translate-y-1/2 transform rounded-lg border border-stone-500 p-2.5 md:rounded-xl dark:text-invert {page.icon_class}">
 					<svelte:component this="{page.icon}" class="inline-block h-4 w-4 text-white sm:h-6 sm:w-6" />
 				</div>
 				<h3
-					class="sm:pl-16 text-gray-900  dark:text-gray-300 sm:text-lg md:font-semibold lg:text-xl">
+					class="sm:pl-16 text-stone-900  dark:text-stone-300 sm:text-lg md:font-semibold lg:text-xl">
 					{page.title}
 				</h3>
 			</div>
@@ -123,7 +123,7 @@ $: menu_about = [
 						<span class="absolute inset-0" aria-hidden="true"></span>
 					</a>
 				</h3>
-				<p class="mt-3 sm:pl-16 md:pl-2 text-sm text-gray-500 dark:text-gray-300">
+				<p class="mt-3 sm:pl-16 md:pl-2 text-sm text-stone-500 dark:text-stone-300">
 					{page.description}
 				</p>
 			</div>

@@ -211,7 +211,7 @@ let events = [
 					<div class="bg-white px-4 py-5 dark:bg-black sm:rounded-lg sm:px-6">
 						<h2
 							id="timeline-title"
-							class="text-lg text-gray-900 dark:text-gray-200">
+							class="text-lg text-stone-900 dark:text-stone-200">
 							Timeline
 						</h2>
 
@@ -223,30 +223,30 @@ let events = [
 										<div class="relative lg:py-16">
 											{#if i + 1 !== events.length}
 												<span
-													class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200 dark:bg-gray-700"
+													class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-stone-200 dark:bg-stone-700"
 													aria-hidden="true">
 												</span>
 											{/if}
 											<div class="relative flex space-x-3">
 												<div>
 													<span
-														class="h-8 w-8 rounded-full bg-gray-100 dark:bg-gray-600 {event.color} flex items-center justify-center">
+														class="h-8 w-8 rounded-full bg-stone-100 dark:bg-stone-600 {event.color} flex items-center justify-center">
 														{@html event.icon}
 													</span>
 												</div>
 												<div
 													class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
 													<div>
-														<p class="text-sm text-gray-500 dark:text-gray-400">
+														<p class="text-sm text-stone-500 dark:text-stone-400">
 															{event.action}
 															<span
-																class="text-gray-900 dark:text-gray-200">
+																class="text-stone-900 dark:text-stone-200">
 																{event.title}
 															</span>
 														</p>
 													</div>
 													<div
-														class="whitespace-nowrap text-right text-sm text-gray-500 dark:text-gray-400">
+														class="whitespace-nowrap text-right text-sm text-stone-500 dark:text-stone-400">
 														<time datetime="2020-09-20">
 															{event.month} - {event.year}
 														</time>
@@ -263,8 +263,8 @@ let events = [
 
 				<section aria-labelledby="timeline-title" class="lg:col-span-2">
 					<div
-						class="prose prose-lg prose-blue mx-auto mt-6 text-gray-500 dark:text-gray-300">
-						<h3 class="dark:text-gray-300">{$t("about.history_sub1")}</h3>
+						class="prose prose-lg prose-blue mx-auto mt-6 text-stone-500 dark:text-stone-300">
+						<h3 class="dark:text-stone-300">{$t("about.history_sub1")}</h3>
 						<p>{$t("about.history_p1")}</p>
 						<p>{$t("about.history_p2")}</p>
 						<p>{$t("about.history_p3")}</p>
@@ -276,13 +276,13 @@ let events = [
 						<p>{$t("about.history_p9")}</p>
 						<p>{$t("about.history_p10")}</p>
 
-						<h3 class="dark:text-gray-300">{$t("about.history_sub2")}</h3>
+						<h3 class="dark:text-stone-300">{$t("about.history_sub2")}</h3>
 						<p>{$t("about.history_p21")}</p>
 						<p>{$t("about.history_p22")}</p>
 						<p>{$t("about.history_p23")}</p>
 
 						<div
-							class="relative rounded-lg border-2 border-double border-gray-200 bg-white"
+							class="relative rounded-lg border-2 border-double border-stone-200 bg-white"
 							style="padding-top: 56.25%">
 							<iframe
 								src="https://player.vimeo.com/video/42558544?h=02e67ddffc"
@@ -292,20 +292,20 @@ let events = [
 								class="absolute inset-0 h-full w-full p-1">
 							</iframe>
 						</div>
-						<div class="mt-1 text-center text-gray-500 dark:text-gray-200">
+						<div class="mt-1 text-center text-stone-500 dark:text-stone-200">
 							{$t("about.history_video")}
 							<span class="info">
 								(4&nbsp;{$t("common.Minute")}&nbsp;{$t("common.Video")})
 							</span>
 						</div>
 
-						<h3 class="dark:text-gray-300">{$t("about.history_sub3")}</h3>
+						<h3 class="dark:text-stone-300">{$t("about.history_sub3")}</h3>
 						<p>{$t("about.history_p31")}</p>
 						<p>{$t("about.history_p32")}</p>
 						<p>{$t("about.history_p33")}</p>
 						<p>{$t("about.history_p34")}</p>
 
-						<h3 class="dark:text-gray-300">{$t("about.history_sub4")}</h3>
+						<h3 class="dark:text-stone-300">{$t("about.history_sub4")}</h3>
 						<p>{$t("about.history_p41")}</p>
 						<p>{$t("about.history_p42")}</p>
 						<p>{$t("about.history_p43")}</p>

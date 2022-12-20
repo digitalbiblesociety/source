@@ -29,8 +29,8 @@ onMount(async () => {
 	aria-controls="{$controls[tab.id]}"
 	aria-selected="{isSelected}"
 	tabindex="{isSelected ? 0 : -1}"
-	class="uppercase inline-flex w-1/2 items-center justify-center rounded-tl-2xl rounded-tr border border-gray-300
-		   py-3 -mx-0.5 bg-gray-100 leading-none sm:w-auto sm:justify-start sm:px-7"
+	class="uppercase inline-flex w-1/2 items-center justify-center rounded-tl-2xl rounded-tr border border-stone-300
+		   py-3 -mx-0.5 bg-stone-100 leading-none sm:w-auto sm:justify-start sm:px-7"
 	class:text-blue-600="{isSelected}"
 	class:border-b-transparent="{isSelected}"
 	class:bg-transparent="{isSelected}"

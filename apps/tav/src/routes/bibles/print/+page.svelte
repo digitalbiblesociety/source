@@ -3236,24 +3236,24 @@ let filter = function () {
 		on:input="{filter}"
 		autocomplete
 		class="mx-auto  my-8 block w-1/3 rounded-md bg-[url('/img/icons/filter.png')] bg-[length:15px_15px] bg-[top_8px_right_8px] bg-no-repeat py-1.5 px-2
-			text-sm leading-5 text-gray-700 placeholder-gray-400 shadow-sm focus:border-gray-600
-			focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-600 dark:bg-gray-300" />
+			text-sm leading-5 text-stone-700 placeholder-stone-400 shadow-sm focus:border-stone-600
+			focus:placeholder-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-600 dark:bg-stone-300" />
 
 	<div class="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-4">
 		{#each results as print}
 			<a
 				href="{print.link ?? print.item.link}"
-				class="flex rounded border border-gray-300 bg-white text-blue-700 shadow-xl hover:text-blue-600 dark:border-black
-											dark:bg-gray-800 dark:text-white dark:hover:text-blue-800"
+				class="flex rounded border border-stone-300 bg-white text-blue-700 shadow-xl hover:text-blue-600 dark:border-black
+											dark:bg-stone-800 dark:text-white dark:hover:text-blue-800"
 				target="_blank"
 				rel="noopener noreferrer">
 				<img src="{print.cover ?? print.item.cover}" alt="Cover" class="m-2 w-14" />
 				<div class="relative m-2">
-					<h3 class="w-full text-gray-800 dark:text-gray-100">
+					<h3 class="w-full text-stone-800 dark:text-stone-100">
 						{print.name ?? print.item.name}
 					</h3>
 					<h4
-						class="absolute bottom-0 right-0 text-right text-xs leading-snug text-gray-600 dark:text-gray-300">
+						class="absolute bottom-0 right-0 text-right text-xs leading-snug text-stone-600 dark:text-stone-300">
 						{print.bid ?? print.item.bid}
 					</h4>
 				</div>

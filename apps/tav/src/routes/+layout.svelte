@@ -21,7 +21,7 @@ export const load = async ({ url }) => {
 <Header />
 
 <main class="-mt-32">
-	<div class="bg-gray-50 dark:bg-gray-800 max-w-7xl mx-auto xl:rounded-lg shadow lg:relative">
+	<div class="bg-stone-50 dark:bg-stone-800 max-w-7xl mx-auto xl:rounded-lg shadow lg:relative">
 		<slot />
 	</div>
 </main>

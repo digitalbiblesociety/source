@@ -1306,15 +1306,15 @@ let rows
 			{#if rows}
 				{#each $rows as row}
 					<tr>
-						<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">
+						<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">
 							{row.id}
 						</td>
-						<td class="whitespace-nowrap px-6 py-4 text-gray-900">
+						<td class="whitespace-nowrap px-6 py-4 text-stone-900">
 							<a href="/languages/{row.id}">
-								<div class="text-sm text-gray-900 dark:text-gray-300">
+								<div class="text-sm text-stone-900 dark:text-stone-300">
 									{row.ln}
 								</div>
-								<div class="text-xs italic text-gray-500">
+								<div class="text-xs italic text-stone-500">
 									{row.iso}
 								</div>
 							</a>
@@ -1324,28 +1324,28 @@ let rows
 								class="flex justify-between"
 								href="https://archive.org/details/{row.id}_DBS_HS/">
 								<div
-									class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-900 dark:text-gray-300">
+									class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-900 dark:text-stone-300">
 									{row.tt}
-									<div class="text-gray-500">{row.tv ?? ""}</div>
+									<div class="text-stone-500">{row.tv ?? ""}</div>
 								</div>
 								<IconChevronLeft class="inline-flex h-5 w-5" />
 							</a>
 						</td>
 						<td
-							class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+							class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 							<svg class="inline-block h-5 w-5">
 								<use href="/img/flags.svg#{row.ci}" xlink:href="#{row.ci}">
 								</use>
 							</svg>
-							<span class="text-sm text-gray-900 dark:text-gray-300">
+							<span class="text-sm text-stone-900 dark:text-stone-300">
 								{row.cn}
 							</span>
 						</td>
-						<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">
+						<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">
 							{row.ci}
 						</td>
 						<td
-							class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+							class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 							{row.dt}
 						</td>
 					</tr>

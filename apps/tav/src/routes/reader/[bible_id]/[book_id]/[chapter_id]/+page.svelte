@@ -22,9 +22,9 @@ async function loadChapter(url) {
 </script>
 
 {#if chapter != undefined}
-	<section class="ss mx-auto max-w-prose text-lg dark:text-gray-300">
+	<section class="ss mx-auto max-w-prose text-lg dark:text-stone-300">
 		<div
-			class="border-b border-gray-200 p-4 sm:flex sm:items-center sm:justify-between">
+			class="border-b border-stone-200 p-4 sm:flex sm:items-center sm:justify-between">
 			<a
 				href="/reader/{$page.params.bible_id}/{chapter.bookId}/{chapter.previous
 					.id}"
@@ -69,7 +69,7 @@ async function loadChapter(url) {
 		</div>
 		{@html chapter.content}
 
-		<div class="p-8 text-xs text-gray-500 dark:text-gray-600">
+		<div class="p-8 text-xs text-stone-500 dark:text-stone-600">
 			{chapter.copyright}
 		</div>
 	</section>

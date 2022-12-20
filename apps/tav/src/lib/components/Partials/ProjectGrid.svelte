@@ -50,7 +50,7 @@
 			action: $t("about.work_research_action"),
 			picture: "/img/about/projects_fab_thumb.webp",
 			url: "/about/work/research",
-			class: "bg-gradient-to-r from-teal-400 to-teal-700  dark:from-gray-600 dark:to-teal-800",
+			class: "bg-gradient-to-r from-teal-400 to-teal-700  dark:from-stone-600 dark:to-teal-800",
 			icon: IconSearch,
 		},
 		{
@@ -59,7 +59,7 @@
 			action: $t("about.work_proposals_action"),
 			picture: "/img/about/projects_proposals_thumb.webp",
 			url: "/about/projects/proposals",
-			class: "bg-gradient-to-r from-indigo-300 to-indigo-600  dark:from-gray-600 dark:to-indigo-800",
+			class: "bg-gradient-to-r from-indigo-300 to-indigo-600  dark:from-stone-600 dark:to-indigo-800",
 			icon: IconHeart,
 		},
 	]
@@ -72,10 +72,10 @@ aria-labelledby="contact-heading">
 <div
     class="grid grid-flow-row auto-rows-max grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
     {#each projects as project}
-        <a href="{project.url}" class="hover:text-sky-670 text-blue-500 dark:text-gray-200 dark:hover:text-white">
-            <div class="flex flex-col rounded-xl rounded-bl-xl rounded-br-xl border border-gray-400 bg-gray-300 dark:border-gray-500 dark:bg-gray-500 dark:hover:border-gray-300">
+        <a href="{project.url}" class="hover:text-sky-670 text-blue-500 dark:text-stone-200 dark:hover:text-white">
+            <div class="flex flex-col rounded-xl rounded-bl-xl rounded-br-xl border border-stone-400 bg-stone-300 dark:border-stone-500 dark:bg-stone-500 dark:hover:border-stone-300">
                 <div class="relative flex items-center rounded-lg px-4  pt-1 pb-1 md:px-8 lg:rounded-none lg:rounded-tl-xl lg:rounded-tr-xl {project.class}">
-                    <div class="dark:text-invert absolute top-3 right-4 flex -translate-y-1/2 transform rounded-lg border border-gray-500 bg-gray-600 p-1.5 dark:bg-gray-800 sm:p-2.5 md:rounded-xl">
+                    <div class="dark:text-invert absolute top-3 right-4 flex -translate-y-1/2 transform rounded-lg border border-stone-500 bg-stone-600 p-1.5 dark:bg-stone-800 sm:p-2.5 md:rounded-xl">
                         <span>
                             <svelte:component this="{project.icon}" class="inline-block h-4 w-4 text-white sm:h-6 sm:w-6" />
                         </span>
@@ -90,18 +90,18 @@ aria-labelledby="contact-heading">
 
                     <div class="w-2/3 p-1 pl-4">
                         <h2
-                            class="text-white dark:text-gray-200 md:text-lg">
+                            class="text-white dark:text-stone-200 md:text-lg">
                             {project.title}
                         </h2>
                         <p
-                            class="mt-2 mb-1 text-xs xl:text-sm leading-tight text-white dark:text-gray-200 ">
+                            class="mt-2 mb-1 text-xs xl:text-sm leading-tight text-white dark:text-stone-200 ">
                             {@html project.description}
                         </p>
                     </div>
                 </div>
 
                 <div>
-                    <div class="hidden rounded-bl-xl rounded-br-xl bg-gray-100 p-3 text-right hover:bg-white dark:bg-gray-500 md:px-8 lg:block">
+                    <div class="hidden rounded-bl-xl rounded-br-xl bg-stone-100 p-3 text-right hover:bg-white dark:bg-stone-500 md:px-8 lg:block">
                         {project.action}
                         <span aria-hidden="true">&rarr;</span>
                     </div>

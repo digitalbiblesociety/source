@@ -164,7 +164,7 @@ $: pages = [
 				href: "https://github.com/digitalbiblesociety",
 				//icon: "cog",
 				class:
-					"text-slate-500 dark:text-gray-200 bg-slate-200 dark:bg-slate-600 border border-slate-400",
+					"text-slate-500 dark:text-stone-200 bg-slate-200 dark:bg-slate-600 border border-slate-400",
 				tag: "Repo",
 				target: "_blank",
 			},
@@ -173,7 +173,7 @@ $: pages = [
 				long: "",
 				href: `/about/contact`,
 				//icon: "mail",
-				class: "text-white bg-gray-400 border border-gray-500",
+				class: "text-white bg-stone-400 border border-stone-500",
 				tag: $t("common.Connecting"),
 				target: "",
 			},
@@ -184,9 +184,9 @@ $: pages = [
 ]
 </script>
 
-<header class="bg-gray-900 pb-32 dark:bg-black">
+<header class="bg-stone-900 pb-32 dark:bg-black">
 	<div
-		class="mx-auto max-w-7xl px-4 md:divide-y md:divide-gray-500 dark:md:divide-gray-800">
+		class="mx-auto max-w-7xl px-4 md:divide-y md:divide-stone-500 dark:md:divide-stone-800">
 		<div class="relative flex h-16 justify-between">
 			<Logo />
 			<Search />
@@ -196,8 +196,8 @@ $: pages = [
 				<CartButton />
 				<button
 					type="button"
-					class="ml-2.5 inline-flex items-center justify-center rounded-md bg-blue-400 p-1 text-gray-100 hover:text-white focus:outline-none
-					focus:ring-2 focus:ring-inset focus:ring-gray-600 dark:bg-gray-800 dark:focus:ring-black md:hidden"
+					class="ml-2.5 inline-flex items-center justify-center rounded-md bg-blue-400 p-1 text-stone-100 hover:text-white focus:outline-none
+					focus:ring-2 focus:ring-inset focus:ring-stone-600 dark:bg-stone-800 dark:focus:ring-black md:hidden"
 					on:click="{() => mobileMenuOpen.set(!$mobileMenuOpen)}"
 					aria-controls="mobile-menu"
 					aria-label="Mobile Menu"

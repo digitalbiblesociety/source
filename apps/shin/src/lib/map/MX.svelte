@@ -115,7 +115,7 @@ class="mx-auto my-4 block w-full max-w-md rounded text-sm"
 <div class="flex flex-row flex-wrap">
 	{#each results as language}
 		<a 
-			class="flex justify-center items-center text-xs h-14 border-gray-100 border-2 px-3 py-1 font-bold text-center w-2/6 sm:w-1/5 overflow-hidden text-ellipsis cursor-pointer text-white"
+			class="flex justify-center items-center text-xs h-14 border-stone-100 border-2 px-3 py-1 font-bold text-center w-2/6 sm:w-1/5 overflow-hidden text-ellipsis cursor-pointer text-white"
 			href={'/?language='+ (language.name ?? language.item.name)}
 			data-iso={language.iso ?? language.item.iso} 
 			style="background-color:{language.color ?? language.item.color}">

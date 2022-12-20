@@ -19,7 +19,7 @@
 		.replace('{rows}', `<b>${rows}</b>`);
 </script>
 
-<aside class="text-gray-500 text-sm" {ref}>
+<aside class="text-stone-500 text-sm" {ref}>
 	{#if $datatableWidth > 600}
 		{#if rows > 0}
 			{@html info}

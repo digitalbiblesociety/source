@@ -25,7 +25,7 @@ import Banner from "$lib/components/Banner.svelte"
 	]} />
 
 <div
-	class="m-4 rounded-2xl border border-gray-300 bg-gray-200 py-8 dark:border-gray-500 dark:bg-blue-800 lg:overflow-hidden ">
+	class="m-4 rounded-2xl border border-stone-300 bg-stone-200 py-8 dark:border-stone-500 dark:bg-blue-800 lg:overflow-hidden ">
 	<div class="mx-auto max-w-5xl lg:px-8">
 		<div class="md:grid md:grid-cols-2 lg:gap-8">
 			<div class="hidden md:relative md:block lg:m-0">
@@ -35,15 +35,15 @@ import Banner from "$lib/components/Banner.svelte"
 				<div
 					class="mx-auto mt-24 max-w-md px-8 sm:max-w-2xl sm:p-6 lg:max-w-none lg:px-0">
 					<h2
-						class="font-semibold uppercase tracking-wider text-blue-600 dark:text-gray-200">
+						class="font-semibold uppercase tracking-wider text-blue-600 dark:text-stone-200">
 						{$t("common.index_volunteer_subtitle")}
 					</h2>
 					<p
-						class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
+						class="mt-2 text-3xl font-extrabold tracking-tight text-stone-900 dark:text-stone-100">
 						{$t("common.index_volunteer_title")}
 					</p>
 					<p
-						class="mx-auto mt-5 max-w-prose text-xl text-gray-500 dark:text-gray-300">
+						class="mx-auto mt-5 max-w-prose text-xl text-stone-500 dark:text-stone-300">
 						{$t("common.index_volunteer_description")}
 					</p>
 

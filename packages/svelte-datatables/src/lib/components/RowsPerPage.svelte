@@ -20,10 +20,10 @@
 		$options.rowsPerPage = e.detail;
 	}}
 >
-	<ListboxButton class="relative flex flex-row h-8 w-full p-2 border-r rounded-tl-md rounded-bl-md text-left sm:text-sm dark:text-gray-600">
+	<ListboxButton class="relative flex flex-row h-8 w-full p-2 border-r rounded-tl-md rounded-bl-md text-left sm:text-sm dark:text-stone-600">
 		{$options.rowsPerPage}
 		<svg
-			class=" mr-1 ml-1 h-5 w-5 text-gray-400 inline"
+			class=" mr-1 ml-1 h-5 w-5 text-stone-400 inline"
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 20 20"
 			fill="currentColor"
@@ -37,10 +37,10 @@
 		</svg>
 	</ListboxButton>
 	<ListboxOptions
-		class="absolute z-10 mt-1 w-24 bg-white dark:bg-gray-300 shadow-lg max-h-60 rounded-md py-1 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+		class="absolute z-10 mt-1 w-24 bg-white dark:bg-stone-300 shadow-lg max-h-60 rounded-md py-1 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
 	>
 		{#each rowOptions as option}
-			<ListboxOption class="text-gray-900 cursor-default select-none relative pl-3" value={option}>
+			<ListboxOption class="text-stone-900 cursor-default select-none relative pl-3" value={option}>
 				{option}
 				{#if option === $options.rowsPerPage}
 					<span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">

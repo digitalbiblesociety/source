@@ -26,8 +26,8 @@
 	};
 </script>
 
-<section class="flex h-48 flex-col place-items-center justify-center bg-gray-800">
-	<h1 class="text-center text-4xl text-gray-100">{$t('Films')}</h1>
+<section class="flex h-48 flex-col place-items-center justify-center bg-stone-800">
+	<h1 class="text-center text-4xl text-stone-100">{$t('Films')}</h1>
 </section>
 
 {#if films}
@@ -43,14 +43,14 @@
 	<div class="mx-auto max-w-lg">
 		{#each results as language (language.languageId ?? language.item.languageId)}
 			<a
-				class="my-4 block rounded border-2 border-gray-200 bg-gray-50 p-2"
+				class="my-4 block rounded border-2 border-stone-200 bg-stone-50 p-2"
 				href="/films/{language.iso3 ?? language.item.iso3}-{language.languageId ??
 					language.item.languageId}"
 			>
-				<p class="truncate text-sm text-gray-900">
+				<p class="truncate text-sm text-stone-900">
 					{language.name ?? language.item.name}
 				</p>
-				<p class="truncate text-sm text-gray-500">
+				<p class="truncate text-sm text-stone-500">
 					{language.nameNative ?? language.item.nameNative}
 				</p>
 			</a>

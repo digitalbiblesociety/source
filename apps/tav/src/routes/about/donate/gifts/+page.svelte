@@ -29,9 +29,9 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 
 		<div id="other" class="xs:grid  mt-8 gap-4 sm:grid-cols-2 lg:gap-6">
 			<div
-				class="relative rounded-lg border bg-gray-50 p-4 mb-6 leading-tight drop-shadow dark:border-gray-400 dark:bg-black lg:p-6">
+				class="relative rounded-lg border bg-stone-50 p-4 mb-6 leading-tight drop-shadow dark:border-stone-400 dark:bg-black lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_wire_1")}:</h2>
-				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-stone-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-stone-400 ">
 					<IconLibrary class="h-8 w-8" />
 				</div>
 				<p>
@@ -47,9 +47,9 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 			</div>
 
 			<div
-				class="relative rounded-lg border bg-gray-50 p-4 mb-6 leading-tight drop-shadow dark:border-gray-400 dark:bg-black lg:p-6">
+				class="relative rounded-lg border bg-stone-50 p-4 mb-6 leading-tight drop-shadow dark:border-stone-400 dark:bg-black lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_mail")}:</h2>
-				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-stone-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-stone-400 ">
 					<IconMail class="h-8 w-8" />
 				</div>
 				<p>{$t("about.donate_mail_1")}</p>
@@ -62,9 +62,9 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 			</div>
 
 			<div
-				class="relative rounded-lg border bg-gray-50 p-4 mb-6 leading-tight drop-shadow dark:border-gray-400 dark:bg-gray-800 lg:p-6">
+				class="relative rounded-lg border bg-stone-50 p-4 mb-6 leading-tight drop-shadow dark:border-stone-400 dark:bg-stone-800 lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_stock")}:</h2>
-				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-stone-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-stone-400 ">
 					<IconChartLine class="h-8 w-8" />
 				</div>
 
@@ -81,10 +81,10 @@ import IconChartLine from "~icons/heroicons-outline/presentation-chart-line"
 			</div>
 
 			<div
-				class="relative rounded-lg border bg-gray-50 p-4 mb-4 leading-tight drop-shadow dark:border-gray-400 dark:bg-black lg:p-6">
+				class="relative rounded-lg border bg-stone-50 p-4 mb-4 leading-tight drop-shadow dark:border-stone-400 dark:bg-black lg:p-6">
 				<h2 class="mb-6 text-xl font-bold">{$t("about.donate_crypto")}:</h2>
 
-				<div class="absolute right-2 -top-2 text-gray-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-gray-400 ">
+				<div class="absolute right-2 -top-2 text-stone-50 bg-blue-400 dark:bg-blue-700 rounded-md p-1.5 border border-stone-400 ">
 					<svg
 						class="h-8 w-8"
 						xmlns="http://www.w3.org/2000/svg"

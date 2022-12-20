@@ -19,30 +19,30 @@ onMount(async () => {
 
 const table_row = (row, locale) =>  `
 <tr class="${ (row.lc == 0) ? 'opacity-50' : ''}">
-	<td class="whitespace-nowrap px-6 py-4 text-gray-900">
+	<td class="whitespace-nowrap px-6 py-4 text-stone-900">
 		<a href="/${locale}/languages/${row.id}">
-			<div class="text-sm text-gray-900 dark:text-gray-300">${row.ln}</div>
-			<div class="text-xs italic text-gray-500 lowercase">${row.iso} | ${row.id.substring(3)}</div>
+			<div class="text-sm text-stone-900 dark:text-stone-300">${row.ln}</div>
+			<div class="text-xs italic text-stone-500 lowercase">${row.iso} | ${row.id.substring(3)}</div>
 		</a>
 	</td>
 	<td class="x-6 py-4">
 		<a href="/${locale}/bibles/${row.id}">
-			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-900 dark:text-gray-300">
+			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-900 dark:text-stone-300">
 				${row.tt}
 			</div>
-			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-500">
+			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-500">
 				${row.tv ?? ""}
 			</div>
 		</a>
 	</td>
 	<td
-		class="inline-flex md:table-cell whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+		class="inline-flex md:table-cell whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 		<svg class="inline-block h-5 w-5">
 			<use href="/img/flags.svg#${row.ci}" xlink:href="#${row.ci}"></use>
 		</svg>
-		<span class="text-sm text-gray-900 dark:text-gray-300">${row.cn}</span>
+		<span class="text-sm text-stone-900 dark:text-stone-300">${row.cn}</span>
 	</td>
-	<td class="hidden md:table-cell whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">${row.dt}</td>
+	<td class="hidden md:table-cell whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">${row.dt}</td>
 </tr>`
 
 

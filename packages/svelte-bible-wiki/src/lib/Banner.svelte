@@ -15,15 +15,15 @@
 		</div>
 
 		{#if tabs}
-			<nav class="flex flex-row justify-center divide-x divide-gray-200 rounded-tl-lg rounded-tr-lg w-1/2 lg:w-1/3 mx-auto">
+			<nav class="flex flex-row justify-center divide-x divide-stone-200 rounded-tl-lg rounded-tr-lg w-1/2 lg:w-1/3 mx-auto">
 				{#each tabs as tab,i}
 				<a href={`/${locale}/${tab.url}`} 
 				class:rounded-tl-lg={i == 0}
 				class:rounded-tr-lg={i == (tabs.length - 1)}
-				class="flex flex-grow justify-center bg-gray-50 bg-opacity-50 text-gray-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-gray-200 whitespace-nowrap py-2 border-b-2 text-sm">
+				class="flex flex-grow justify-center bg-stone-50 bg-opacity-50 text-stone-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-stone-200 whitespace-nowrap py-2 border-b-2 text-sm">
 					{tab.title}
 					{#if tab.count}
-						<span class="bg-gray-100 text-gray-900 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs md:inline-block">{tab.count}</span>
+						<span class="bg-stone-100 text-stone-900 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs md:inline-block">{tab.count}</span>
 					{/if}
 				  </a>
 				{/each}

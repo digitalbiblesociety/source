@@ -9,10 +9,10 @@ if ($cartQuantity < 0) {
 <div class="flow-root">
 	<a class="relative flex items-center p-2" href="/store/cart">
 		<IconShoppingCart
-			class="h-6 w-6 flex-shrink-0 text-gray-100 group-hover:text-gray-500 dark:text-gray-200" aria-label="Cart"/>
+			class="h-6 w-6 flex-shrink-0 text-stone-100 group-hover:text-stone-500 dark:text-stone-200" aria-label="Cart"/>
 		{#if $cartQuantity > 0}
 			<span
-				class="absolute bottom-0 right-0 -mb-1 h-5 w-5 rounded-full bg-blue-400 text-center text-sm text-gray-50 group-hover:text-gray-500"
+				class="absolute bottom-0 right-0 -mb-1 h-5 w-5 rounded-full bg-blue-400 text-center text-sm text-stone-50 group-hover:text-stone-500"
 				class:w-8="{$cartQuantity > 99}">
 				{$cartQuantity < 1000 ? $cartQuantity : "1K+"}
 			</span>

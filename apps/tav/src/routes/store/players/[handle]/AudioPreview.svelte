@@ -25,7 +25,7 @@ let playing = false
 				<IconPlay
 					class="h-7 w-7 rounded-2xl text-center
 					 text-blue-400 hover:border-4 hover:border-yellow-300" />
-				<p class="-mt-0.5 text-center text-gray-500 " style="font-size: 8px">
+				<p class="-mt-0.5 text-center text-stone-500 " style="font-size: 8px">
 					{$t("common.Listen")}
 				</p>
 			</div>

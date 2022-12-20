@@ -84,15 +84,15 @@ $: link_groups = [
 
 <footer class="">
 	<div
-		class="border-t-none mx-auto max-w-7xl border border-gray-300 bg-gray-50
-			pt-5 pb-3 dark:border-gray-500 dark:bg-gray-800 xl:rounded-b-2xl">
+		class="border-t-none mx-auto max-w-7xl border border-stone-300 bg-stone-50
+			pt-5 pb-3 dark:border-stone-500 dark:bg-stone-800 xl:rounded-b-2xl">
 		<section class="block justify-around sm:flex">
 			<div class="flex-col items-center justify-around px-8 sm:w-6/12">
 
 				<!-- Logo -->
 				<div class="relative z-10 flex px-2 lg:px-0 mx-auto">
 					<div class="flex flex-shrink-0 w-full items-center">
-						<a href="/"  class="inline-flex shrink-0 justify-center items-center mx-auto py-3 text-gray-700 dark:text-gray-200 lg:px-3">
+						<a href="/"  class="inline-flex shrink-0 justify-center items-center mx-auto py-3 text-stone-700 dark:text-stone-200 lg:px-3">
 							<img width="65.75px" height="32px" src="/img/logo/logo.svg" alt="DBS Logo" />
 							<span class="bold hidden md:block whitespace-nowrap pl-1.5 text-center text-sm uppercase sm:pl-3 lg:text-xl">
 							{$t("common.org_title")}
@@ -103,7 +103,7 @@ $: link_groups = [
 
 
 				<div
-					class=" mt-2 flex justify-center text-gray-700 dark:text-gray-200 dark:hover:text-gray-300">
+					class=" mt-2 flex justify-center text-stone-700 dark:text-stone-200 dark:hover:text-stone-300">
 					<a
 						href="https://vimeo.com/digitalbiblesociety"
 						class="hover:text-blue-500"
@@ -171,7 +171,7 @@ $: link_groups = [
 				</div>
 
 				<div
-					class="my-3 flex justify-center space-x-6 text-2xl text-gray-400 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-300">
+					class="my-3 flex justify-center space-x-6 text-2xl text-stone-400 hover:text-stone-500 dark:text-stone-200 dark:hover:text-stone-300">
 					<a
 						href="/about/donate#endorsement"
 						class="opacity-80 hover:underline hover:opacity-100">
@@ -213,13 +213,13 @@ $: link_groups = [
 					<div class="pb-2">
 						<h3
 							class="mb-2 text-center font-semibold uppercase tracking-wider
-								text-gray-600 underline dark:text-gray-200">
+								text-stone-600 underline dark:text-stone-200">
 							{link_group.name}
 						</h3>
 						<ul class="mt-2">
 							{#each link_group.links as link}
 								<li
-									class="mb-1 text-gray-600 hover:text-blue-600 dark:text-gray-200 dark:hover:text-gray-200">
+									class="mb-1 text-stone-600 hover:text-blue-600 dark:text-stone-200 dark:hover:text-stone-200">
 									<a
 										href="{link.href}"
 										target="{link.external ? '_blank' : ''}"
@@ -244,13 +244,13 @@ $: link_groups = [
 	</div>
 
 	<div
-		class="mx-auto flex w-10/12  max-w-7xl p-2 text-sm text-gray-600 dark:text-gray-300 mb-2">
+		class="mx-auto flex w-10/12  max-w-7xl p-2 text-sm text-stone-600 dark:text-stone-300 mb-2">
 		<span class="m-auto w-full text-center md:w-7/12 md:text-right">
 			<a
 				href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="ml-16 inline-flex items-center text-right  hover:text-blue-600  hover:underline hover:dark:text-gray-100">
+				class="ml-16 inline-flex items-center text-right  hover:text-blue-600  hover:underline hover:dark:text-stone-100">
 				{$t("common.org_title")}
 				<img
 					class="mx-2 h-5 w-5"
@@ -263,7 +263,7 @@ $: link_groups = [
 			<DarkToggle />
 			<a
 				href="/about/overview/privacy"
-				class="ml-4 hover:text-blue-500 hover:underline hover:dark:text-gray-100">
+				class="ml-4 hover:text-blue-500 hover:underline hover:dark:text-stone-100">
 				{$t("common.Privacy")}
 			</a>
 		</span>

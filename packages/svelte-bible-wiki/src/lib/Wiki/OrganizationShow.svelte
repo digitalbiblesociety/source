@@ -11,27 +11,27 @@
 
 	const table_row = (row, locale) =>  `
 	<tr>
-		<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">${row.id}</td>
-		<td class="whitespace-nowrap px-6 py-4 text-gray-900">
+		<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">${row.id}</td>
+		<td class="whitespace-nowrap px-6 py-4 text-stone-900">
 			<a href="/${locale}/languages/${row.id}">
-				<div class="text-sm text-gray-900 dark:text-gray-300">${row.language ? row.language.name : ""}</div>
-				<div class="text-xs italic text-gray-500">${row.iso}</div>
+				<div class="text-sm text-stone-900 dark:text-stone-300">${row.language ? row.language.name : ""}</div>
+				<div class="text-xs italic text-stone-500">${row.iso}</div>
 			</a>
 		</td>
 		<td class="px-6 py-4">
 			<a class="max-w-sm overflow-hidden text-ellipsis text-sm" href="/${locale}/bibles/${row.id}">
-				<div class="text-gray-900 dark:text-gray-300">${row.title}</div>
-				<div class="text-gray-500">${row.title_vernacular ?? ""}</div>
+				<div class="text-stone-900 dark:text-stone-300">${row.title}</div>
+				<div class="text-stone-500">${row.title_vernacular ?? ""}</div>
 			</a>
 		</td>
-		<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">${row.date}</td>
+		<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">${row.date}</td>
 	</tr>`
 
 </script>
 	
 {#if organization}
 
-<div class="relative flex flex-col -mb-9 pb-5 xl:rounded-tl-xl xl:rounded-tr-xl text-gray-100 text-2xl text-center h-32"
+<div class="relative flex flex-col -mb-9 pb-5 xl:rounded-tl-xl xl:rounded-tr-xl text-stone-100 text-2xl text-center h-32"
 	style="background-image: linear-gradient(to bottom right, {organization.colors.primary}, {organization.colors.secondary});">
 	<div class="start">
 		<Breadcrumbs

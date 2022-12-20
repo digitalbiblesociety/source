@@ -41,26 +41,23 @@
 
 <svelte:window bind:outerWidth={pageWidth} />
 {#if $options.customFilters}
-	<section aria-labelledby="filter-heading">
-		<h2 id="filter-heading" class="sr-only">Filters</h2>
-		<div class="block relative z-10 pb-4 ">
-			<div class="mx-auto px-2 flex justify-center pt-2 ">
-				<div class="items-center flex lg:flex-col">
+		<section>
+				<div class="wrapper">
 					{#each $options.customFilters as filter}
 						{#each $columns as column}
 							{#if column.name === filter.key}
 								<div
-									class="relative inline-block text-center mx-2 lg:border lg:border-blue-200 w-4/5 rounded-md mb-6"
+									class="relative inline-block text-center mx-2 lg:border lg:border-primary-200 w-4/5 rounded-md mb-6"
 								>
 									<div
 										on:click={() => {
 											opened[filter.key] = !opened[filter.key];
 										}}
-										class="inline-flex justify-center text-sm text-blue-600 dark:text-gray-100 uppercase hover:text-gray-900"
+										class="inline-flex justify-center text-sm font-medium text-primary-600 dark:text-stone-100 uppercase hover:text-stone-900"
 									>
 										<span>{filter.label}</span>
 										<svg
-											class="flex-shrink-0 mr-4 ml-1 h-5 w-5 text-gray-400 lg:hidden"
+											class="flex-shrink-0 mr-4 ml-1 h-5 w-5 text-stone-400 lg:hidden"
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 20 20"
 											fill="currentColor"
@@ -74,7 +71,7 @@
 										</svg>
 									</div>
 									<div
-										class:hidden={!opened[filter.key]}
+										class:hidden={!opened[filter.key] && pageWidth < 1025}
 										class="origin-top-right absolute lg:relative right-0  bg-white lg:bg-transparent rounded-md px-4 py-2"
 									>
 										<form class="space-y-2">
@@ -86,10 +83,7 @@
 														filter.operation
 													);
 													checkDefaults(filter, !e.target.checked);
-												}}
-												class="mt-1 block w-full pl-3  py-2 pr-4 border-gray-300 focus:outline-none sm:text-sm rounded-md
-                                                    dark:text-gray-200 "
-											>
+												}}>
 												{#each filter.options as option, index}
 													<div class="flex items-center">
 														<input
@@ -99,14 +93,9 @@
 															bind:checked={active_filters[column.name + '_' + index]}
 															data-filter={column.name + '_' + index}
 															type="checkbox"
-															class="h-4 w-4 border-gray-300 rounded"
+															class="h-4 w-4 border-stone-300 rounded"
 														/>
-														<label
-															for={column.name + index}
-															class="ml-3 pr-4 text-sm text-gray-700 dark:text-gray-200  whitespace-nowrap"
-														>
-															{option.label}
-														</label>
+														<label for={column.name + index}>{option.label}</label>
 													</div>
 												{/each}
 											</fieldset>
@@ -117,7 +106,56 @@
 						{/each}
 					{/each}
 				</div>
-			</div>
-		</div>
-	</section>
+		</section>
 {/if}
+
+<style>
+section {
+	display: block; 
+	position: relative; 
+	z-index: 10; 
+	padding-bottom: 1rem; 
+}
+
+#svelte-simple-datatable aside {
+	position: absolute;
+	top: 0;
+}
+
+section .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	height:100%;
+}
+@media (min-width: 1024px) { 
+	section .wrapper {
+		flex-direction: column; 
+	}
+}
+
+fieldset {
+	display: block; 
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem; 
+	padding-left: 0.75rem; 
+	padding-right: 1rem; 
+	margin-top: 0.25rem; 
+	font-size: 1rem;
+	line-height: 1.5rem; 
+	width: 100%; 
+	border-radius: 0.375rem; 
+	border-color: #D1D5DB; 
+}
+
+label {
+	padding-right: 1rem; 
+	margin-left: 0.75rem; 
+	color: #374151; 
+	font-size: 0.875rem;
+	line-height: 1.25rem; 
+	font-weight: 500; 
+	white-space: nowrap; 
+}
+
+</style>

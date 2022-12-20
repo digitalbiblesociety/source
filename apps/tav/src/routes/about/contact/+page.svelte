@@ -29,7 +29,7 @@ import Banner from "$lib/components/Banner.svelte"
 <div class="relative">
 	<div class="relative mx-auto mb-24 max-w-7xl lg:grid lg:grid-cols-5">
 		<div class=" py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12 ">
-			<div class="py-6 mx-6 text-center text-gray-500 dark:text-gray-200 border rounded-lg">
+			<div class="py-6 mx-6 text-center text-stone-500 dark:text-stone-200 border rounded-lg">
 					<div class="pt-4 flex justify-center">
 						<IconLocationMarker
 							class=" mr-4 h-8 w-8 text-blue-500" />
@@ -39,9 +39,9 @@ import Banner from "$lib/components/Banner.svelte"
 						</div>
 					</div>
 					<div class="pt-4 flex justify-center">
-						<IconPhone class=" mr-4 h-8 w-8 text-blue-500 dark:text-gray-300" />
+						<IconPhone class=" mr-4 h-8 w-8 text-blue-500 dark:text-stone-300" />
 						<div>
-							936-494-4442 <div class="text-sm text-gray-400 ">
+							936-494-4442 <div class="text-sm text-stone-400 ">
 								9:00am-5:00pm CST
 							</div>
 						</div>
@@ -64,7 +64,7 @@ import Banner from "$lib/components/Banner.svelte"
 							type="text"
 							name="name"
 							placeholder={$t('common.Name')}
-							class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-800 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+							class="block w-full rounded-md border-stone-300 py-3 px-4 text-stone-800 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
 					</div>
 					<div>
 						<label for="email" class="sr-only">Email</label>
@@ -73,7 +73,7 @@ import Banner from "$lib/components/Banner.svelte"
 							name="email"
 							type="email"
 							autocomplete="email"
-							class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-800 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+							class="block w-full rounded-md border-stone-300 py-3 px-4 text-stone-800 shadow-sm focus:border-blue-500 focus:ring-blue-500"
 							placeholder={$t('common.Email')} />
 					</div>
 					<div>
@@ -81,7 +81,7 @@ import Banner from "$lib/components/Banner.svelte"
 							type="text"
 							name="subject"
 							placeholder={$t('common.Subject')}
-							class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-800 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+							class="block w-full rounded-md border-stone-300 py-3 px-4 text-stone-800 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
 					</div>
 					<div>
 						<label for="message" class="sr-only">Message</label>
@@ -89,7 +89,7 @@ import Banner from "$lib/components/Banner.svelte"
 							id="message"
 							name="message"
 							rows="4"
-							class="block w-full rounded-md border border-gray-300 py-3 px-4 text-gray-900 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+							class="block w-full rounded-md border border-stone-300 py-3 px-4 text-stone-900 placeholder-stone-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
 							placeholder="$t('common.Message')">
 						</textarea>
 					</div>

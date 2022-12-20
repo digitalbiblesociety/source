@@ -19,13 +19,13 @@ let rows
 
 	<div
 		class="border-t-1 relative -mx-9 -mt-1 flex flex-col justify-between rounded-t-xl border-2 border-b-0
-				border-gray-400 bg-cover bg-center bg-no-repeat text-center"
+				border-stone-400 bg-cover bg-center bg-no-repeat text-center"
 		style="background-image: url('https://images.bible.cloud/treasures/banners/{library.id}.jpg');">
-		<h4 class="text-shadow-xl pt-8 text-2xl text-gray-200">
+		<h4 class="text-shadow-xl pt-8 text-2xl text-stone-200">
 			{library.title_vernacular}
 		</h4>
 		<h2
-			class="text-shadow-xl pb-8 text-3xl font-extrabold text-gray-300 sm:text-4xl">
+			class="text-shadow-xl pb-8 text-3xl font-extrabold text-stone-300 sm:text-4xl">
 			{library.title}
 		</h2>
 	</div>
@@ -44,10 +44,10 @@ let rows
 			<div class="relative mx-auto max-w-4xl">
 				<div class="py-12 sm:flex">
 					<div
-						class="mt-3 pr-8 text-xl text-gray-800 dark:text-gray-300 sm:mt-4">
+						class="mt-3 pr-8 text-xl text-stone-800 dark:text-stone-300 sm:mt-4">
 						<a
 							class="button mb-8 p-4"
-							href="http://downloads.dbs.org/treasures/{library.iso.toUpperCase()}/index.html">
+							href="http://downloads.dbs.org.s3.amazonaws.com/treasures/{library.iso.toUpperCase()}/index.html">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="inline-block h-6 w-6"
@@ -87,11 +87,11 @@ let rows
 		<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-24">
 			<div class="mx-auto max-w-4xl">
 				<dl
-					class="rounded-lg bg-white shadow-lg dark:bg-gray-800 sm:grid sm:grid-cols-3">
+					class="rounded-lg bg-white shadow-lg dark:bg-stone-800 sm:grid sm:grid-cols-3">
 					<div
-						class="flex flex-col border-b border-gray-100 p-6 text-center dark:border-gray-900 sm:border-0 sm:border-r">
+						class="flex flex-col border-b border-stone-100 p-6 text-center dark:border-stone-900 sm:border-0 sm:border-r">
 						<dt
-							class="order-2 mt-2 text-lg leading-6 text-gray-500">
+							class="order-2 mt-2 text-lg leading-6 text-stone-500">
 							{$t("common.Resources")}
 						</dt>
 						<dd class="order-1 text-5xl font-extrabold text-blue-600">
@@ -99,9 +99,9 @@ let rows
 						</dd>
 					</div>
 					<div
-						class="flex flex-col border-t border-b border-gray-100 p-6 text-center dark:border-gray-900 sm:border-0 sm:border-l sm:border-r">
+						class="flex flex-col border-t border-b border-stone-100 p-6 text-center dark:border-stone-900 sm:border-0 sm:border-l sm:border-r">
 						<dt
-							class="order-2 mt-2 text-lg leading-6 text-gray-500">
+							class="order-2 mt-2 text-lg leading-6 text-stone-500">
 							{$t("common.Audio Lessons")}
 						</dt>
 						<dd class="order-1 text-5xl font-extrabold text-blue-600">
@@ -111,9 +111,9 @@ let rows
 						</dd>
 					</div>
 					<div
-						class="flex flex-col border-t border-gray-100 p-6 text-center dark:border-gray-900 sm:border-0 sm:border-l">
+						class="flex flex-col border-t border-stone-100 p-6 text-center dark:border-stone-900 sm:border-0 sm:border-l">
 						<dt
-							class="order-2 mt-2 text-lg leading-6 text-gray-500">
+							class="order-2 mt-2 text-lg leading-6 text-stone-500">
 							{$t("common.Scripture Films")}
 						</dt>
 						<dd class="order-1 text-5xl font-extrabold text-blue-600">

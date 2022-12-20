@@ -46,17 +46,17 @@ let endorsements = [
 		class="mt-2  grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 ">
 		{#each endorsements as { title, logo, style, link, description }}
 			<div
-				class="relative rounded-xl border bg-white drop-shadow dark:border-gray-400 dark:bg-black">
+				class="relative rounded-xl border bg-white drop-shadow dark:border-stone-400 dark:bg-black">
 				<a target="_blank" href="{link}">
 					<img class="mx-auto p-2 {style}" src="{logo}" alt="{title}" />
 
 					<div
-						class="space-around inline-flex text-lg leading-6 text-gray-900">
+						class="space-around inline-flex text-lg leading-6 text-stone-900">
 						<IconCheck class="ml-2 h-6 w-6 text-blue-500" />
-						<span class="ml-2 dark:text-gray-300">{title}</span>
+						<span class="ml-2 dark:text-stone-300">{title}</span>
 					</div>
 				</a>
-				<p class="mt-2 flex pl-4 pr-1 text-sm text-gray-600 dark:text-gray-400">
+				<p class="mt-2 flex pl-4 pr-1 text-sm text-stone-600 dark:text-stone-400">
 					{description}
 				</p>
 				<a target="_blank" href="{link}" class="">

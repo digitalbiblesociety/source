@@ -18,13 +18,13 @@
 	
 		<div class="relative w-full pt-6">
 			<div class="relative mx-auto max-w-4xl px-4 pt-4 pb-8 sm:px-6 lg:px-8">
-				<h1 class="text-center text-2xl font-bold text-gray-800 md:text-3xl  ">
-					<span class="dark:text-gray-200">{$t("common.Making Scripture")}</span>
+				<h1 class="text-center text-2xl font-bold text-stone-800 md:text-3xl  ">
+					<span class="dark:text-stone-200">{$t("common.Making Scripture")}</span>
 					<span class="bg-clip-text pb-3 text-blue-600 dark:text-white sm:pb-5">
 						{$t("common.Accessible")}
 					</span>
 				</h1>
-				<p class="my-4 text-sm text-gray-700 dark:text-gray-300 sm:px-2 md:text-center md:md:leading-5 lg:tracking-tight">
+				<p class="my-4 text-sm text-stone-700 dark:text-stone-300 sm:px-2 md:text-center md:md:leading-5 lg:tracking-tight">
 					<span class="text-bold text-blue-600 dark:text-white">
 						{$t("common.org_title")}
 					</span>
@@ -44,7 +44,7 @@
 					class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
 					<div class="lg:py-24">
 						<h1
-							class="mt-4 text-center text-4xl font-extrabold text-gray-800 dark:text-gray-100 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+							class="mt-4 text-center text-4xl font-extrabold text-stone-800 dark:text-stone-100 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
 							<div>{$t("common.Making Scripture")}</div>
 							<div class="pb-3 text-blue-500 dark:text-blue-400 sm:pb-5">
 								{$t("common.Accessible")}
@@ -52,7 +52,7 @@
 						</h1>
 	
 						<p
-							class="text-gray-500 dark:text-gray-200 sm:text-xl lg:text-lg xl:text-xl">
+							class="text-stone-500 dark:text-stone-200 sm:text-xl lg:text-lg xl:text-xl">
 							{$t("common.index_intro_text")}
 						</p>
 	

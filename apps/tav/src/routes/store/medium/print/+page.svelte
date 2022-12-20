@@ -14,14 +14,14 @@ let variations = [
 
 <div class="mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
 	<div class="max-w-3xl">
-		<h2 id="features-heading" class="text-gray-500">
+		<h2 id="features-heading" class="text-stone-500">
 			Variations for Print on Demand
 		</h2>
 		<p
-			class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+			class="mt-2 text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl">
 			Trim & Binding
 		</p>
-		<p class="mt-4 text-gray-500">...</p>
+		<p class="mt-4 text-stone-500">...</p>
 	</div>
 
 	<div class="flex flex-row flex-wrap">
@@ -29,11 +29,11 @@ let variations = [
 			<div
 				class="xs:w-1/2 flex flex-col-reverse justify-between sm:w-1/3 md:w-1/5">
 				<div class="mt-6">
-					<h3 class="text-sm text-gray-900">{variation.title}</h3>
-					<p class="mt-2 text-sm text-gray-500">{variation.description}</p>
+					<h3 class="text-sm text-stone-900">{variation.title}</h3>
+					<p class="mt-2 text-sm text-stone-500">{variation.description}</p>
 				</div>
 				<div
-					class="aspect-w-1 aspect-h-1 mx-2 overflow-hidden rounded-lg bg-gray-100">
+					class="aspect-w-1 aspect-h-1 mx-2 overflow-hidden rounded-lg bg-stone-100">
 					<img src="{variation.img}" alt="{variation.title}" class="object-cover object-center" />
 				</div>
 			</div>

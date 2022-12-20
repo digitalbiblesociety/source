@@ -77,10 +77,10 @@ $: values = [
 								src="{value.icon}"
 								class="float-left mr-4 h-9 w-9 md:h-14 md:w-14"
 								alt="{value.title}" />
-							<p class="text-lg font-semibold text-gray-900 dark:text-gray-300">
+							<p class="text-lg font-semibold text-stone-900 dark:text-stone-300">
 								{value.title}
 							</p>
-							<p class="mt-3 text-gray-500 dark:text-gray-400">
+							<p class="mt-3 text-stone-500 dark:text-stone-400">
 								{value.description}
 							</p>
 						</span>

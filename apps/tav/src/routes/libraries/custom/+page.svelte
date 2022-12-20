@@ -298,7 +298,7 @@ let rows
 	classList="relative max-w-6xl mx-auto"
 	data="{scoped_languages}"
 	bind:dataRows="{rows}">
-	<thead class="bg-gray-50 text-gray-600">
+	<thead class="bg-stone-50 text-stone-600">
 		<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">
 			{$t("common.Title")}
 		</th>
@@ -312,10 +312,10 @@ let rows
 				<tr>
 					<td class="whitespace-nowrap px-6 py-4 text-sm font-medium">
 						<a href="/languages/{row.id}">
-							<div class="text-sm text-gray-900 dark:text-gray-300">
+							<div class="text-sm text-stone-900 dark:text-stone-300">
 								{row.tt}
 							</div>
-							<div class="text-xs text-gray-500">{row.tv}</div>
+							<div class="text-xs text-stone-500">{row.tv}</div>
 						</a>
 					</td>
 					<td class="hidden whitespace-nowrap text-sm sm:table-cell">
@@ -328,7 +328,7 @@ let rows
 								<use href="/img/flags.svg#{row.ci}" xlink:href="#{row.ci}">
 								</use>
 							</svg>
-							<span class="text-sm text-gray-900 dark:text-gray-300">
+							<span class="text-sm text-stone-900 dark:text-stone-300">
 								{row.cn}
 							</span>
 						</a>

@@ -7,10 +7,10 @@ $: ({ art } = data);
 <div class="flex flex-1 flex-col">
 	<header class="w-full">
 		<div
-			class="relative z-10 flex h-16 shrink-0 border-b border-gray-200 shadow-sm dark:border-slate-600">
+			class="relative z-10 flex h-16 shrink-0 border-b border-stone-200 shadow-sm dark:border-slate-600">
 			<button
 				type="button"
-				class="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:border-slate-600 dark:text-gray-400 md:hidden">
+				class="border-r border-stone-200 px-4 text-stone-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:border-slate-600 dark:text-stone-400 md:hidden">
 				<span class="sr-only">Open sidebar</span>
 				<!-- Heroicon name: outline/menu-alt-2 -->
 				<svg
@@ -38,7 +38,7 @@ $: ({ art } = data);
 							Search all files
 						</label>
 						<div
-							class="relative w-full text-gray-400 focus-within:text-gray-600">
+							class="relative w-full text-stone-400 focus-within:text-stone-600">
 							<div
 								class="pointer-events-none absolute inset-y-0 left-0 flex items-center">
 								<!-- Heroicon name: solid/search -->
@@ -58,13 +58,13 @@ $: ({ art } = data);
 							<input
 								name="mobile-search-field"
 								id="mobile-search-field"
-								class="h-full w-full border-transparent py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-gray-200 sm:hidden"
+								class="h-full w-full border-transparent py-2 pl-8 pr-3 text-stone-900 placeholder-stone-500 focus:border-transparent focus:placeholder-stone-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-stone-200 sm:hidden"
 								placeholder="Search"
 								type="search" />
 							<input
 								name="desktop-search-field"
 								id="desktop-search-field"
-								class="hidden h-full w-full border-transparent py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-gray-200 sm:block"
+								class="hidden h-full w-full border-transparent py-2 pl-8 pr-3 text-stone-900 placeholder-stone-500 focus:border-transparent focus:placeholder-stone-400 focus:outline-none focus:ring-0 dark:bg-slate-700 dark:text-stone-200 sm:block"
 								placeholder="Search all files"
 								type="search" />
 						</div>
@@ -79,14 +79,14 @@ $: ({ art } = data);
 				<div class="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
 					<div class="flex">
 						<h1
-							class="flex-1 text-2xl font-bold text-gray-900 dark:text-gray-200">
+							class="flex-1 text-2xl font-bold text-stone-900 dark:text-stone-200">
 							Photos
 						</h1>
 						<div
-							class="ml-6 flex items-center rounded-lg bg-gray-100 p-0.5 sm:hidden">
+							class="ml-6 flex items-center rounded-lg bg-stone-100 p-0.5 sm:hidden">
 							<button
 								type="button"
-								class="rounded-md p-1.5 text-gray-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+								class="rounded-md p-1.5 text-stone-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
 								<!-- Heroicon name: solid/view-list -->
 								<svg
 									class="h-5 w-5"
@@ -104,7 +104,7 @@ $: ({ art } = data);
 							</button>
 							<button
 								type="button"
-								class="ml-0.5 rounded-md p-1.5 text-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+								class="ml-0.5 rounded-md p-1.5 text-stone-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
 								<!-- Heroicon name: solid/view-grid -->
 								<svg
 									class="h-5 w-5"
@@ -129,7 +129,7 @@ $: ({ art } = data);
 							<select
 								id="tabs"
 								name="tabs"
-								class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10  focus:border-blue-500 focus:outline-none focus:ring-blue-500 dark:border-slate-900 sm:text-sm">
+								class="block w-full rounded-md border-stone-300 py-2 pl-3 pr-10  focus:border-blue-500 focus:outline-none focus:ring-blue-500 dark:border-slate-900 sm:text-sm">
 								<option selected>Recently Viewed</option>
 								<option>Recently Added</option>
 								<option>Favorited</option>
@@ -137,11 +137,11 @@ $: ({ art } = data);
 						</div>
 						<div class="hidden sm:block">
 							<div
-								class="flex items-center border-b border-gray-200 dark:border-slate-600">
+								class="flex items-center border-b border-stone-200 dark:border-slate-600">
 								<nav
 									class="-mb-px flex flex-1 space-x-6 xl:space-x-8"
 									aria-label="Tabs">
-									<!-- Current: "border-blue-500 text-blue-600", Default: "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:border-gray-300  dark:border-slate-900" -->
+									<!-- Current: "border-blue-500 text-blue-600", Default: "border-transparent text-stone-500 dark:text-stone-400 hover:text-stone-700 hover:border-stone-300  dark:border-slate-900" -->
 									<span
 										aria-current="page"
 										class="whitespace-nowrap border-b-2 border-blue-500 py-4 px-1 text-sm text-blue-600">
@@ -149,20 +149,20 @@ $: ({ art } = data);
 									</span>
 
 									<span
-										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400">
+										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm text-stone-500 hover:border-stone-300 hover:text-stone-700 dark:text-stone-400">
 										Recently Added
 									</span>
 
 									<span
-										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400">
+										class="whitespace-nowrap border-b-2 border-transparent py-4 px-1 text-sm text-stone-500 hover:border-stone-300 hover:text-stone-700 dark:text-stone-400">
 										Favorited
 									</span>
 								</nav>
 								<div
-									class="ml-6 hidden items-center rounded-lg bg-gray-100 p-0.5 sm:flex">
+									class="ml-6 hidden items-center rounded-lg bg-stone-100 p-0.5 sm:flex">
 									<button
 										type="button"
-										class="rounded-md p-1.5 text-gray-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+										class="rounded-md p-1.5 text-stone-400 hover:bg-white hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
 										<!-- Heroicon name: solid/view-list -->
 										<svg
 											class="h-5 w-5"
@@ -180,7 +180,7 @@ $: ({ art } = data);
 									</button>
 									<button
 										type="button"
-										class="ml-0.5 rounded-md p-1.5 text-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+										class="ml-0.5 rounded-md p-1.5 text-stone-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
 										<!-- Heroicon name: solid/view-grid -->
 										<svg
 											class="h-5 w-5"
@@ -206,9 +206,9 @@ $: ({ art } = data);
 							class="relative grid h-screen grid-cols-2 gap-x-4 gap-y-8 overflow-y-scroll sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
 							{#each art as artwork}
 								<li class="relative">
-									<!-- Current: "ring-2 ring-offset-2 ring-blue-500", Default: "focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-blue-500" -->
+									<!-- Current: "ring-2 ring-offset-2 ring-blue-500", Default: "focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-stone-100 focus-within:ring-blue-500" -->
 									<div
-										class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 ring-2 ring-blue-500 ring-offset-2">
+										class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-stone-100 ring-2 ring-blue-500 ring-offset-2">
 										<!-- Current: "", Default: "group-hover:opacity-75" -->
 										<img
 											src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
@@ -223,11 +223,11 @@ $: ({ art } = data);
 										</button>
 									</div>
 									<p
-										class="pointer-events-none mt-2 block truncate text-sm text-gray-900 dark:text-gray-200">
+										class="pointer-events-none mt-2 block truncate text-sm text-stone-900 dark:text-stone-200">
 										IMG_4985.HEIC
 									</p>
 									<p
-										class="pointer-events-none block text-sm text-gray-500 dark:text-gray-400">
+										class="pointer-events-none block text-sm text-stone-500 dark:text-stone-400">
 										3.9 MB
 									</p>
 								</li>
@@ -241,7 +241,7 @@ $: ({ art } = data);
 
 			<!-- Details sidebar -->
 			<aside
-				class="hidden w-96 overflow-y-auto border-l border-gray-200 p-8 dark:border-slate-600 lg:block">
+				class="hidden w-96 overflow-y-auto border-l border-stone-200 p-8 dark:border-slate-600 lg:block">
 				<div class="space-y-6 pb-16">
 					<div>
 						<div
@@ -254,17 +254,17 @@ $: ({ art } = data);
 						<div class="mt-4 flex items-start justify-between">
 							<div>
 								<h2
-									class="text-lg text-gray-900 dark:text-gray-200">
+									class="text-lg text-stone-900 dark:text-stone-200">
 									<span class="sr-only">Details for</span>
 									IMG_4985.HEIC
 								</h2>
-								<p class="text-sm text-gray-500 dark:text-gray-400">
+								<p class="text-sm text-stone-500 dark:text-stone-400">
 									3.9 MB
 								</p>
 							</div>
 							<button
 								type="button"
-								class="ml-4 flex h-8 w-8 items-center justify-center rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-gray-400">
+								class="ml-4 flex h-8 w-8 items-center justify-center rounded-full text-stone-400 hover:bg-stone-100 hover:text-stone-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-stone-400">
 								<!-- Heroicon name: outline/heart -->
 								<svg
 									class="h-6 w-6"
@@ -285,48 +285,48 @@ $: ({ art } = data);
 						</div>
 					</div>
 					<div>
-						<h3 class="text-gray-900 dark:text-gray-200">
+						<h3 class="text-stone-900 dark:text-stone-200">
 							Information
 						</h3>
 						<dl
-							class="mt-2 divide-y divide-gray-200 border-t border-b border-gray-200 dark:border-slate-600">
+							class="mt-2 divide-y divide-stone-200 border-t border-b border-stone-200 dark:border-slate-600">
 							<div class="flex justify-between py-3 text-sm font-medium">
-								<dt class="text-gray-500 dark:text-gray-400">Uploaded by</dt>
-								<dd class="text-gray-900 dark:text-gray-200">Marie Culver</dd>
+								<dt class="text-stone-500 dark:text-stone-400">Uploaded by</dt>
+								<dd class="text-stone-900 dark:text-stone-200">Marie Culver</dd>
 							</div>
 
 							<div class="flex justify-between py-3 text-sm font-medium">
-								<dt class="text-gray-500 dark:text-gray-400">Created</dt>
-								<dd class="text-gray-900 dark:text-gray-200">June 8, 2020</dd>
+								<dt class="text-stone-500 dark:text-stone-400">Created</dt>
+								<dd class="text-stone-900 dark:text-stone-200">June 8, 2020</dd>
 							</div>
 
 							<div class="flex justify-between py-3 text-sm font-medium">
-								<dt class="text-gray-500 dark:text-gray-400">Last modified</dt>
-								<dd class="text-gray-900 dark:text-gray-200">June 8, 2020</dd>
+								<dt class="text-stone-500 dark:text-stone-400">Last modified</dt>
+								<dd class="text-stone-900 dark:text-stone-200">June 8, 2020</dd>
 							</div>
 
 							<div class="flex justify-between py-3 text-sm font-medium">
-								<dt class="text-gray-500 dark:text-gray-400">Dimensions</dt>
-								<dd class="text-gray-900 dark:text-gray-200">4032 x 3024</dd>
+								<dt class="text-stone-500 dark:text-stone-400">Dimensions</dt>
+								<dd class="text-stone-900 dark:text-stone-200">4032 x 3024</dd>
 							</div>
 
 							<div class="flex justify-between py-3 text-sm font-medium">
-								<dt class="text-gray-500 dark:text-gray-400">Resolution</dt>
-								<dd class="text-gray-900 dark:text-gray-200">72 x 72</dd>
+								<dt class="text-stone-500 dark:text-stone-400">Resolution</dt>
+								<dd class="text-stone-900 dark:text-stone-200">72 x 72</dd>
 							</div>
 						</dl>
 					</div>
 					<div>
-						<h3 class="text-gray-900 dark:text-gray-200">
+						<h3 class="text-stone-900 dark:text-stone-200">
 							Description
 						</h3>
 						<div class="mt-2 flex items-center justify-between">
-							<p class="text-sm italic text-gray-500 dark:text-gray-400">
+							<p class="text-sm italic text-stone-500 dark:text-stone-400">
 								Add a description to this image.
 							</p>
 							<button
 								type="button"
-								class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-gray-400">
+								class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-stone-400 hover:bg-stone-100 hover:text-stone-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-stone-400">
 								<!-- Heroicon name: solid/pencil -->
 								<svg
 									class="h-5 w-5"
@@ -343,11 +343,11 @@ $: ({ art } = data);
 						</div>
 					</div>
 					<div>
-						<h3 class="text-gray-900 dark:text-gray-200">
+						<h3 class="text-stone-900 dark:text-stone-200">
 							Shared with
 						</h3>
 						<ul
-							class="mt-2 divide-y divide-gray-200 border-t border-b border-gray-200 dark:border-slate-600">
+							class="mt-2 divide-y divide-stone-200 border-t border-b border-stone-200 dark:border-slate-600">
 							<li class="flex items-center justify-between py-3">
 								<div class="flex items-center">
 									<img
@@ -355,7 +355,7 @@ $: ({ art } = data);
 										alt="Aimee Douglas"
 										class="h-8 w-8 rounded-full" />
 									<p
-										class="ml-4 text-sm text-gray-900 dark:text-gray-200">
+										class="ml-4 text-sm text-stone-900 dark:text-stone-200">
 										Aimee Douglas
 									</p>
 								</div>
@@ -374,7 +374,7 @@ $: ({ art } = data);
 										alt="Andrea McMillan"
 										class="h-8 w-8 rounded-full" />
 									<p
-										class="ml-4 text-sm text-gray-900 dark:text-gray-200">
+										class="ml-4 text-sm text-stone-900 dark:text-stone-200">
 										Andrea McMillan
 									</p>
 								</div>
@@ -391,7 +391,7 @@ $: ({ art } = data);
 									type="button"
 									class="group -ml-1 flex items-center rounded-md p-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
 									<span
-										class="flex h-8 w-8 items-center justify-center rounded-full  border-2 border-dashed border-gray-300 text-gray-400 dark:border-slate-900">
+										class="flex h-8 w-8 items-center justify-center rounded-full  border-2 border-dashed border-stone-300 text-stone-400 dark:border-slate-900">
 										<!-- Heroicon name: solid/plus-sm -->
 										<svg
 											class="h-5 w-5"

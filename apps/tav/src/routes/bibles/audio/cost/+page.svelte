@@ -45,10 +45,10 @@ client.collection
 	<style>
 	tbody td,
 	tbody th {
-		@apply border border-gray-300 p-1 text-xs dark:border-gray-400 lg:text-sm;
+		@apply border border-stone-300 p-1 text-xs dark:border-stone-400 lg:text-sm;
 	}
 	tbody tr {
-		@apply border border-gray-300  text-sm md:text-base;
+		@apply border border-stone-300  text-sm md:text-base;
 	}
 	tbody tr:nth-child(even) {
 		background-color: #efefef;
@@ -57,13 +57,13 @@ client.collection
 		@apply text-xs text-blue-600 lg:text-sm;
 	}
 	th.title {
-		@apply text-xs text-blue-600 dark:text-gray-800 md:text-lg;
+		@apply text-xs text-blue-600 dark:text-stone-800 md:text-lg;
 	}
 	td.cost {
-		@apply text-sm text-gray-800 dark:text-blue-800 md:text-base;
+		@apply text-sm text-stone-800 dark:text-blue-800 md:text-base;
 	}
 	td.txt {
-		@apply text-xs text-gray-800 dark:text-blue-600 lg:text-sm;
+		@apply text-xs text-stone-800 dark:text-blue-600 lg:text-sm;
 	}
 	.button-buy {
 		@apply mx-4 my-1 p-0.5 text-xs sm:text-sm md:mx-8 md:p-1 lg:text-base;
@@ -90,7 +90,7 @@ client.collection
 
 
 <div class="mx-auto w-full max-w-4xl overflow-y-scroll px-4 pt-16 ">
-	<table class="text-center dark:bg-gray-300 ">
+	<table class="text-center dark:bg-stone-300 ">
 		<tbody>
 			<tr class="">
 				<th scope="row">{$t("common.Device")}</th>

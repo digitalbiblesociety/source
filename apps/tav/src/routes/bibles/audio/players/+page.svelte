@@ -10,10 +10,10 @@ import IconCheck from "~icons/heroicons-outline/check"
 	<style>
 	tbody td,
 	tbody th {
-		@apply border border-gray-300 p-1 dark:border-gray-400;
+		@apply border border-stone-300 p-1 dark:border-stone-400;
 	}
 	tbody tr {
-		@apply border border-gray-300;
+		@apply border border-stone-300;
 	}
 	tbody tr:nth-child(even) {
 		background-color: #efefef;
@@ -22,13 +22,13 @@ import IconCheck from "~icons/heroicons-outline/check"
 		@apply text-sm text-blue-600;
 	}
 	th.title {
-		@apply text-xl text-blue-600 dark:text-gray-800;
+		@apply text-xl text-blue-600 dark:text-stone-800;
 	}
 	td.cost {
-		@apply text-xl text-gray-800 dark:text-blue-800;
+		@apply text-xl text-stone-800 dark:text-blue-800;
 	}
 	td.txt {
-		@apply text-gray-800 dark:text-blue-600;
+		@apply text-stone-800 dark:text-blue-600;
 	}
 	.button-buy {
 		@apply m-0 p-2;
@@ -78,7 +78,7 @@ import IconCheck from "~icons/heroicons-outline/check"
 </nav>
 
 <div class="mx-auto w-full overflow-y-scroll px-4 pt-16 ">
-	<table class="text-center dark:bg-gray-300 ">
+	<table class="text-center dark:bg-stone-300 ">
 		<tbody>
 			<tr class="">
 				<th scope="col">{$t("common.Device")}</th>

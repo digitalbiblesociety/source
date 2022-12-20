@@ -209,8 +209,8 @@ let filter = function () {
 			on:input="{filter}"
 			autocomplete
 			class="mx-auto  my-8 block w-1/3 rounded-md bg-[url('/img/icons/filter.png')] bg-[length:15px_15px] bg-[top_8px_right_8px] bg-no-repeat py-1.5 px-2
-			text-sm leading-5 text-gray-700 placeholder-gray-400 shadow-sm focus:border-gray-600
-			focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-600 dark:bg-gray-300" />
+			text-sm leading-5 text-stone-700 placeholder-stone-400 shadow-sm focus:border-stone-600
+			focus:placeholder-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-600 dark:bg-stone-300" />
 
 		<div class="grid grid-cols-2 md:grid-cols-4 md:px-12 lg:grid-cols-4">
 			{#each results as contributor}

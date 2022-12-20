@@ -43,15 +43,15 @@
 		</div>
 	{/if}
 	
-	<section class="body-font text-gray-600">
+	<section class="body-font text-stone-600">
 		<div class="container mx-auto px-5 py-24">
 			<div class="mb-20 flex w-full flex-col text-center">
-				<h1 class="title-font mb-4 text-2xl text-gray-900 dark:text-gray-200 sm:text-3xl">
+				<h1 class="title-font mb-4 text-2xl text-stone-900 dark:text-stone-200 sm:text-3xl">
 					Script Features
 				</h1>
 				<div>
 					{#if alphabet.open_type_tag}
-						<div class="leading-relaxed text-gray-500">
+						<div class="leading-relaxed text-stone-500">
 							{alphabet.open_type_tag}
 						</div>
 					{/if}
@@ -71,8 +71,8 @@
 			<div class="-m-4 flex flex-wrap text-center">
 				{#if alphabet.baseline}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
-							<div class="mb-3 inline-block h-12 w-24 text-4xl text-gray-400">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
+							<div class="mb-3 inline-block h-12 w-24 text-4xl text-stone-400">
 								[ <span class="text-blue-600">
 									{#if alphabet.baseline === "bottom"}_ {/if}
 									{#if alphabet.baseline === "unspecified"}? {/if}
@@ -89,7 +89,7 @@
 				{/if}
 				{#if alphabet.diacritics}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 41.6 62.3"
@@ -107,7 +107,7 @@
 				{/if}
 				{#if alphabet.white_space}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								[ ]
 							</div>
@@ -117,7 +117,7 @@
 				{/if}
 				{#if alphabet.complex_positioning}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 52 87.2"
@@ -142,7 +142,7 @@
 				{/if}
 				{#if alphabet.contextual_forms}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 52 87.2"
@@ -167,7 +167,7 @@
 				{/if}
 				{#if alphabet.reordering}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 52 87.2"
@@ -192,7 +192,7 @@
 				{/if}
 				{#if alphabet.direction}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								{#if alphabet.direction === "ltr"}
 									→
@@ -211,7 +211,7 @@
 				{/if}
 				{#if alphabet.ligatures}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 							</div>
 	
@@ -222,7 +222,7 @@
 	
 				{#if alphabet.unicode}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 							</div>
 	
@@ -236,7 +236,7 @@
 	
 				{#if alphabet.case}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								{alphabet.case}
 							</div>
@@ -248,7 +248,7 @@
 	
 				{#if alphabet.split_graphs}
 					<div class="flex w-full flex-col p-4 sm:w-1/3 md:w-1/5">
-						<div class="flex-1 rounded-lg border-2 border-gray-200 px-4 py-6">
+						<div class="flex-1 rounded-lg border-2 border-stone-200 px-4 py-6">
 							<div class="mb-3 inline-block h-12 w-12 text-4xl text-blue-600">
 								{alphabet.split_graphs}
 							</div>
@@ -267,7 +267,7 @@
 				<Tab>
 					Bibles
 					<span
-						class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-800">
+						class="inline-flex items-center rounded-full bg-stone-100 px-2.5 py-0.5 text-xs text-stone-800">
 						{bibles.length}
 					</span>
 				</Tab>
@@ -298,37 +298,37 @@
 						{#if $rows}
 							{#each $rows as row}
 								<tr>
-									<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">
+									<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">
 										{row.id}
 									</td>
-									<td class="whitespace-nowrap px-6 py-4 text-gray-900">
+									<td class="whitespace-nowrap px-6 py-4 text-stone-900">
 										<a href="{'/' + locale}/languages/{row.id}">
-											<div class="text-sm text-gray-900 dark:text-gray-300">
+											<div class="text-sm text-stone-900 dark:text-stone-300">
 												{row.ln}
 											</div>
-											<div class="text-xs italic text-gray-500">{row.iso}</div>
+											<div class="text-xs italic text-stone-500">{row.iso}</div>
 										</a>
 									</td>
 									<td class="px-6 py-4">
 										<a href="{'/' + locale}/bibles/{row.id}">
-											<div class="text-sm text-gray-900 dark:text-gray-300">
+											<div class="text-sm text-stone-900 dark:text-stone-300">
 												{row.tt}
 											</div>
-											<div class="text-sm text-gray-500">{row.tv ?? ""}</div>
+											<div class="text-sm text-stone-500">{row.tv ?? ""}</div>
 										</a>
 									</td>
 									<td
-										class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+										class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 										<svg class="inline-block h-5 w-5">
 											<use href="/img/flags.svg#{row.ci}" xlink:href="#{row.ci}">
 											</use>
 										</svg>
-										<span class="text-sm text-gray-900 dark:text-gray-300">
+										<span class="text-sm text-stone-900 dark:text-stone-300">
 											{row.cn}
 										</span>
 									</td>
 									<td
-										class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+										class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 										{row.dt}
 									</td>
 								</tr>

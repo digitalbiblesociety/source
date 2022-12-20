@@ -7,15 +7,15 @@
 
 	const table_row = (row, locale) =>  `
 	<tr>
-		<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+		<td class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
 			<a href="/${locale}/alphabets/${row.script}">
-				<div class="text-sm text-gray-900 dark:text-gray-200">${row.name}</div>
-				<div class="text-xs text-gray-500">${row.script}</div>
+				<div class="text-sm text-stone-900 dark:text-stone-200">${row.name}</div>
+				<div class="text-xs text-stone-500">${row.script}</div>
 			</a>
 		</td>
-		<td class="hidden whitespace-nowrap px-6 py-4 text-sm text-gray-900 sm:table-cell">${row.type}</td>
-		<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">${row.family}</td>
-		<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">${row.status}</td>
+		<td class="hidden whitespace-nowrap px-6 py-4 text-sm text-stone-900 sm:table-cell">${row.type}</td>
+		<td class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">${row.family}</td>
+		<td class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">${row.status}</td>
 	</tr>`
 
 	let rows

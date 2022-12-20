@@ -45,10 +45,10 @@ const stats = [
 	<dl class="-mx-8 -mt-8 flex flex-row justify-center">
 		{#each stats as stat}
 			<div class="flex flex-col justify-center px-8 pt-8 text-center">
-				<dt class="order-2 text-gray-500">
+				<dt class="order-2 text-stone-500">
 					{stat.title}
 				</dt>
-				<dd class="order-1 text-2xl font-extrabold text-gray-800 sm:text-3xl">
+				<dd class="order-1 text-2xl font-extrabold text-stone-800 sm:text-3xl">
 					{stat.value}
 				</dd>
 			</div>

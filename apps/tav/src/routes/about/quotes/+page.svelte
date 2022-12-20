@@ -165,7 +165,7 @@ let about_quotes = [
 				{$t("about.quotes_title")}
 			</h2>
 			<div class="mt-3 sm:mt-4">
-				<p class="text-l text-gray-500 dark:text-gray-300">
+				<p class="text-l text-stone-500 dark:text-stone-300">
 					{$t("about.quotes_tagline")}
 				</p>
 			</div>
@@ -186,10 +186,10 @@ let about_quotes = [
 				<img src="{quote.image}" alt="{quote.name}" class="my-2 ml-24 h-20" />
 				<div>
 					<h3
-						class="pl-5     text-gray-900 dark:text-gray-300 sm:text-lg md:font-semibold">
+						class="pl-5     text-stone-900 dark:text-stone-300 sm:text-lg md:font-semibold">
 						{quote.name}
 					</h3>
-					<p class=" px-5 text-sm text-gray-500 dark:text-gray-300">
+					<p class=" px-5 text-sm text-stone-500 dark:text-stone-300">
 						{quote.title}
 					</p>
 				</div>

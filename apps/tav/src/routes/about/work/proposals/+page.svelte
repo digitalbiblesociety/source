@@ -24,7 +24,7 @@
 
 	<div
 		id="copy"
-		class="prose mx-auto max-w-5xl mt-8 leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose mx-auto max-w-5xl mt-8 leading-6 text-stone-500 dark:prose-invert dark:text-stone-300">
 		<img
 			src="/img/about/projects_proposals.png"
 			alt="Proposals"

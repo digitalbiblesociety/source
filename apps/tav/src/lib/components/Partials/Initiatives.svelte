@@ -29,19 +29,19 @@ let dbs = {
 </script>
 
 <div
-	class="rounded-lg border border-gray-300 bg-gray-200 dark:border-gray-500 dark:bg-blue-500 lg:overflow-hidden lg:pb-14">
+	class="rounded-lg border border-stone-300 bg-stone-200 dark:border-stone-500 dark:bg-blue-500 lg:overflow-hidden lg:pb-14">
 	<div class="grid grid-cols-2 gap-4 py-8">
 		<div class="flex flex-col place-items-center justify-center pl-8">
 			<span
-				class="font-semibold uppercase tracking-wider text-blue-600 dark:text-gray-200">
+				class="font-semibold uppercase tracking-wider text-blue-600 dark:text-stone-200">
 				Scripture distribution
 			</span>
 			<h2
-				class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
+				class="mt-2 text-3xl font-extrabold tracking-tight text-stone-900 dark:text-stone-100">
 				Initiatives
 			</h2>
 			<p
-				class="mt-4 text-gray-500 dark:text-gray-200 sm:text-xl lg:text-lg xl:text-xl">
+				class="mt-4 text-stone-500 dark:text-stone-200 sm:text-xl lg:text-lg xl:text-xl">
 				We are always looking for a few people to help us with these so if you
 				are interested in helping us please consider donating or volunteering.
 				We're also always looking for new projects so if you know of a need,
@@ -50,12 +50,12 @@ let dbs = {
 		</div>
 		<div class="p-4 text-white ">
 			<div class="overflow-hidden bg-slate-100 shadow sm:rounded-md">
-				<ul  class="divide-y divide-y-8 divide-gray-200">
+				<ul  class="divide-y divide-y-8 divide-stone-200">
 					{#each initiatives as initiative}
 						<li>
 							<a
 								href="/about/news/initiative/{initiative.id}"
-								class="block hover:bg-gray-50">
+								class="block hover:bg-stone-50">
 								<div class="px-4 py-4 sm:px-6">
 									<div class="flex items-center justify-between">
 										<p class="truncate text-sm text-blue-600">
@@ -71,21 +71,21 @@ let dbs = {
 									<div class="mt-2 sm:flex sm:justify-between">
 										<div class="sm:flex">
 											{#if initiative.quantity}
-												<p class="flex items-center text-sm text-gray-500">
+												<p class="flex items-center text-sm text-stone-500">
 													<Icon
 														name="quantity"
 														type="solid"
-														class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" />
+														class="mr-1.5 h-5 w-5 flex-shrink-0 text-stone-400" />
 													{initiative.quantity}
 												</p>
 											{/if}
 											{#if initiative.location}
 												<p
-													class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+													class="mt-2 flex items-center text-sm text-stone-500 sm:mt-0 sm:ml-6">
 													<Icon
 														name="marker"
 														type="solid"
-														class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" />
+														class="mr-1.5 h-5 w-5 flex-shrink-0 text-stone-400" />
 													{initiative.location}
 												</p>
 											{/if}
@@ -93,11 +93,11 @@ let dbs = {
 
 										{#if initiative.deadline}
 											<div
-												class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+												class="mt-2 flex items-center text-sm text-stone-500 sm:mt-0">
 												<Icon
 													name="calendar"
 													type="solid"
-													class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" />
+													class="mr-1.5 h-5 w-5 flex-shrink-0 text-stone-400" />
 												<time datetime="2020-01-07">
 													{initiative.deadline}
 												</time>

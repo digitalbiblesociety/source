@@ -19,10 +19,10 @@
 	<tr class="${row.bc + row.fc + row.rc > 0 ? '' : 'opacity-40'}">
 						<td class="whitespace-nowrap px-6 py-4 text-sm font-medium">
 							<a href="/languages/${row.id}">
-								<div class="text-sm text-gray-900 dark:text-gray-300">
+								<div class="text-sm text-stone-900 dark:text-stone-300">
 									${row.tt}
 								</div>
-								<div class="text-xs text-gray-500">${row.tv}</div>
+								<div class="text-xs text-stone-500">${row.tv}</div>
 							</a>
 						</td>
 						<td class="hidden whitespace-nowrap text-sm sm:table-cell">
@@ -34,23 +34,23 @@
 								<svg class="mx-auto block h-5 w-5 sm:inline-block">
 									<use href="/img/flags.svg#${row.ci}" xlink:href="#${row.ci}"></use>
 								</svg>
-								<span class="text-sm text-gray-900 dark:text-gray-300">
+								<span class="text-sm text-stone-900 dark:text-stone-300">
 									${row.cn}
 								</span>
 							</a>
 						</td>
 						<td class="hidden whitespace-nowrap px-6 py-4 md:table-cell">
-							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-gray-100 text-gray-700">
+							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-stone-100 text-stone-700">
 								${row.bc}
 							</span>
 						</td>
 						<td class="hidden whitespace-nowrap px-6 py-4 lg:table-cell">
-							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-gray-100 text-gray-700">
+							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-stone-100 text-stone-700">
 								${row.rc}
 							</span>
 						</td>
 						<td class="hidden whitespace-nowrap px-6 py-4 lg:table-cell">
-							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-gray-100 text-gray-700">
+							<span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm bg-stone-100 text-stone-700">
 								${row.fc}
 							</span>
 						</td>
@@ -75,7 +75,7 @@
 
 	{#if browser}
 	<Datatable classList="relative" data="{languages}" bind:dataRows="{rows}">
-		<thead class="bg-gray-50 text-gray-600">
+		<thead class="bg-stone-50 text-stone-600">
 			<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">{translations?.thead?.title ?? 'title'}</th>
 			<th data-key="id" class="sortable hidden sm:table-cell">iso</th>
 			<th data-key="po" class="sortable">{translations?.thead?.population ?? 'population'}</th>
@@ -95,7 +95,7 @@
 	{/if}
 	<noscript>
 		<table class="mx-auto w-4/5 pt-8">
-			<thead class="bg-gray-50 text-gray-600">
+			<thead class="bg-stone-50 text-stone-600">
 				<th class="sortable">{translations?.thead?.title ?? 'title'}</th>
 				<th class="sortable"></th>
 				<th class="sortable hidden sm:table-cell">iso</th>

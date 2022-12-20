@@ -9,6 +9,6 @@
 	{#if icon}
 		{@html icon}
 	{/if}
-	<div class="text-gray-900 dark:text-gray-100">{title ?? ''}</div>
-	<div class="text-gray-500 dark:text-gray-400">{subtitle ?? ''}</div>
+	<div class="text-stone-900 dark:text-stone-100">{title ?? ''}</div>
+	<div class="text-stone-500 dark:text-stone-400">{subtitle ?? ''}</div>
 </a>

@@ -8,16 +8,16 @@
 	class="min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
 	<div class="mx-auto max-w-max">
 		<main class="sm:flex">
-			<p class="text-4xl font-extrabold text-gray-50 sm:text-5xl">
+			<p class="text-4xl font-extrabold text-stone-50 sm:text-5xl">
 				{$page.status}
 			</p>
 			<div class="sm:ml-6">
-				<div class="sm:border-l sm:border-gray-200 sm:pl-6">
+				<div class="sm:border-l sm:border-stone-200 sm:pl-6">
 					<h1
-						class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">
+						class="text-4xl font-extrabold tracking-tight text-stone-900 dark:text-stone-100 sm:text-5xl">
 						Something Went Wrong
 					</h1>
-					<p class="mt-1 text-gray-500 dark:text-gray-200">
+					<p class="mt-1 text-stone-500 dark:text-stone-200">
 						{$page.error.message}
 					</p>
 				</div>

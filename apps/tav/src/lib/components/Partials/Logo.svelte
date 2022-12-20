@@ -6,7 +6,7 @@ import { t } from "$lib/Translations/index.js"
 	<div class="flex flex-shrink-0 items-center">
 		<a
 			href="/"
-			class="inline-flex shrink-0 items-center py-3 text-gray-200 lg:px-3">
+			class="inline-flex shrink-0 items-center py-3 text-stone-200 lg:px-3">
 			<img width="65.75px" height="32px" src="/img/logo/logo.svg" alt="DBS Logo" />
 			<span
 				class="bold hidden whitespace-nowrap pl-1.5 text-center text-sm uppercase sm:pl-3 md:block lg:text-xl">

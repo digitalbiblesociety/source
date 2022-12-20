@@ -593,12 +593,12 @@ const changeContinentFocus = (pos, region) => {
 {#if color_buttons}
 	<div class="flex flex-row justify-center">
 		<div
-			class="my-1 mx-4 cursor-pointer rounded bg-gray-200 px-3"
+			class="my-1 mx-4 cursor-pointer rounded bg-stone-200 px-3"
 			on:click="{() => changeMapColor('default')}">
 			Christian Percentage
 		</div>
 		<div
-			class="my-1 mx-4 cursor-pointer rounded bg-gray-200 px-3"
+			class="my-1 mx-4 cursor-pointer rounded bg-stone-200 px-3"
 			on:click="{() => changeMapColor('world_watch_list')}">
 			World Watch List
 		</div>

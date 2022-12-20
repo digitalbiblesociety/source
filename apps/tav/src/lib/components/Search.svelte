@@ -1,9 +1,6 @@
 <script>
 import { onMount } from "svelte"
 import { t } from "$lib/Translations/index.js"
-import { shortcut } from "$lib/utils.js"
-
-import IconSearch from "~icons/heroicons-outline/search"
 
 import Fuse from "fuse.js"
 import query from "query-store"
@@ -18,7 +15,7 @@ let dropdown_visible = false
 // Mount and load the site index
 onMount(async () => {
 	const api_base_url = import.meta.env.VITE_BASE_API
-	const response = await fetch(`${api_base_url}/bibles_dbs.json`)
+	const response = await fetch(`${api_base_url}/site.json`)
 	search_data = await response.json()
 
 	let search_input = []
@@ -95,7 +92,7 @@ let highlighter = function (resultItem) {
 		<div class="relative">
 			<div
 				class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-				<IconSearch class="h-5 w-5 text-gray-600 dark:text-gray-100" />
+				<IconSearch class="h-5 w-5 text-stone-600 dark:text-stone-100" />
 			</div>
 			<input
 				type="search"
@@ -104,16 +101,9 @@ let highlighter = function (resultItem) {
 				bind:value="{$query.search}"
 				on:input="{instantSearch}"
 				aria-label="Search"
-				use:shortcut="{{
-					control: true,
-					code: 'KeyG',
-					callback: () => {
-						search_input.focus()
-					},
-				}}"
 				autocomplete="off"
-				class="block w-full rounded-md border border-gray-100 bg-gray-200 py-1 pl-10 pr-3 text-sm text-gray-700
-						placeholder-gray-700 dark:border-gray-700 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-100" />
+				class="block w-full rounded-md border border-stone-100 bg-stone-200 py-1 pl-10 pr-3 text-sm text-stone-700
+						placeholder-stone-700 dark:border-stone-700 dark:bg-stone-700 dark:text-stone-100 dark:placeholder-stone-100" />
 		</div>
 	</div>
 </div>
@@ -124,10 +114,10 @@ let highlighter = function (resultItem) {
 			<div class="absolute inset-x-0 z-10 transform shadow-lg">
 				<div class="relative mx-auto max-w-4xl text-center">
 					<div
-						class="rounded-2xl bg-white px-4 py-8 dark:bg-gray-800 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+						class="rounded-2xl bg-white px-4 py-8 dark:bg-stone-800 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
 						<div>
 							<h3
-								class="text-sm uppercase tracking-wide text-gray-500">
+								class="text-sm uppercase tracking-wide text-stone-500">
 								{$t("common.Bibles")}
 							</h3>
 							<ul class="mt-6 space-y-6">
@@ -137,15 +127,15 @@ let highlighter = function (resultItem) {
 											<a
 												on:click="{() => { dropdown_visible = false }}"
 												href="/bibles/{bible.item.id}"
-												class="-m-3 flex justify-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900">
+												class="-m-3 flex justify-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-stone-100 dark:hover:bg-stone-900">
 												<div class="hidden shrink-0 sm:block"></div>
 												<div class="min-w-0 flex-1 sm:ml-8">
 													<h4
-														class="truncate text-gray-900 dark:text-gray-200">
+														class="truncate text-stone-900 dark:text-stone-200">
 														{bible.item.tt}
 													</h4>
 													<p
-														class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+														class="mt-1 text-sm text-stone-500 dark:text-stone-300">
 														{bible.item.tv}
 													</p>
 												</div>

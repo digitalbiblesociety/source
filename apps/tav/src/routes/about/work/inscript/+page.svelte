@@ -7,7 +7,7 @@
 					Bible Reader
 				</h2>
 				<p
-					class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">
+					class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-stone-900 dark:text-stone-200 sm:text-4xl">
 					inScript Bible Browser
 				</p>
 			</div>
@@ -15,7 +15,7 @@
 		<div class="relative">
 			<div class="relative md:p-6">
 				<div class="lg:grid lg:grid-cols-2 lg:gap-6">
-					<div class="prose prose-lg prose-blue text-gray-500 lg:max-w-none">
+					<div class="prose prose-lg prose-blue text-stone-500 lg:max-w-none">
 						<p>
 							inScript Bible Browser. The all new inScript™ 4 is an open-source,
 							multi-lingual, free-to-access Bible delivery system. It is easy to
@@ -39,7 +39,7 @@
 							content and functionality. Contact us to get involved.
 						</p>
 					</div>
-					<div class="prose prose-lg prose-blue mt-6 text-gray-500 lg:mt-0">
+					<div class="prose prose-lg prose-blue mt-6 text-stone-500 lg:mt-0">
 						<ol>
 							<li>
 								Side-by-side text comparison in almost every language with

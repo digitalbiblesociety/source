@@ -72,8 +72,8 @@
 
 <div class="container mx-auto py-12 px-8 relative" style="height:calc(100vh - 8rem)">
 	<div class="flex w-full rounded-lg h-full lg:overflow-hidden overflow-auto flex-row shadow-2xl">
-		<div class="lg:w-1/2 text-gray-800 flex flex-col">
-			<div class="p-8 shadow-md relative bg-gray-600 text-white">
+		<div class="lg:w-1/2 text-stone-800 flex flex-col">
+			<div class="p-8 shadow-md relative bg-stone-600 text-white">
 				<div class="flex items-center">
 					<svg
 						class="h-10 block mx-auto object-cover object-top"
@@ -95,18 +95,18 @@
 				</div>
 				<!--
 		  <h1 class="text-lg mt-6">Built in collaboration with Faith Comes By Hearing</h1>
-		  <p class="text-gray-200 text-sm"></p>
+		  <p class="text-stone-200 text-sm"></p>
 		  -->
 				<div class="mt-6 flex">
 					<div class="relative ml-auto flex-1 pl-8 sm:block hidden">
 						<input
 							placeholder="Search"
 							type="text"
-							class="w-full border rounded border-gray-400 h-full focus:outline-none pl-4 pr-8 text-gray-700 text-sm text-gray-500"
+							class="w-full border rounded border-stone-400 h-full focus:outline-none pl-4 pr-8 text-stone-700 text-sm text-stone-500"
 						/>
 						<svg
 							stroke="currentColor"
-							class="w-4 h-4 absolute right-0 top-0 mt-3 mr-2 text-gray-500"
+							class="w-4 h-4 absolute right-0 top-0 mt-3 mr-2 text-stone-500"
 							stroke-width="2"
 							fill="none"
 							stroke-linecap="round"
@@ -124,12 +124,12 @@
 					{#each bibles.data as bible}
 						<div
 							on:click={() => fetchAudioFileSet(bible.abbr, bible.filesets['dbp-prod'])}
-							class="bg-gray-100 px-8 py-6 flex items-center border-b border-gray-300"
+							class="bg-stone-100 px-8 py-6 flex items-center border-b border-stone-300"
 						>
 							<div class="flex ml-4">
 								<div class="flex flex-col pl-4">
 									<h2 class="text-sm">{bible.name}</h2>
-									<h3 class="text-gray-500 text-sm">{bible.vname ?? ''}</h3>
+									<h3 class="text-stone-500 text-sm">{bible.vname ?? ''}</h3>
 								</div>
 							</div>
 						</div>
@@ -137,9 +137,9 @@
 				{/if}
 
 				{#if current_books && current_books.visible}
-				<div on:click={() => current_books.visible = false} class="bg-gray-100 px-8 py-6 flex items-center border-b border-gray-300">
+				<div on:click={() => current_books.visible = false} class="bg-stone-100 px-8 py-6 flex items-center border-b border-stone-300">
 					<div class="flex flex-row ml-4">
-						<svg class="mr-2 h-6 w-6 text-gray-400" x-description="Heroicon name: solid/arrow-narrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+						<svg class="mr-2 h-6 w-6 text-stone-400" x-description="Heroicon name: solid/arrow-narrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
 							<path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
 						  </svg>
 						Back
@@ -148,11 +148,11 @@
 					{#each current_books.data as book}
 						<div
 							on:click={() => setCurrentChapters(book)}
-							class="bg-gray-100 px-8 py-6 flex items-center border-b border-gray-300">
+							class="bg-stone-100 px-8 py-6 flex items-center border-b border-stone-300">
 							<div class="flex ml-4">
 								<div class="flex flex-col pl-4">
 									<h2 class="text-sm">{book.name}</h2>
-									<h3 class="text-gray-500 text-sm">{book.book_id ?? ''}</h3>
+									<h3 class="text-stone-500 text-sm">{book.book_id ?? ''}</h3>
 								</div>
 							</div>
 						</div>
@@ -160,8 +160,8 @@
 				{/if}
 			</div>
 		</div>
-		<div class="lg:w-1/2 bg-gray-600 text-white flex flex-col">
-			<div class="p-8 bg-gray-700">
+		<div class="lg:w-1/2 bg-stone-600 text-white flex flex-col">
+			<div class="p-8 bg-stone-700">
 				{#if current_chapter}
 					<audio bind:this={player} src={current_chapter} controls>
 						<track kind="captions" />
@@ -174,7 +174,7 @@
 
 						<div class="flex flex-col pl-4">
 							<h2 class="text-sm">{current_book.name}</h2>
-							<h3 class="text-gray-500 text-sm">{current_book.book_group}</h3>
+							<h3 class="text-stone-500 text-sm">{current_book.book_group}</h3>
 						</div>
 					</div>
 				{/if}

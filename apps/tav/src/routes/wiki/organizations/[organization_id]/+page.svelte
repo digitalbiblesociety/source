@@ -26,33 +26,33 @@ let rows
 	<div class="col-span-4 pt-20 lg:col-span-1">
 		<div class="mx-auto max-w-3xl">
 			<div class="mx-auto w-3/4 pb-8">{@html organization.logo}</div>
-			<div class="border-t border-gray-200 px-4 py-5 sm:p-0">
-				<dl class="sm:divide-y sm:divide-gray-200">
+			<div class="border-t border-stone-200 px-4 py-5 sm:p-0">
+				<dl class="sm:divide-y sm:divide-stone-200">
 					<div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
-						<dt class="text-sm text-gray-500">Address</dt>
-						<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+						<dt class="text-sm text-stone-500">Address</dt>
+						<dd class="mt-1 text-sm text-stone-900 sm:col-span-2 sm:mt-0">
 							{organization.address}
 						</dd>
 					</div>
 					<div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
-						<dt class="text-sm text-gray-500">Phone</dt>
-						<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+						<dt class="text-sm text-stone-500">Phone</dt>
+						<dd class="mt-1 text-sm text-stone-900 sm:col-span-2 sm:mt-0">
 							{organization.phone}
 						</dd>
 					</div>
 					<div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
-						<dt class="text-sm text-gray-500">Email address</dt>
-						<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+						<dt class="text-sm text-stone-500">Email address</dt>
+						<dd class="mt-1 text-sm text-stone-900 sm:col-span-2 sm:mt-0">
 							{organization.email}
 						</dd>
 					</div>
 					<div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
-						<dt class="text-sm text-gray-500">
+						<dt class="text-sm text-stone-500">
 							links
 							<IconExternalLink />
 						</dt>
-						<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-							<div class="-my-5 divide-y divide-gray-200">
+						<dd class="mt-1 text-sm text-stone-900 sm:col-span-2 sm:mt-0">
+							<div class="-my-5 divide-y divide-stone-200">
 								{#if organization.url_website}
 									<a
 										class="block py-2 pl-4 hover:bg-slate-200"
@@ -121,31 +121,31 @@ let rows
 					{#if rows}
 						{#each $rows as row}
 							<tr>
-								<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">
+								<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">
 									{row.id}
 								</td>
-								<td class="whitespace-nowrap px-6 py-4 text-gray-900">
+								<td class="whitespace-nowrap px-6 py-4 text-stone-900">
 									<a href="/languages/{row.id}">
-										<div class="text-sm text-gray-900 dark:text-gray-300">
+										<div class="text-sm text-stone-900 dark:text-stone-300">
 											{row.language ? row.language.name : ""}
 										</div>
-										<div class="text-xs italic text-gray-500">{row.iso}</div>
+										<div class="text-xs italic text-stone-500">{row.iso}</div>
 									</a>
 								</td>
 								<td class="px-6 py-4">
 									<a href="/bibles/{row.id}">
 										<div
-											class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-900 dark:text-gray-300">
+											class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-900 dark:text-stone-300">
 											{row.title}
 										</div>
 										<div
-											class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-500">
+											class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-500">
 											{row.title_vernacular ?? ""}
 										</div>
 									</a>
 								</td>
 								<td
-									class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+									class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 									{row.date}
 								</td>
 							</tr>

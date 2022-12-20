@@ -28,14 +28,14 @@ client.collection
 							class="mx-auto h-full object-cover object-center" />
 					{/if}
 				</div>
-				<h3 class="mt-4 text-sm text-gray-700">
+				<h3 class="mt-4 text-sm text-stone-700">
 					<a href="/store/players/{product.handle}">
 						<span class="absolute inset-0"></span>
 						{product.title}
 					</a>
 				</h3>
-				<p class="mt-1 text-sm text-gray-500">{product.productType}</p>
-				<p class="mt-1 text-xs text-gray-400">
+				<p class="mt-1 text-sm text-stone-500">{product.productType}</p>
+				<p class="mt-1 text-xs text-stone-400">
 					{#each product.variants as variant}
 						${variant.price}, {variant.title}
 						<br />

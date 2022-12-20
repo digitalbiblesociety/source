@@ -39,8 +39,8 @@ onMount(async () => {
 	{#if articles.length !== 0}
 		{#each articles as article}
 			<a
-				class="flex flex-col overflow-hidden rounded-lg border border-gray-300 shadow-lg
-							dark:border-gray-800 dark:bg-slate-600"
+				class="flex flex-col overflow-hidden rounded-lg border border-stone-300 shadow-lg
+							dark:border-stone-800 dark:bg-slate-600"
 				href="{`/about/projects/${article.slug}`}">
 				{#if article.featured_media_src_url}
 					<div class="flex-shrink-0">
@@ -53,10 +53,10 @@ onMount(async () => {
 				<div class="flex flex-1 flex-col justify-between p-6">
 					<div class="flex-1">
 						<div class="mt-2">
-							<p class="text-xl font-semibold text-gray-900 dark:text-gray-200">
+							<p class="text-xl font-semibold text-stone-900 dark:text-stone-200">
 								{@html article.title.rendered}
 							</p>
-							<p class="mt-3 text-gray-500 dark:text-gray-300">
+							<p class="mt-3 text-stone-500 dark:text-stone-300">
 								{@html article.excerpt.rendered}
 							</p>
 						</div>

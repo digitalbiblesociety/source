@@ -12,23 +12,23 @@
 </script>
 
 <section
-	class="relative flex h-48 flex-col place-items-center justify-center overflow-hidden bg-gray-800"
+	class="relative flex h-48 flex-col place-items-center justify-center overflow-hidden bg-stone-800"
 >
-	<h1 class="text-center text-4xl text-gray-100">{language.name}</h1>
+	<h1 class="text-center text-4xl text-stone-100">{language.name}</h1>
 	{#if language.name != language.autonym}
-		<h2 class="text-gray-200">{language.autonym ?? ''}</h2>
+		<h2 class="text-stone-200">{language.autonym ?? ''}</h2>
 	{/if}
 	{#if language.translations}
 		{#if language.translations.length > 6}
 			<small
-				class="sm-blur absolute inset-0 flex rotate-6 flex-wrap text-2xl text-gray-400 opacity-10"
+				class="sm-blur absolute inset-0 flex rotate-6 flex-wrap text-2xl text-stone-400 opacity-10"
 			>
 				{#each language.translations as translation}
 					<span class="px-4">{translation.name}</span>
 				{/each}
 			</small>
 		{:else}
-			<small class="text-gray-400">
+			<small class="text-stone-400">
 				{#each language.translations as translation}
 					<span class="px-4">{translation.name}</span>
 				{/each}

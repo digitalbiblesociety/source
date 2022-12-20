@@ -16,7 +16,7 @@ $: projects = [
 		action: $t("about.work_bibles_action"),
 		picture: "/img/about/projects_biblecloud_thumb.png",
 		url: "/about/work/biblecloud",
-		class: "bg-gradient-to-r from-sky-400 to-blue-600 dark:bg-gray-800",
+		class: "bg-gradient-to-r from-sky-400 to-blue-600 dark:bg-stone-800",
 		icon: IconBookmark,
 	},
 	{
@@ -25,7 +25,7 @@ $: projects = [
 		action: $t("about.work_libraries_action"),
 		picture: "/img/about/projects_libraries_thumb.png",
 		url: "/libraries",
-		class: "bg-gradient-to-r from-teal-400 to-teal-800  dark:bg-gray-800",
+		class: "bg-gradient-to-r from-teal-400 to-teal-800  dark:bg-stone-800",
 		icon: IconLibrary,
 	},
 	{
@@ -34,7 +34,7 @@ $: projects = [
 		action: $t("about.work_audio_action"),
 		picture: "/img/about/projects_players_thumb.png",
 		url: "/about/work/audiobibles",
-		class: "bg-gradient-to-r from-cyan-400 to-cyan-700 dark:bg-gray-800",
+		class: "bg-gradient-to-r from-cyan-400 to-cyan-700 dark:bg-stone-800",
 		icon: IconVolumeUp,
 	},
 	{
@@ -43,7 +43,7 @@ $: projects = [
 		action: $t("about.work_print_action"),
 		picture: "/img/about/projects_print_thumb.png",
 		url: "/about/work/print",
-		class: "bg-gradient-to-r from-blue-400 to-slate-800 dark:bg-gray-800",
+		class: "bg-gradient-to-r from-blue-400 to-slate-800 dark:bg-stone-800",
 		icon: IconBookOpen,
 	},
 	{
@@ -52,7 +52,7 @@ $: projects = [
 		action: $t("about.work_research_action"),
 		picture: "/img/about/projects_fab_thumb.png",
 		url: "/about/work/research",
-		class: "bg-gradient-to-r from-teal-400 to-teal-700  dark:bg-gray-800",
+		class: "bg-gradient-to-r from-teal-400 to-teal-700  dark:bg-stone-800",
 		icon: IconSearch,
 	},
 	{
@@ -61,7 +61,7 @@ $: projects = [
 		action: $t("about.work_proposals_action"),
 		picture: "/img/about/projects_proposals_thumb.png",
 		url: "/about/work/proposals",
-		class: "bg-gradient-to-r from-indigo-400 to-indigo-600  dark:bg-gray-800",
+		class: "bg-gradient-to-r from-indigo-400 to-indigo-600  dark:bg-stone-800",
 		icon: IconHeart,
 	},
 ]
@@ -94,9 +94,9 @@ $: projects = [
 	<div class="mt-8">
 		{#each projects as project}
 			<a href="{project.url}" class="text-blue-700 hover:text-blue-600 dark:text-white dark:hover:text-blue-800">
-				<div class="mb-8 flex flex-col rounded-xl rounded-bl-xl rounded-br-xl border border-gray-300 bg-gray-100 dark:bg-gray-800">
-					<div class="relative flex rounded-tl-xl rounded-tr-xl px-4 pt-5 pb-1 md:px-8 bg-gray-200 dark:bg-gray-600">
-						<div class="dark:text-invert absolute top-3 right-4 flex -translate-y-1/2 transform rounded-xl border border-gray-500 bg-blue-600 p-2.5 dark:bg-gray-800 text-gray-200">
+				<div class="mb-8 flex flex-col rounded-xl rounded-bl-xl rounded-br-xl border border-stone-300 bg-stone-100 dark:bg-stone-800">
+					<div class="relative flex rounded-tl-xl rounded-tr-xl px-4 pt-5 pb-1 md:px-8 bg-stone-200 dark:bg-stone-600">
+						<div class="dark:text-invert absolute top-3 right-4 flex -translate-y-1/2 transform rounded-xl border border-stone-500 bg-blue-600 p-2.5 dark:bg-stone-800 text-stone-200">
 							{#if project.icon}
 								<svelte:component this="{project.icon}" />
 							{/if}
@@ -107,11 +107,11 @@ $: projects = [
 						</div>
 
 						<div class="w-9/12  pl-4">
-							<h3 class="text-lg text-gray-800 dark:text-gray-100">
+							<h3 class="text-lg text-stone-800 dark:text-stone-100">
 								{project.title}
 							</h3>
 							<p
-								class="mt-2 text-sm leading-tight text-gray-800 dark:text-gray-100">
+								class="mt-2 text-sm leading-tight text-stone-800 dark:text-stone-100">
 								{@html project.description}
 							</p>
 						</div>
@@ -119,7 +119,7 @@ $: projects = [
 
 					<div>
 						<div
-							class="rounded-bl-xl rounded-br-xl bg-blue-500 p-1 text-right text-white hover:bg-black dark:bg-gray-400 dark:hover:bg-gray-200 md:px-8 {project.class}">
+							class="rounded-bl-xl rounded-br-xl bg-blue-500 p-1 text-right text-white hover:bg-black dark:bg-stone-400 dark:hover:bg-stone-200 md:px-8 {project.class}">
 							{project.action}
 							<span aria-hidden="true">&rarr;</span>
 						</div>

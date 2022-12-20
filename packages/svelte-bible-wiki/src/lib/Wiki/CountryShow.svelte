@@ -19,10 +19,10 @@
 
 	const table_row = (row, locale) =>  `
 	<tr class="py-4 text-sm">
-		<td class="whitespace-nowrap px-6 text-gray-900 dark:text-gray-200">
+		<td class="whitespace-nowrap px-6 text-stone-900 dark:text-stone-200">
 			<a href=/${locale}/languages/${row.iso}>
 				<div>${row.name}</div>
-				<div class="text-xs italic text-gray-500 dark:text-gray-300">${row.autonym ?? ''}</div>
+				<div class="text-xs italic text-stone-500 dark:text-stone-300">${row.autonym ?? ''}</div>
 			</a>
 		</td>
 		<td class="hidden whitespace-nowrap px-6 sm:table-cell">${row.iso}</td>
@@ -31,10 +31,10 @@
 	let rows;
 </script>
 
-	<div class="flex flex-col bg-gradient-to-br from-blue-500 to-secondary-500 dark:from-blue-700 dark:to-secondary-700 xl:rounded-tl-xl xl:rounded-tr-xl text-gray-100 text-2xl text-center h-32">
+	<div class="flex flex-col bg-gradient-to-br from-blue-500 to-secondary-500 dark:from-blue-700 dark:to-secondary-700 xl:rounded-tl-xl xl:rounded-tr-xl text-stone-100 text-2xl text-center h-32">
 		{#if country}
 		<h1 class="text-center text-3xl font-extrabold leading-8 tracking-wider text-white-900 sm:text-4xl pt-6">
-			{country.name_long ?? ''} <div class="text-sm text-gray-200">{country.region_name}</div>
+			{country.name_long ?? ''} <div class="text-sm text-stone-200">{country.region_name}</div>
 		</h1>
 		{/if}
 	</div>
@@ -74,7 +74,7 @@
 				{/if}
 		</div>
 
-			<div class="w-1/2 text-gray-900 dark:text-gray-200">
+			<div class="w-1/2 text-stone-900 dark:text-stone-200">
 				{#if country}
 
 				<div class="prose dark:prose-invert px-4 py-8">
@@ -112,7 +112,7 @@
 						</dd>
 					</div>
 					{#if country.persecution}
-						<div class="mt-2 border-t border-b border-gray-200">
+						<div class="mt-2 border-t border-b border-stone-200">
 							<div class="flex justify-between py-1 text-sm">
 								<dt>{translations.world_watch_list}</dt>
 								<dd>

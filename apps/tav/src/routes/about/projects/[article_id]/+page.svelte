@@ -26,9 +26,9 @@ onMount(async () => {
 	<div
 		id="proposals"
 		class="relative flex h-48 md:h-56 xl:h-64 flex-col xl:rounded-t-lg bg-cover overflow-hidden -mt-2 -ml-1.5 -mr-1.5
-			border-2 border-gray-500 border-b-0"
+			border-2 border-stone-500 border-b-0"
 		style="background-image:url({article[0].acf.banner})">
-		<div class="absolute inset-0 z-0 bg-gray-900 bg-opacity-60"></div>
+		<div class="absolute inset-0 z-0 bg-stone-900 bg-opacity-60"></div>
 		<div class="z-10 justify-start text-white">
 			<Breadcrumbs
 				breadcrumbs="{[
@@ -46,7 +46,7 @@ onMount(async () => {
 				]}" />
 		</div>
 		<h1
-			class="z-10 mt-2 md:mt-4 xl:mt-8 block max-w-prose p-4 text-center text-2xl md:text-3xl font-bold text-gray-100">
+			class="z-10 mt-2 md:mt-4 xl:mt-8 block max-w-prose p-4 text-center text-2xl md:text-3xl font-bold text-stone-100">
 			<span
 				class="block text-center font-semibold uppercase tracking-wide">
 				{new Date(article[0].date).toDateString()}
@@ -63,7 +63,7 @@ onMount(async () => {
 
 		{#if article[0].author_full_name}
 			<div
-				class="my-4 flex justify-center border-t-2 border-gray-300 py-4 dark:border-gray-600">
+				class="my-4 flex justify-center border-t-2 border-stone-300 py-4 dark:border-stone-600">
 				<div class="flex items-center">
 					<div>
 						<img
@@ -74,7 +74,7 @@ onMount(async () => {
 
 					<div class="ml-3">
 						<p
-							class="text-sm text-gray-700 group-hover:text-gray-900 dark:text-gray-300">
+							class="text-sm text-stone-700 group-hover:text-stone-900 dark:text-stone-300">
 							{article[0].author_full_name}
 						</p>
 					</div>

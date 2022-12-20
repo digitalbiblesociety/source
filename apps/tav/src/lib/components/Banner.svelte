@@ -9,7 +9,7 @@
 	export let breadcrumbs
 </script>
 
-<div class="border-gray-300 dark:border-gray-700 xl:rounded-t-lg">
+<div class="border-stone-300 dark:border-stone-700 xl:rounded-t-lg">
 	{#if breadcrumbs}
 		<Breadcrumbs breadcrumbs={breadcrumbs} />
 	{/if}

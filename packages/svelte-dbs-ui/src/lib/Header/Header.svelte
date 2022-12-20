@@ -79,7 +79,7 @@
 									</Menu>
 								</div>
 							{:else}
-								<a href={link.href} class="text-white hover:bg-gray-500 hover:bg-opacity-75 rounded-md py-2 px-3 text-sm font-medium">
+								<a href={link.href} class="text-white hover:bg-stone-500 hover:bg-opacity-75 rounded-md py-2 px-3 text-sm font-medium">
 									{ link.label }
 								</a>
 							{/if}
@@ -92,7 +92,7 @@
                     <div class="max-w-lg w-full lg:max-w-xs"></div>
                 </div>
 				<div class="flex lg:hidden">
-					<button class="bg-gray-100 p-2 rounded-md inline-flex items-center justify-center text-gray-600 hover:text-white hover:bg-gray-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-600 focus:ring-white" id="headlessui-disclosure-button-2" type="button" aria-expanded="false">
+					<button class="bg-stone-100 p-2 rounded-md inline-flex items-center justify-center text-stone-600 hover:text-white hover:bg-stone-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-600 focus:ring-white" id="headlessui-disclosure-button-2" type="button" aria-expanded="false">
 						<span class="sr-only">Open main menu</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="block h-6 w-6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
 					</button>

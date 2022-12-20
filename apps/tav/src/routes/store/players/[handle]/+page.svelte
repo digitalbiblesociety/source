@@ -123,14 +123,14 @@ function price(itemPrice) {
 				</div>
 
 				<p class="text-center">{product.title}</p>
-				<p class="mt-2 text-center text-sm text-gray-700 dark:text-gray-200">
+				<p class="mt-2 text-center text-sm text-stone-700 dark:text-stone-200">
 					{#each product.variants as variant}
 						${variant.price}
 						<br />
 					{/each}
 				</p>
 				<button
-					class="mx-auto mt-2 flex items-center justify-center rounded-md bg-gray-200 py-1 px-1 text-xs text-gray-600  hover:bg-gray-300 focus:outline-none"
+					class="mx-auto mt-2 flex items-center justify-center rounded-md bg-stone-200 py-1 px-1 text-xs text-stone-600  hover:bg-stone-300 focus:outline-none"
 					onclick="history.back()">
 					<IconArrowLeft class="mr-2 h-3 w-3" />
 					{$t("store.player_change")}
@@ -170,7 +170,7 @@ function price(itemPrice) {
 										}}"
 										class="{current_variation == variant.id
 											? 'bg-blue-600 text-white'
-											: 'text-gray-800 dark:text-gray-100'} mx-1 flex cursor-pointer flex-col items-center justify-center rounded-md p-3 text-sm uppercase focus:outline-none dark:bg-gray-800 sm:flex-1">
+											: 'text-stone-800 dark:text-stone-100'} mx-1 flex cursor-pointer flex-col items-center justify-center rounded-md p-3 text-sm uppercase focus:outline-none dark:bg-stone-800 sm:flex-1">
 										{variant.title}
 										<div class="text-sm">{price(variant.priceV2.amount)}</div>
 									</label>
@@ -185,14 +185,14 @@ function price(itemPrice) {
 						{$t("common.Quantity")}:
 						<input
 							class="mx-auto mt-0.5 ml-4 w-2/3 rounded-md border bg-[url('/img/icons/shopping_cart.png')] bg-[length:15px_15px] bg-[top_10px_right_8px] bg-no-repeat
-							pl-4 drop-shadow-md dark:border-gray-700 dark:bg-gray-500 dark:text-white"
+							pl-4 drop-shadow-md dark:border-stone-700 dark:bg-stone-500 dark:text-white"
 							type="number"
 							name="quantity"
 							min="1"
 							max="{product.variants[0].quantityAvailable ?? 100}"
 							bind:value="{quantity}" />
 					</label>
-					<div class="mt-3 text-center text-xs text-gray-400">
+					<div class="mt-3 text-center text-xs text-stone-400">
 						{$t("store.player_bulk")}
 						<a class="underline" href="/about/contact">
 							{$t("common.Contact Us")}
@@ -214,7 +214,7 @@ function price(itemPrice) {
 				</form>
 
 				<div class="mt-6">
-					<div class="text-gray-500 dark:text-gray-200 dark:bg-gray-800 p-2 rounded">
+					<div class="text-stone-500 dark:text-stone-200 dark:bg-stone-800 p-2 rounded">
 						<p>{@html product.description}</p>
 					</div>
 				</div>
@@ -224,8 +224,8 @@ function price(itemPrice) {
 
 	<div class="w-3/5 text-xs sm:w-2/3 md:p-1 md:text-sm lg:w-3/4">
 		<input
-			class="mx-auto my-2 block w-full max-w-md rounded-md border-gray-300 pl-12 text-sm
-			focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-600 dark:text-gray-200 dark:placeholder-gray-200
+			class="mx-auto my-2 block w-full max-w-md rounded-md border-stone-300 pl-12 text-sm
+			focus:border-blue-500 focus:ring-blue-500 dark:bg-stone-600 dark:text-stone-200 dark:placeholder-stone-200
 			bg-[url('/img/icons/filter.png')] bg-[length:15px_15px] bg-[top_10px_left_8px] bg-no-repeat"
 			bind:value="{query}"
 			on:input="{() => {
@@ -237,7 +237,7 @@ function price(itemPrice) {
 		<div
 			id="audio-capacity-progress-bar"
 			class="relative mx-auto mb-4 flex h-8 max-w-2xl place-items-center justify-center rounded-lg px-6">
-			<div class="h-2 w-full rounded bg-gray-200 dark:bg-gray-100">
+			<div class="h-2 w-full rounded bg-stone-200 dark:bg-stone-100">
 				<div
 					class="h-2 rounded bg-blue-600"
 					style="width: {$selected.length == 0

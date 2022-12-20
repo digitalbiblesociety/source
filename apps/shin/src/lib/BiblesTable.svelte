@@ -61,14 +61,14 @@
 				{#each $rows as row}
 					<tr>
 						<td
-							class="dark:white hidden whitespace-nowrap px-6 py-4 text-gray-900">
+							class="dark:white hidden whitespace-nowrap px-6 py-4 text-stone-900">
 							{row.id}
 						</td>
-						<td class="whitespace-nowrap px-6 py-4 text-gray-900">
-							<div class="text-sm text-gray-900 dark:text-white">
+						<td class="whitespace-nowrap px-6 py-4 text-stone-900">
+							<div class="text-sm text-stone-900 dark:text-white">
 								{row.ln}
 							</div>
-							<div class="text-xs italic text-gray-500 dark:text-gray-400">
+							<div class="text-xs italic text-stone-500 dark:text-stone-400">
 								{row.iso}
 							</div>
 						</td>
@@ -80,26 +80,26 @@
 									{row.tt}
 								</div>
 								<div
-									class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-600 dark:text-gray-400">
+									class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-600 dark:text-stone-400">
 									{row.tv ?? ''}
 								</div>
 							</a>
 						</td>
 						<td
-							class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+							class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 							<svg class="mr-1 inline-block h-5 w-5 drop-shadow-md">
 								<use href="/img/flags.svg#{row.ci}" xlink:href="#{row.ci}">
 								</use>
 							</svg>
-							<span class="text-sm text-gray-900 dark:text-gray-300">
+							<span class="text-sm text-stone-900 dark:text-stone-300">
 								{row.cn}
 							</span>
 						</td>
-						<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">
+						<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">
 							{row.ci}
 						</td>
 						<td
-							class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+							class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 							{row.dt}
 						</td>
 					</tr>

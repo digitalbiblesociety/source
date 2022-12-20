@@ -33,7 +33,7 @@
 	<ul class="mx-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 		{#each libraries as library}
 			<li
-				class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow dark:divide-gray-500 dark:bg-gray-800">
+				class="col-span-1 divide-y divide-stone-200 rounded-lg bg-white shadow dark:divide-stone-500 dark:bg-stone-800">
 				<a href="/libraries/treasures/{library.id}">
 					<div
 						class="flex w-full items-center justify-between space-x-6 drop-shadow-xl">
@@ -42,26 +42,26 @@
 							style="background-image:url(https://images.bible.cloud/treasures/banners/{library.id}.jpg);background-size:cover;">
 							<div class="flex items-center space-x-3">
 								<h3
-									class="text-shadow block w-full truncate text-center text-xl text-gray-100">
+									class="text-shadow block w-full truncate text-center text-xl text-stone-100">
 									{library.title_vernacular}
 								</h3>
 							</div>
 							<p
-								class="text-shadow mt-1 block w-full truncate text-center text-xl text-gray-200">
+								class="text-shadow mt-1 block w-full truncate text-center text-xl text-stone-200">
 								{library.title}
 							</p>
 						</div>
 					</div>
 					<div>
 						<div
-							class="-mt-px flex divide-x divide-gray-200 dark:divide-gray-500">
+							class="-mt-px flex divide-x divide-stone-200 dark:divide-stone-500">
 							<div class="flex w-0 flex-1">
 								<a
 									target="_blank"
 									href="http://downloads.dbs.org/treasures/{library.iso.toUpperCase()}/index.html"
-									class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-white">
+									class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm text-stone-700 hover:text-blue-500 dark:text-stone-200 dark:hover:text-white">
 									<svg
-										class="h-5 w-5 text-gray-400"
+										class="h-5 w-5 text-stone-400"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -79,9 +79,9 @@
 							<div class="-ml-px flex w-0 flex-1">
 								<a
 									href="https://dbs-web.s3.us-west-2.amazonaws.com/downloads/treasureslibraries/{library.iso.toUpperCase()}.zip"
-									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-white">
+									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm text-stone-700 hover:text-blue-500 dark:text-stone-200 dark:hover:text-white">
 									<svg
-										class="h-5 w-5 text-gray-400"
+										class="h-5 w-5 text-stone-400"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -99,10 +99,10 @@
 							<div class="-ml-px flex w-0 flex-1">
 								<a
 									href="/libraries/treasures/{library.id}"
-									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-white">
+									class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm text-stone-700 hover:text-blue-500 dark:text-stone-200 dark:hover:text-white">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 text-gray-400"
+										class="h-5 w-5 text-stone-400"
 										fill="none"
 										viewBox="0 0 24 24"
 										stroke="currentColor">

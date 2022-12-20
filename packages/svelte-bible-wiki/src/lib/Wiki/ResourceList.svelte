@@ -15,24 +15,24 @@
 
 	const table_row = (row, locale) =>  `
 	<tr>
-		<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">${row.id}</td>
+		<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">${row.id}</td>
 		<td class="px-6 py-4">
-			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-900 dark:text-gray-300">${row.ln}</div>
-			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-500">${row.iso ?? ""}</div>
+			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-900 dark:text-stone-300">${row.ln}</div>
+			<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-500">${row.iso ?? ""}</div>
 		</td>
 		<td class="px-6 py-4">
 			<a href="/${locale}/resources/${row.id}">
-				<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-900 dark:text-gray-300">${row.tt}</div>
-				<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-gray-500">${row.tv ?? ""}</div>
+				<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-900 dark:text-stone-300">${row.tt}</div>
+				<div class="max-w-sm overflow-hidden text-ellipsis text-sm text-stone-500">${row.tv ?? ""}</div>
 			</a>
 		</td>
-		<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900 md:table-cell">
+		<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900 md:table-cell">
 			<svg class="inline-block h-5 w-5">
 				<use href="/img/flags.svg#${row.ci}" xlink:href="#${row.ci}"></use>
 			</svg>
-			<span class="text-sm text-gray-900 dark:text-gray-300">${row.cn}</span>
+			<span class="text-sm text-stone-900 dark:text-stone-300">${row.cn}</span>
 		</td>
-		<td class="hidden whitespace-nowrap px-6 py-4 text-gray-900">${row.ci}</td>
+		<td class="hidden whitespace-nowrap px-6 py-4 text-stone-900">${row.ci}</td>
 	</tr>`
 
 	let rows

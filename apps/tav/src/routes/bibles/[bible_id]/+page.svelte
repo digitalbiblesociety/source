@@ -78,12 +78,12 @@ onMount(async () => {
 </div>
 
 <div
-	class="mb-4 flex w-full flex-col rounded-t pt-10 text-center text-gray-500 dark:bg-gray-600 dark:text-gray-300">
+	class="mb-4 flex w-full flex-col rounded-t pt-10 text-center text-stone-500 dark:bg-stone-600 dark:text-stone-300">
 	{#if bible.title_vernacular}
 		<h2 class="title-font tracking-widest">{bible.title_vernacular}</h2>
 	{/if}
 	<h1
-		class="title-font mb-8 text-3xl text-gray-900 dark:text-gray-200">
+		class="title-font mb-8 text-3xl text-stone-900 dark:text-stone-200">
 		{bible.title}
 		<span class="block text-sm sm:hidden">
 			{bible.date} |
@@ -106,10 +106,10 @@ onMount(async () => {
 </div>
 
 <!--	<TabPanel> -->
-<section class="overflow-hidden text-gray-600">
+<section class="overflow-hidden text-stone-600">
 	<div class="container mx-auto px-5 py-4">
 		<div class="grid gap-3 sm:grid-cols-1 md:grid-cols-3">
-			<div class="mx-auto hidden rounded p-4 dark:bg-gray-800 sm:block">
+			<div class="mx-auto hidden rounded p-4 dark:bg-stone-800 sm:block">
 				<img
 					class="mx-auto mb-4"
 					src="https://images.bible.cloud/covers/220x340/{bible.id}.jpg"
@@ -126,7 +126,7 @@ onMount(async () => {
 				{#if bible.date}
 					<div class="flex justify-between">
 						<span class="">Date</span>
-						<span class="font-bold text-gray-700 dark:text-gray-300">
+						<span class="font-bold text-stone-700 dark:text-stone-300">
 							{bible.date}
 						</span>
 					</div>
@@ -168,7 +168,7 @@ onMount(async () => {
 				{/if}
 
 				{#if bible.copyright}
-					<div class="mt-4 text-center text-sm text-gray-500">
+					<div class="mt-4 text-center text-sm text-stone-500">
 						{bible.copyright}
 					</div>
 				{/if}
@@ -179,11 +179,11 @@ onMount(async () => {
 				<!-- TODO: Add Audio Bible Players -->
 
 				{#if bible_links.inscript}
-					<div class="mb-6 border-b pb-4 dark:border-gray-400">
-						<h3 class="uppercase text-gray-600 dark:text-gray-300">
+					<div class="mb-6 border-b pb-4 dark:border-stone-400">
+						<h3 class="uppercase text-stone-600 dark:text-stone-300">
 							Read Online:
 						</h3>
-						<h4 class="text-sm text-gray-400">
+						<h4 class="text-sm text-stone-400">
 							For online use, comparision and study.
 						</h4>
 					</div>
@@ -198,17 +198,18 @@ onMount(async () => {
 				{/if}
 
 				{#if bible_links.pdf}
-					<div class="mt-10 mb-6 border-b pb-4 dark:border-gray-400">
-						<h3 class="uppercase text-gray-600 dark:text-gray-300">
+					<div class="mt-10 mb-6 border-b pb-4 dark:border-stone-400">
+						<h3 class="uppercase text-stone-600 dark:text-stone-300">
 							Downloads:
 						</h3>
-						<h4 class="text-sm text-gray-400">
+						<h4 class="text-sm text-stone-400">
 							For offline use, printing and sharing.
 						</h4>
 					</div>
 
 					<a
 						class="button-bible"
+						target="_blank"
 						href="https://dbs-web.s3.us-west-2.amazonaws.com/downloads/pdf/{bible.id}/{bible.id}_us_letter.pdf">
 						<svg
 							class="mr-4 inline-block h-5 w-5"
@@ -254,7 +255,7 @@ onMount(async () => {
 
 	{#if bible.pod.print_ready}
 		<TabPanel>
-			<section class="text-gray-600 body-font overflow-hidden">
+			<section class="text-stone-600 body-font overflow-hidden">
 				<div class="container px-5 py-24 mx-auto">
 					<div class="lg:w-4/6 mx-auto flex flex-wrap">
 						<img
@@ -262,10 +263,10 @@ onMount(async () => {
 							class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
 							src="/img/bibles/{bible.id}.png" />
 						<div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-							<h2 class="text-sm title-font text-gray-500 tracking-widest">
+							<h2 class="text-sm title-font text-stone-500 tracking-widest">
 								{bible.title_vernacular}
 							</h2>
-							<h1 class="text-gray-900 text-3xl title-font mb-1">
+							<h1 class="text-stone-900 text-3xl title-font mb-1">
 								{bible.title}
 							</h1>
 							<p class="leading-relaxed">
@@ -273,11 +274,11 @@ onMount(async () => {
 								providing the service only through the generosity of donors.
 							</p>
 							<div
-								class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+								class="flex mt-6 items-center pb-5 border-b-2 border-stone-100 mb-5">
 								{#if printable.page_count < 48}
 									<label class="w-1/5">
 										<img
-											class="w-10 border-2 border-gray-500 mx-auto rounded-full"
+											class="w-10 border-2 border-stone-500 mx-auto rounded-full"
 											src="/img/binding_saddle.jpeg"
 											alt="Saddle Stitch" />
 										Softcover Saddle Stitch
@@ -289,7 +290,7 @@ onMount(async () => {
 									</label>
 									<label class="opacity-60 w-1/5">
 										<img
-											class="w-10 border-2 border-gray-500 mx-auto rounded-full"
+											class="w-10 border-2 border-stone-500 mx-auto rounded-full"
 											src="/img/binding_coil.jpeg"
 											alt="Coil Binding" />
 										Coil Bound
@@ -304,7 +305,7 @@ onMount(async () => {
 									<img
 										class="{printable.binding === 'binding_perfect'
 											? 'border-blue-600'
-											: 'border-gray-500 opacity-50'} w-10 border-2 mx-auto rounded-full"
+											: 'border-stone-500 opacity-50'} w-10 border-2 mx-auto rounded-full"
 										src="/img/binding_perfect.jpeg"
 										alt="Perfect Binding" />
 									Perfect Binding
@@ -318,7 +319,7 @@ onMount(async () => {
 									<img
 										class="{printable.binding === 'binding_casewrap'
 											? 'border-blue-600'
-											: 'border-gray-500 opacity-50'} w-10 border-2 border-gray-500 mx-auto rounded-full"
+											: 'border-stone-500 opacity-50'} w-10 border-2 border-stone-500 mx-auto rounded-full"
 										src="/img/binding_casewrap.jpeg"
 										alt="Casewrap Binding" />
 									Casewrap
@@ -332,7 +333,7 @@ onMount(async () => {
 									<img
 										class="{printable.binding === 'binding_linen'
 											? 'border-blue-600'
-											: 'border-gray-500 opacity-50'} w-10 border-2 border-gray-500 mx-auto rounded-full"
+											: 'border-stone-500 opacity-50'} w-10 border-2 border-stone-500 mx-auto rounded-full"
 										src="/img/binding_linen.jpeg"
 										alt="Linen Binding" />
 									Linen
@@ -344,7 +345,7 @@ onMount(async () => {
 								</label>
 							</div>
 
-							<div class="text-sm text-gray-500">
+							<div class="text-sm text-stone-500">
 								<div><b>Interior Color</b>: Black & White Standard</div>
 								<div><b>Trim Size</b>: {printable.trim}</div>
 								<div><b>Binding Type</b>: {printable.binding}</div>
@@ -353,25 +354,25 @@ onMount(async () => {
 								<div><b>Pages:</b> {printable.page_count}</div>
 							</div>
 
-							<label class="flex border-gray-100 border-2 p-2 mb-4">
-								<span class="text-gray-800 px-4">Quantity</span>
+							<label class="flex border-stone-100 border-2 p-2 mb-4">
+								<span class="text-stone-800 px-4">Quantity</span>
 								<input
 									id="quantity"
-									class="block w-full rounded-md border-transparent focus:border-gray-500"
+									class="block w-full rounded-md border-transparent focus:border-stone-500"
 									type="text"
 									name="quantity"
 									value="1" />
 							</label>
 
 							<div class="flex">
-								<span class="title-font text-2xl text-gray-900"
+								<span class="title-font text-2xl text-stone-900"
 									>$14.20</span>
 								<button
 									class="flex ml-auto text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
 									Button
 								</button>
 								<button
-									class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+									class="rounded-full w-10 h-10 bg-stone-200 p-0 border-0 inline-flex items-center justify-center text-stone-500 ml-4">
 									<svg
 										fill="currentColor"
 										stroke-linecap="round"
@@ -399,7 +400,7 @@ onMount(async () => {
 			<div class="lg:max-w-lg lg:self-end">
 				<div class="mt-4">
 					<h1
-						class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-300 sm:text-4xl">
+						class="text-3xl font-extrabold tracking-tight text-stone-900 dark:text-stone-300 sm:text-4xl">
 						MEGAVOICE Envoy Equip
 					</h1>
 				</div>
@@ -408,12 +409,12 @@ onMount(async () => {
 					<h2 id="information-heading" class="sr-only">Product information</h2>
 
 					<div class="flex items-center">
-						<p class="text-lg text-gray-900 dark:text-gray-300 sm:text-xl">
+						<p class="text-lg text-stone-900 dark:text-stone-300 sm:text-xl">
 							$47
 						</p>
 
 						<div
-							class="ml-4 pl-4 border-l border-gray-300 dark:border-gray-900">
+							class="ml-4 pl-4 border-l border-stone-300 dark:border-stone-900">
 							<h2 class="sr-only">Reviews</h2>
 							<div class="flex items-center">
 								<div>
@@ -467,7 +468,7 @@ onMount(async () => {
 
 
 										<svg
-											class="text-gray-300 h-5 w-5 shrink-0"
+											class="text-stone-300 h-5 w-5 shrink-0"
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 20 20"
 											fill="currentColor"
@@ -479,13 +480,13 @@ onMount(async () => {
 									</div>
 									<p class="sr-only">4 out of 5 stars</p>
 								</div>
-								<p class="ml-2 text-sm text-gray-500"></p>
+								<p class="ml-2 text-sm text-stone-500"></p>
 							</div>
 						</div>
 					</div>
 
 					<div class="mt-4 space-y-6">
-						<p class="text-gray-500 dark:text-gray-400"></p>
+						<p class="text-stone-500 dark:text-stone-400"></p>
 					</div>
 
 					<div class="mt-6 flex items-center">
@@ -501,7 +502,7 @@ onMount(async () => {
 								d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 								clip-rule="evenodd"></path>
 						</svg>
-						<p class="ml-2 text-sm text-gray-500 dark:text-gray-400">
+						<p class="ml-2 text-sm text-stone-500 dark:text-stone-400">
 							In stock and ready to ship
 						</p>
 					</div>
@@ -528,13 +529,13 @@ onMount(async () => {
 
 							<fieldset>
 								<legend
-									class="block text-sm text-gray-700 dark:text-gray-300">
+									class="block text-sm text-stone-700 dark:text-stone-300">
 									Size
 								</legend>
 								<div class="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
 									{#each audio_players as audio_player}
 										<label
-											class="relative block border border-gray-300 rounded-lg p-4 cursor-pointer focus:outline-none">
+											class="relative block border border-stone-300 rounded-lg p-4 cursor-pointer focus:outline-none">
 											<input
 												type="radio"
 												name="size-choice"
@@ -544,12 +545,12 @@ onMount(async () => {
 												aria-describedby="size-choice-0-description" />
 											<p
 												id="size-choice-0-label"
-												class="text-gray-900 dark:text-gray-300">
+												class="text-stone-900 dark:text-stone-300">
 												{audio_player.title}
 											</p>
 											<p
 												id="size-choice-0-description"
-												class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+												class="mt-1 text-sm text-stone-500 dark:text-stone-400">
 												{audio_player.description}
 											</p>
 
@@ -565,11 +566,11 @@ onMount(async () => {
 						<div class="mt-4">
 							<a
 								href="/about/devices/audio"
-								class="group inline-flex text-sm text-gray-500 hover:text-gray-700">
+								class="group inline-flex text-sm text-stone-500 hover:text-stone-700">
 								<span>What player should I buy?</span>
 
 								<svg
-									class="shrink-0 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+									class="shrink-0 ml-2 h-5 w-5 text-stone-400 group-hover:text-stone-500"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
 									fill="currentColor"
@@ -588,7 +589,7 @@ onMount(async () => {
 							<a href="#" class="group inline-flex font-medium">
 
 								<svg
-									class="shrink-0 mr-2 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+									class="shrink-0 mr-2 h-6 w-6 text-stone-400 group-hover:text-stone-500"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -601,7 +602,7 @@ onMount(async () => {
 										d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
 									></path>
 								</svg>
-								<span class="text-gray-500 hover:text-gray-700"
+								<span class="text-stone-500 hover:text-stone-700"
 									>Lifetime Guarantee</span>
 							</a>
 						</div>

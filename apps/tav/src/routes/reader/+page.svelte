@@ -35,30 +35,30 @@ const subMonths = (input, months) => {
 	<tbody>
 		{#if rows}
 			{#each $rows as row}
-				<tr class="{row.bibles_count > 0 ? 'text-green-600' : 'text-gray-400'}">
+				<tr class="{row.bibles_count > 0 ? 'text-green-600' : 'text-stone-400'}">
 					<td
-						class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+						class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
 						<a href="{`/reader/${row.id}`}">
-							<div class="text-sm text-gray-900 dark:text-gray-200">
+							<div class="text-sm text-stone-900 dark:text-stone-200">
 								{row.name}
 							</div>
-							<div class="text-xs text-gray-500">{row.nameLocal}</div>
+							<div class="text-xs text-stone-500">{row.nameLocal}</div>
 						</a>
 					</td>
 					<td
-						class="hidden whitespace-nowrap px-6 py-4 text-sm text-gray-900 sm:table-cell">
+						class="hidden whitespace-nowrap px-6 py-4 text-sm text-stone-900 sm:table-cell">
 						{row.abbreviation}
 					</td>
 					<td
-						class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
-						<div class="text-sm text-gray-900 dark:text-gray-200">
+						class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
+						<div class="text-sm text-stone-900 dark:text-stone-200">
 							{row.language.name}
 						</div>
-						<div class="text-xs text-gray-500">{row.language.id}</div>
+						<div class="text-xs text-stone-500">{row.language.id}</div>
 					</td>
 					<td
-						class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
-						<div class="text-xs text-gray-500">{row.language.script}</div>
+						class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
+						<div class="text-xs text-stone-500">{row.language.script}</div>
 					</td>
 					<td>
 						{#if subMonths(new Date(), 1) > row.updatedAt}

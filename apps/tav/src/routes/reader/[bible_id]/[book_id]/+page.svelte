@@ -16,7 +16,7 @@ export let data;
 <section class="grid grid-cols-4 divide-y divide-x">
 	{#each data.chapters.data as chapter}
 		<a
-			class="block p-4 text-center hover:bg-gray-200"
+			class="block p-4 text-center hover:bg-stone-200"
 			href="{`/reader/${$page.params.bible_id}/${chapter.bookId}/${chapter.id}`}">
 			{chapter.reference}
 		</a>

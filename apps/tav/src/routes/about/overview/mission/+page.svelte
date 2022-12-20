@@ -62,7 +62,7 @@ let about_quotes = [
 					{quote.quote}
 				</span>
 				<h4 class="text-right">{quote.name}</h4>
-				<p class="text-right text-xs text-gray-500 dark:text-gray-300">
+				<p class="text-right text-xs text-stone-500 dark:text-stone-300">
 					{quote.title}
 				</p>
 			</div>
@@ -90,7 +90,7 @@ let about_quotes = [
 		<p class="text-center italic">{$t("about.mission_p6")}</p>
 
 		<div
-			class="relative border-2 border-double border-gray-300"
+			class="relative border-2 border-double border-stone-300"
 			style="padding-top: 56.25%">
 			<iframe
 				src="https://player.vimeo.com/video/159399573?h=02e67ddffc"
@@ -100,7 +100,7 @@ let about_quotes = [
 				class="absolute inset-0 h-full w-full p-1">
 			</iframe>
 		</div>
-		<div class="mt-1 text-center text-gray-500 dark:text-gray-200">
+		<div class="mt-1 text-center text-stone-500 dark:text-stone-200">
 			{$t("about.mission_video")}
 			<span class="info">
 				(5&nbsp;{$t("common.Minute")}&nbsp;{$t("common.Video")})

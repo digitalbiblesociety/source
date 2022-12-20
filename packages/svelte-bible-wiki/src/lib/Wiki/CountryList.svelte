@@ -16,16 +16,16 @@
 
 	const table_row = (row, locale) =>  `
 		<tr>
-			<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+			<td class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
 				<svg class="mr-4 inline-flex h-5 w-5">
 					<use href="/img/flags.svg#${row.id}" xlink:href="#${row.ci}"></use>
 				</svg>
 				<a class="inline-flex flex-col" href="/${locale}/countries/${row.id}">
 					${row.tt}
-					<div class="text-gray-400 text-sm">${row.co ?? ''}</div>
+					<div class="text-stone-400 text-sm">${row.co ?? ''}</div>
 				</a>
 			</td>
-			<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900 text-center">
+			<td class="whitespace-nowrap px-6 py-4 text-sm text-stone-900 text-center">
 				${row.po ? row.po.toLocaleString("en") : ""}
 			</td>
 		</tr>`
@@ -53,7 +53,7 @@
 
 	{#if browser}
 	<Datatable classList="relative mx-auto w-4/5" data="{countries}" bind:dataRows="{rows}">
-		<thead class="bg-gray-50 text-gray-600 text-center">
+		<thead class="bg-stone-50 text-stone-600 text-center">
 			<th data-key="tt" class="sortable">{translations?.thead?.title ?? 'Title'}</th>
 			<th data-key="po" class="sortable">{translations?.thead?.population ?? 'Population'}</th>
 		</thead>
@@ -67,7 +67,7 @@
 	</Datatable>
 	{:else}
 	<table class="relative mx-auto w-4/5 font-mono mt-10">
-		<thead class="bg-gray-50 text-gray-600 text-center">
+		<thead class="bg-stone-50 text-stone-600 text-center">
 			<th class="">{translations?.title}</th>
 			<th class="">{translations?.population}</th>
 		</thead>

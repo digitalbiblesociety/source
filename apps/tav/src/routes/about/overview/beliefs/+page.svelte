@@ -90,17 +90,17 @@ $: beliefs = [
 								alt="{believe.title}" />
 							<p>
 								<span
-									class="text-lg font-semibold text-gray-900 dark:text-gray-300">
+									class="text-lg font-semibold text-stone-900 dark:text-stone-300">
 									{believe.title}
 								</span>
 								&nbsp;
 								<span
-									class="mt-3 leading-5 text-gray-600 dark:text-gray-400">
+									class="mt-3 leading-5 text-stone-600 dark:text-stone-400">
 									{believe.long}
 								</span>
 							</p>
 
-							<p class="mt-3 text-sm text-slate-500 dark:text-gray-400">
+							<p class="mt-3 text-sm text-slate-500 dark:text-stone-400">
 								{believe.ref}
 							</p>
 						</span>

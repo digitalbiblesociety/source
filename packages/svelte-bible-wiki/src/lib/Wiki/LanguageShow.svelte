@@ -17,19 +17,19 @@
 	let rows
 
 	const bible_row = (row, locale) =>  `<tr>
-						<td class="hidden whitespace-nowrap px-6 py-4 text-sm text-gray-900 sm:table-cell">${row.date}</td>
-						<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+						<td class="hidden whitespace-nowrap px-6 py-4 text-sm text-stone-900 sm:table-cell">${row.date}</td>
+						<td class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
 							<a href="/${locale}/bibles/${row.id}">
-								<div class="text-sm text-gray-900">${row.title}</div>
-								<div class="text-xs text-gray-500">
+								<div class="text-sm text-stone-900">${row.title}</div>
+								<div class="text-xs text-stone-500">
 									${row.title_vernacular}
 								</div>
 							</a>
 						</td>
-						<td class="hidden whitespace-nowrap px-6 py-4 text-sm text-gray-900 sm:table-cell">
+						<td class="hidden whitespace-nowrap px-6 py-4 text-sm text-stone-900 sm:table-cell">
 							${row.id}
 						</td>
-						<td class="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-900 sm:text-left">
+						<td class="whitespace-nowrap px-6 py-4 text-center text-sm text-stone-900 sm:text-left">
 							<a href="/${locale}/countries/${row.ci}">
 								<svg class="mx-auto block h-5 w-5 sm:inline-block">
 									<use
@@ -37,7 +37,7 @@
 										xlink:href="#${row.country_id}">
 									</use>
 								</svg>
-								<span class="text-sm text-gray-900">${row.country_id}</span>
+								<span class="text-sm text-stone-900">${row.country_id}</span>
 							</a>
 						</td>
 					</tr>`
@@ -45,16 +45,16 @@
 	const film_row = (row, locale) =>  `
 	<tr>
 		<td
-			class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+			class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
 			<a href="${row.url}">
-				<div class="text-sm text-gray-900">${row.title}</div>
-				<div class="text-xs text-gray-500">${row.title_vernacular}</div>
+				<div class="text-sm text-stone-900">${row.title}</div>
+				<div class="text-xs text-stone-500">${row.title_vernacular}</div>
 			</a>
 		</td>
 		<td
-			class="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-900 sm:text-left">
+			class="whitespace-nowrap px-6 py-4 text-center text-sm text-stone-900 sm:text-left">
 			<a href="/${locale}/organizations/${row.organization_id}">
-				<span class="text-sm text-gray-900">${row.organization_id}</span>
+				<span class="text-sm text-stone-900">${row.organization_id}</span>
 			</a>
 		</td>
 	</tr>
@@ -63,18 +63,18 @@
 
 	const resource_row = (row, locale) =>  `<tr>
 									<td
-										class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+										class="whitespace-nowrap px-6 py-4 text-sm text-stone-900">
 										<a href="${row.url}">
-											<div class="text-sm text-gray-900">${row.title}</div>
-											<div class="text-xs text-gray-500">
+											<div class="text-sm text-stone-900">${row.title}</div>
+											<div class="text-xs text-stone-500">
 												${row.title_vernacular}
 											</div>
 										</a>
 									</td>
 									<td
-										class="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-900 sm:text-left">
+										class="whitespace-nowrap px-6 py-4 text-center text-sm text-stone-900 sm:text-left">
 										<a href="/${locale}/organizations/${row.organization_id}">
-											<span class="text-sm text-gray-900">
+											<span class="text-sm text-stone-900">
 												${row.organization_id}
 											</span>
 										</a>
@@ -111,30 +111,30 @@ let stat_block = [
 
 	<span slot="tabs">
 	<TabList>
-		<div class="relative z-10 flex flex-row justify-center divide-x divide-gray-200 rounded-tl-lg rounded-tr-lg w-1/2 lg:w-1/3 mx-auto">
+		<div class="relative z-10 flex flex-row justify-center divide-x divide-stone-200 rounded-tl-lg rounded-tr-lg w-1/2 lg:w-1/3 mx-auto">
 		{#if language.bibles.length != 0}
-			<Tab class="flex flex-grow justify-center bg-gray-50 bg-opacity-50 text-gray-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-gray-200 whitespace-nowrap py-2 border-b-2 text-sm">
+			<Tab class="flex flex-grow justify-center bg-stone-50 bg-opacity-50 text-stone-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-stone-200 whitespace-nowrap py-2 border-b-2 text-sm">
 				Bibles
 				<span
-					class="bg-gray-100 text-gray-900 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs md:inline-block">
+					class="bg-stone-100 text-stone-900 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs md:inline-block">
 					{language.bibles.length}
 				</span>
 			</Tab>
 		{/if}
 		{#if language.films.length != 0}
-			<Tab class="flex flex-grow justify-center bg-gray-50 bg-opacity-50 text-gray-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-gray-200 whitespace-nowrap py-2 border-b-2 text-sm">
+			<Tab class="flex flex-grow justify-center bg-stone-50 bg-opacity-50 text-stone-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-stone-200 whitespace-nowrap py-2 border-b-2 text-sm">
 			Films
 				<span
-					class="bg-gray-100 text-gray-900 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs md:inline-block">
+					class="bg-stone-100 text-stone-900 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs md:inline-block">
 					{language.films.length}
 				</span>
 			</Tab>
 		{/if}
 		{#if language.resources.length != 0}
-		<Tab class="flex flex-grow justify-center bg-gray-50 bg-opacity-50 text-gray-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-gray-200 whitespace-nowrap py-2 border-b-2 text-sm">
+		<Tab class="flex flex-grow justify-center bg-stone-50 bg-opacity-50 text-stone-800 border-transparent hover:border-emerald-600 hover:bg-emerald-600 hover:text-stone-200 whitespace-nowrap py-2 border-b-2 text-sm">
 			Resources
 				<span
-					class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-sm text-gray-800">
+					class="inline-flex items-center rounded-full bg-stone-100 px-2.5 py-0.5 text-sm text-stone-800">
 					{language.resources.length}
 				</span>
 			</Tab>

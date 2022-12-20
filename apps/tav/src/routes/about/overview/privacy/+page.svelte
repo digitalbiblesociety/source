@@ -25,7 +25,7 @@ import Banner from "$lib/components/Banner.svelte"
 	]} />
 
 <div
-	class="relative overflow-hidden rounded-2xl bg-white py-16 dark:bg-gray-700">
+	class="relative overflow-hidden rounded-2xl bg-white py-16 dark:bg-stone-700">
 	<div class="relative px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-prose text-lg">
 			<h4>
@@ -34,10 +34,10 @@ import Banner from "$lib/components/Banner.svelte"
 					Last updated: November 09, 2021
 				</span>
 				<span
-					class="mt-2 block text-center text-3xl font-extrabold  tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">
+					class="mt-2 block text-center text-3xl font-extrabold  tracking-tight text-stone-900 dark:text-stone-200 sm:text-4xl">
 					Privacy Policy
 				</span>
-				<p class="mt-8 text-lg  text-gray-500 dark:text-gray-300">
+				<p class="mt-8 text-lg  text-stone-500 dark:text-stone-300">
 					This Privacy Policy describes Our policies and procedures on the
 					collection, use and disclosure of Your information when You use the
 					Service and tells You about Your privacy rights and how the law
@@ -46,7 +46,7 @@ import Banner from "$lib/components/Banner.svelte"
 			</h4>
 		</div>
 		<div
-			class="prose prose-base prose-blue mx-auto mt-6 text-gray-500 dark:text-gray-300">
+			class="prose prose-base prose-blue mx-auto mt-6 text-stone-500 dark:text-stone-300">
 			<h3>Non-legalese, Simple Summary</h3>
 			<ol>
 				<li>
@@ -64,27 +64,27 @@ import Banner from "$lib/components/Banner.svelte"
 				the Service, You agree to the collection and use of information in
 				accordance with this Privacy Policy.
 			</p>
-			<h4 class="dark:text-gray-200">Interpretation and Definitions</h4>
-			<h3 class="dark:text-gray-200">Interpretation</h3>
+			<h4 class="dark:text-stone-200">Interpretation and Definitions</h4>
+			<h3 class="dark:text-stone-200">Interpretation</h3>
 			<p>
 				The words of which the initial letter is capitalized have meanings
 				defined under the following conditions. The following definitions shall
 				have the same meaning regardless of whether they appear in singular or
 				in plural.
 			</p>
-			<h3 class="dark:text-gray-200">Definitions</h3>
+			<h3 class="dark:text-stone-200">Definitions</h3>
 			<p>For the purposes of this Privacy Policy:</p>
 			<ul>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Account</strong>
+						<strong class="dark:text-stone-200">Account</strong>
 						means a unique account created for You to access our Service or parts
 						of our Service.
 					</p>
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Company</strong>
+						<strong class="dark:text-stone-200">Company</strong>
 						(referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot;
 						or &quot;Our&quot; in this Agreement) refers to Digital Bible Society,
 						P.O. Box 2881 Conroe, TX. 77305.
@@ -92,7 +92,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Cookies</strong>
+						<strong class="dark:text-stone-200">Cookies</strong>
 						are small files that are placed on Your computer, mobile device or any
 						other device by a website, containing the details of Your browsing history
 						on that website among its many uses.
@@ -100,32 +100,32 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Country</strong>
+						<strong class="dark:text-stone-200">Country</strong>
 						refers to: Texas, United States
 					</p>
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Device</strong>
+						<strong class="dark:text-stone-200">Device</strong>
 						means any device that can access the Service such as a computer, a cellphone
 						or a digital tablet.
 					</p>
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Personal Data</strong>
+						<strong class="dark:text-stone-200">Personal Data</strong>
 						is any information that relates to an identified or identifiable individual.
 					</p>
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Service</strong>
+						<strong class="dark:text-stone-200">Service</strong>
 						refers to the Website.
 					</p>
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Service Provider</strong>
+						<strong class="dark:text-stone-200">Service Provider</strong>
 						means any natural or legal person who processes the data on behalf of
 						the Company. It refers to third-party companies or individuals employed
 						by the Company to facilitate the Service, to provide the Service on behalf
@@ -135,7 +135,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Usage Data</strong>
+						<strong class="dark:text-stone-200">Usage Data</strong>
 						refers to data collected automatically, either generated by the use of
 						the Service or from the Service infrastructure itself (for example, the
 						duration of a page visit).
@@ -143,7 +143,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Website</strong>
+						<strong class="dark:text-stone-200">Website</strong>
 						refers to DBS, accessible from
 						<a
 							href="http://dbs.org"
@@ -155,18 +155,18 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">You</strong>
+						<strong class="dark:text-stone-200">You</strong>
 						means the individual accessing or using the Service, or the company,
 						or other legal entity on behalf of which such individual is accessing
 						or using the Service, as applicable.
 					</p>
 				</li>
 			</ul>
-			<h4 class="dark:text-gray-200">
+			<h4 class="dark:text-stone-200">
 				Collecting and Using Your Personal Data
 			</h4>
-			<h3 class="dark:text-gray-200">Types of Data Collected</h3>
-			<h4 class="dark:text-gray-200">Personal Data</h4>
+			<h3 class="dark:text-stone-200">Types of Data Collected</h3>
+			<h4 class="dark:text-stone-200">Personal Data</h4>
 			<p>
 				While using Our Service, We may ask You to provide Us with certain
 				personally identifiable information that can be used to contact or
@@ -181,7 +181,7 @@ import Banner from "$lib/components/Banner.svelte"
 					<p>Usage Data</p>
 				</li>
 			</ul>
-			<h4 class="dark:text-gray-200">Usage Data</h4>
+			<h4 class="dark:text-stone-200">Usage Data</h4>
 			<p>Usage Data is collected automatically when using the Service.</p>
 			<p>
 				Usage Data may include information such as Your Device's Internet
@@ -203,7 +203,7 @@ import Banner from "$lib/components/Banner.svelte"
 				visit our Service or when You access the Service by or through a mobile
 				device.
 			</p>
-			<h4 class="dark:text-gray-200">Tracking Technologies and Cookies</h4>
+			<h4 class="dark:text-stone-200">Tracking Technologies and Cookies</h4>
 			<p>
 				We use Cookies and similar tracking technologies to track the activity
 				on Our Service and store certain information. Tracking technologies used
@@ -212,7 +212,7 @@ import Banner from "$lib/components/Banner.svelte"
 			</p>
 			<ul>
 				<li>
-					<strong class="dark:text-gray-200">
+					<strong class="dark:text-stone-200">
 						Cookies or Browser Cookies.
 					</strong>
 					A cookie is a small file placed on Your Device. You can instruct Your browser
@@ -222,7 +222,7 @@ import Banner from "$lib/components/Banner.svelte"
 					refuse Cookies, our Service may use Cookies.
 				</li>
 				<li>
-					<strong class="dark:text-gray-200">Web Beacons.</strong>
+					<strong class="dark:text-stone-200">Web Beacons.</strong>
 					Certain sections of our Service and our emails may contain small electronic
 					files known as web beacons (also referred to as clear gifs, pixel tags,
 					and single-pixel gifs) that permit the Company, for example, to count users
@@ -244,7 +244,7 @@ import Banner from "$lib/components/Banner.svelte"
 			<ul>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">
+						<strong class="dark:text-stone-200">
 							Necessary / Essential Cookies
 						</strong>
 					</p>
@@ -261,7 +261,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">
+						<strong class="dark:text-stone-200">
 							Cookies Policy / Notice Acceptance Cookies
 						</strong>
 					</p>
@@ -274,7 +274,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">Functionality Cookies</strong>
+						<strong class="dark:text-stone-200">Functionality Cookies</strong>
 					</p>
 					<p>Type: Persistent Cookies</p>
 					<p>Administered by: Us</p>
@@ -292,12 +292,12 @@ import Banner from "$lib/components/Banner.svelte"
 				cookies, please visit our Cookies Policy or the Cookies section of our
 				Privacy Policy.
 			</p>
-			<h3 class="dark:text-gray-200">Use of Your Personal Data</h3>
+			<h3 class="dark:text-stone-200">Use of Your Personal Data</h3>
 			<p>The Company may use Personal Data for the following purposes:</p>
 			<ul>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">
+						<strong class="dark:text-stone-200">
 							To provide and maintain our Service
 						</strong>
 						, including to monitor the usage of our Service.
@@ -305,7 +305,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">To manage Your Account:</strong>
+						<strong class="dark:text-stone-200">To manage Your Account:</strong>
 						to manage Your registration as a user of the Service. The Personal Data
 						You provide can give You access to different functionalities of the Service
 						that are available to You as a registered user.
@@ -313,7 +313,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">
+						<strong class="dark:text-stone-200">
 							For the performance of a contract:
 						</strong>
 						the development, compliance and undertaking of the purchase contract
@@ -323,7 +323,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">To contact You:</strong>
+						<strong class="dark:text-stone-200">To contact You:</strong>
 						To contact You by email, telephone calls, SMS, or other equivalent forms
 						of electronic communication, such as a mobile application's push notifications
 						regarding updates or informative communications related to the functionalities,
@@ -333,7 +333,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">To provide You</strong>
+						<strong class="dark:text-stone-200">To provide You</strong>
 						with news, special offers and general information about other goods,
 						services and events which we offer that are similar to those that you
 						have already purchased or enquired about unless You have opted not to
@@ -342,7 +342,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>
 					<p>
-						<strong class="dark:text-gray-200">To manage Your requests:</strong>
+						<strong class="dark:text-stone-200">To manage Your requests:</strong>
 						To attend and manage Your requests to Us.
 					</p>
 				</li>
@@ -350,23 +350,23 @@ import Banner from "$lib/components/Banner.svelte"
 			<p>We may share Your personal information in the following situations:</p>
 			<ul>
 				<li>
-					<strong class="dark:text-gray-200">With Service Providers:</strong>
+					<strong class="dark:text-stone-200">With Service Providers:</strong>
 					We may share Your personal information with Service Providers to monitor
 					and analyze the use of our Service, to contact You.
 				</li>
 				<li>
-					<strong class="dark:text-gray-200">With other users:</strong>
+					<strong class="dark:text-stone-200">With other users:</strong>
 					when You share personal information or otherwise interact in the public
 					areas with other users, such information may be viewed by all users and
 					may be publicly distributed outside.
 				</li>
 				<li>
-					<strong class="dark:text-gray-200">With Your consent</strong>
+					<strong class="dark:text-stone-200">With Your consent</strong>
 					: We may disclose Your personal information for any other purpose with
 					Your consent.
 				</li>
 			</ul>
-			<h3 class="dark:text-gray-200">Retention of Your Personal Data</h3>
+			<h3 class="dark:text-stone-200">Retention of Your Personal Data</h3>
 			<p>
 				The Company will retain Your Personal Data only for as long as is
 				necessary for the purposes set out in this Privacy Policy. We will
@@ -382,7 +382,7 @@ import Banner from "$lib/components/Banner.svelte"
 				functionality of Our Service, or We are legally obligated to retain this
 				data for longer time periods.
 			</p>
-			<h3 class="dark:text-gray-200">Transfer of Your Personal Data</h3>
+			<h3 class="dark:text-stone-200">Transfer of Your Personal Data</h3>
 			<p>
 				Your information, including Personal Data, is processed at the Company's
 				operating offices and in any other places where the parties involved in
@@ -402,21 +402,21 @@ import Banner from "$lib/components/Banner.svelte"
 				a country unless there are adequate controls in place including the
 				security of Your data and other personal information.
 			</p>
-			<h3 class="dark:text-gray-200">Disclosure of Your Personal Data</h3>
-			<h4 class="dark:text-gray-200">Business Transactions</h4>
+			<h3 class="dark:text-stone-200">Disclosure of Your Personal Data</h3>
+			<h4 class="dark:text-stone-200">Business Transactions</h4>
 			<p>
 				If the Company is involved in a merger, acquisition or asset sale, Your
 				Personal Data may be transferred. We will provide notice before Your
 				Personal Data is transferred and becomes subject to a different Privacy
 				Policy.
 			</p>
-			<h4 class="dark:text-gray-200">Law enforcement</h4>
+			<h4 class="dark:text-stone-200">Law enforcement</h4>
 			<p>
 				Under certain circumstances, the Company may be required to disclose
 				Your Personal Data if required to do so by law or in response to valid
 				requests by public authorities (e.g. a court or a government agency).
 			</p>
-			<h4 class="dark:text-gray-200">Other legal requirements</h4>
+			<h4 class="dark:text-stone-200">Other legal requirements</h4>
 			<p>
 				The Company may disclose Your Personal Data in the good faith belief
 				that such action is necessary to:
@@ -433,7 +433,7 @@ import Banner from "$lib/components/Banner.svelte"
 				</li>
 				<li>Protect against legal liability</li>
 			</ul>
-			<h3 class="dark:text-gray-200">Security of Your Personal Data</h3>
+			<h3 class="dark:text-stone-200">Security of Your Personal Data</h3>
 			<p>
 				The security of Your Personal Data is important to Us, but remember that
 				no method of transmission over the Internet, or method of electronic
@@ -441,7 +441,7 @@ import Banner from "$lib/components/Banner.svelte"
 				means to protect Your Personal Data, We cannot guarantee its absolute
 				security.
 			</p>
-			<h4 class="dark:text-gray-200">Children's Privacy</h4>
+			<h4 class="dark:text-stone-200">Children's Privacy</h4>
 			<p>
 				Our Service does not address anyone under the age of 13. We do not
 				knowingly collect personally identifiable information from anyone under
@@ -457,7 +457,7 @@ import Banner from "$lib/components/Banner.svelte"
 				require Your parent's consent before We collect and use that
 				information.
 			</p>
-			<h4 class="dark:text-gray-200">Links to Other Websites</h4>
+			<h4 class="dark:text-stone-200">Links to Other Websites</h4>
 			<p>
 				Our Service may contain links to other websites that are not operated by
 				Us. If You click on a third party link, You will be directed to that
@@ -468,7 +468,7 @@ import Banner from "$lib/components/Banner.svelte"
 				We have no control over and assume no responsibility for the content,
 				privacy policies or practices of any third party sites or services.
 			</p>
-			<h4 class="dark:text-gray-200">Changes to this Privacy Policy</h4>
+			<h4 class="dark:text-stone-200">Changes to this Privacy Policy</h4>
 			<p>
 				We may update Our Privacy Policy from time to time. We will notify You
 				of any changes by posting the new Privacy Policy on this page.
@@ -483,7 +483,7 @@ import Banner from "$lib/components/Banner.svelte"
 				changes. Changes to this Privacy Policy are effective when they are
 				posted on this page.
 			</p>
-			<h4 class="dark:text-gray-200">Contact Us</h4>
+			<h4 class="dark:text-stone-200">Contact Us</h4>
 			<p>
 				If you have any questions about this Privacy Policy, You can contact us:
 			</p>

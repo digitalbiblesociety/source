@@ -46,7 +46,7 @@ import IconLockedClosed from "~icons/heroicons-outline/lock-closed"
 								type="submit"
 								formtarget="_blank"
 								class="space-between flex h-full items-center rounded-lg bg-gradient-to-r from-blue-400
-									to-blue-600 px-2 py-1 text-center dark:bg-gray-800">
+									to-blue-600 px-2 py-1 text-center dark:bg-stone-800">
 								{$t("about.donate_paypal")}
 								<IconExternalLink class="ml-2 h-5 w-5" />
 							</button>
@@ -59,18 +59,18 @@ import IconLockedClosed from "~icons/heroicons-outline/lock-closed"
 						</form>
 
 						<a
-							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-teal-500 to-teal-800 px-2 py-1 text-center text-white  dark:bg-gray-800"
+							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-teal-500 to-teal-800 px-2 py-1 text-center text-white  dark:bg-stone-800"
 							href="/about/donate/gifts">
 							{$t("about.donate_mail")}
 						</a>
 
 						<a
-							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-700 px-2 py-2 text-center text-white dark:bg-gray-800"
+							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-700 px-2 py-2 text-center text-white dark:bg-stone-800"
 							href="/about/donate/gifts">
 							{$t("about.donate_stock")}
 						</a>
 						<a
-							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-cyan-400 to-indigo-700 px-2 py-2 text-center text-white dark:bg-gray-800"
+							class="space-between mx-2 flex h-full items-center rounded-lg bg-gradient-to-r from-cyan-400 to-indigo-700 px-2 py-2 text-center text-white dark:bg-stone-800"
 							href="/about/donate/gifts">
 							{$t("about.donate_crypto")}
 						</a>
@@ -80,11 +80,11 @@ import IconLockedClosed from "~icons/heroicons-outline/lock-closed"
 		</div>
 
 		<div class="lg:ml-18 mt-12 -mb-16 md:ml-12">
-			<p class="text-small text-center uppercase text-gray-500">
+			<p class="text-small text-center uppercase text-stone-500">
 				<IconLockedClosed
-					class="duration-50 -mt-1 mr-1 inline-block h-5 w-5 transition ease-in-out group-hover:text-gray-900" />
+					class="duration-50 -mt-1 mr-1 inline-block h-5 w-5 transition ease-in-out group-hover:text-stone-900" />
 				<span
-					class="ml-2text-sm mt-8 uppercase text-gray-500 dark:text-gray-200">
+					class="ml-2text-sm mt-8 uppercase text-stone-500 dark:text-stone-200">
 					{$t("about.donate_secure")}
 				</span>
 			</p>

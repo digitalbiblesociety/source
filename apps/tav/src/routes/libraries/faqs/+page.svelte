@@ -29,7 +29,7 @@ import Banner from "$lib/components/Banner.svelte"
 <section id="container" class="mx-auto max-w-5xl">
 	<div
 		id="copy"
-		class="prose  m-auto mt-8 max-w-none leading-tight text-gray-600 dark:prose-invert dark:text-gray-300">
+		class="prose  m-auto mt-8 max-w-none leading-tight text-stone-600 dark:prose-invert dark:text-stone-300">
 		<h3 class="w-full bg-blue-400 px-2 text-white">
 			{$t("libraries.faq_1")}
 		</h3>
@@ -91,7 +91,7 @@ import Banner from "$lib/components/Banner.svelte"
 		<p>{$t("libraries.faq_a16")}</p>
 
 		<div
-			class="relative mt-12 bg-gray-50 dark:bg-gray-600"
+			class="relative mt-12 bg-stone-50 dark:bg-stone-600"
 			style="padding-top: 56.25%">
 			<iframe
 				src="https://player.vimeo.com/video/124872117?h=02e67ddffc"
@@ -101,7 +101,7 @@ import Banner from "$lib/components/Banner.svelte"
 				class="absolute inset-0 h-full w-full p-1">
 			</iframe>
 		</div>
-		<div class="mt-1 text-center text-gray-500 dark:text-gray-200">
+		<div class="mt-1 text-center text-stone-500 dark:text-stone-200">
 			{$t("about.work_libraries_video")}
 			<span class="info">
 				(6&nbsp;{$t("common.Minute")}&nbsp;{$t("common.Video")})

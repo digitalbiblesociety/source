@@ -131,12 +131,12 @@ subnav={[
 								src="/img/icons/{feature.id}.svg" />
 						</div>
 						<p
-							class="ml-9 text-lg leading-6 text-gray-900 dark:text-slate-200">
+							class="ml-9 text-lg leading-6 text-stone-900 dark:text-slate-200">
 							{feature.name}
 						</p>
 					</dt>
 					<!--
-						<dd class="mt-2 ml-9 text-gray-500">{ feature.description }</dd>
+						<dd class="mt-2 ml-9 text-stone-500">{ feature.description }</dd>
 						-->
 				</div>
 			{/each}

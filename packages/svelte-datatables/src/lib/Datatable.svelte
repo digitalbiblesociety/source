@@ -62,17 +62,16 @@
 		</div>
 	</div>
 
-	<div class="dt-table flex flex-col justify-center items-center lg:flex-row">
-		<div class="lg:w-1/6 empty:hidden">
+	<div class="dt-table">
+		<aside>
 			<ColumnFilterInputs />
-		</div>
-
-		<table class="relative w-full lg:w-5/6 mt-3 ml-2 lg:ml-6 mx-auto">
+		</aside>
+		<table>
 			<slot />
 		</table>
 	</div>
 
-	<div class="text-gray-700 dark:text-gray-100 mt-6 px-4 sm:px-6 pt-4 md:pt-8 flex flex-col items-center justify-between border-t border-gray-200 dark:border-gray-500">
+	<div class="text-stone-700 dark:text-stone-100 mt-6 px-4 sm:px-6 pt-4 md:pt-8 flex flex-col items-center justify-between border-t border-stone-200 dark:border-stone-500">
 		<nav class="relative z-0 inline-flex mx-auto rounded-md -space-x-px" aria-label="Pagination">
 			<PaginationButtons {context} />
 		</nav>
@@ -81,3 +80,39 @@
 		</section>
 	</div>
 </section>
+
+
+<style>
+@media (min-width: 1024px) { 
+	.dt-table aside {
+		width: 16.666667%;
+	}
+}
+
+table {
+	position: relative; 
+	margin-left: 0.5rem; 
+	margin-top: 0.75rem; 
+	width: 100%;
+}
+
+.dt-table {
+	display: flex;
+	flex-direction: column;
+	justify-content: start; 
+	align-items: start;
+}
+
+@media (min-width: 1024px) { 
+	.dt-table {
+  		flex-direction: row; 
+	}
+ }
+
+@media (min-width: 1024px) { 
+	table {
+		margin-left: 1.5rem; 
+		width: 83.333333%; 
+	}
+}
+</style>

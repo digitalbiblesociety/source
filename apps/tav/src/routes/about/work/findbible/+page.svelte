@@ -52,15 +52,15 @@ function percentage(count, count_old) {
 
 <div>
 	<dl
-		class="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-2 md:divide-y-0 md:divide-x">
+		class="mt-5 grid grid-cols-1 divide-y divide-stone-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-2 md:divide-y-0 md:divide-x">
 		{#each link_counts as link_count}
 			<div class="px-4 py-5 sm:p-6">
-				<dt class="font-normal text-gray-900">{link_count.title}</dt>
+				<dt class="font-normal text-stone-900">{link_count.title}</dt>
 				<dd class="mt-1 flex items-baseline justify-between md:block lg:flex">
 					<div
 						class="text-stone-400 flex items-baseline text-2xl font-semibold">
 						{Number(link_count.count).toLocaleString()}
-						<span class="ml-2 text-sm text-gray-500">
+						<span class="ml-2 text-sm text-stone-500">
 							from {link_count.count_old}
 						</span>
 					</div>

@@ -778,8 +778,8 @@ let filter = function () {
 		on:input="{filter}"
 		autocomplete
 		class="mx-auto  my-6 block w-1/3 rounded-sm bg-[url('/img/icons/filter.png')] bg-[length:15px_15px] bg-[top_8px_right_8px] bg-no-repeat py-1.5 px-2
-			text-sm leading-5 text-gray-700 placeholder-gray-400 drop-shadow-md focus:border-gray-600
-			focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-600 dark:bg-gray-200" />
+			text-sm leading-5 text-stone-700 placeholder-stone-400 drop-shadow-md focus:border-stone-600
+			focus:placeholder-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-600 dark:bg-stone-200" />
 
 	<p class="mx-12 mb-4 text-center text-sm text-red-500">
 		Titles are for reference only. Working links are coming soon. Contact us to order.
@@ -789,10 +789,10 @@ let filter = function () {
 		class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-7">
 		{#each results as bl}
 			<span
-				class="flex rounded-lg  border border-gray-400 bg-slate-100
-					      text-gray-700 drop-shadow-lg
+				class="flex rounded-lg  border border-stone-400 bg-slate-100
+					      text-stone-700 drop-shadow-lg
 					     hover:bg-slate-600 hover:text-white dark:border-black
- 						 dark:bg-slate-800 dark:text-gray-200
+ 						 dark:bg-slate-800 dark:text-stone-200
 						 dark:hover:bg-slate-600">
 				<div class="relative m-2 h-16 w-full">
 					<h3 class="w-10/12 font-semibold leading-tight ">

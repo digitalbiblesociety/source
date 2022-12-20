@@ -25,9 +25,9 @@ import Banner from "$lib/components/Banner.svelte"
 
 	<div
 		id="copy"
-		class="prose m-auto mt-8 max-w-none leading-6 text-gray-500 dark:prose-invert dark:text-gray-300">
+		class="prose m-auto mt-8 max-w-none leading-6 text-stone-500 dark:prose-invert dark:text-stone-300">
 		<h3>{$t("about.work_audio_h1")}</h3>
-		<div class="ml-6 -mt-6 sm:float-right sm:w-1/2 md:w-1/3 dark:bg-gray-300 rounded-md">
+		<div class="ml-6 -mt-6 sm:float-right sm:w-1/2 md:w-1/3 dark:bg-stone-300 rounded-md">
 			<p class="text-center text-sm text-blue-500">
 				{$t("about.work_audio_caption_3")}
 			</p>

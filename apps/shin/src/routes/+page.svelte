@@ -27,10 +27,10 @@
 	<tr class="${row.bc + row.fc + row.rc > 0 ? '' : 'opacity-40'}">
 		<td class="whitespace-nowrap px-6 py-4 text-sm font-medium">
 			<a href="/languages/${row.id}">
-				<div class="text-sm text-gray-900 dark:text-gray-300">
+				<div class="text-sm text-stone-900 dark:text-stone-300">
 					${row.tt}
 				</div>
-				<div class="text-xs text-gray-500">${row.tv}</div>
+				<div class="text-xs text-stone-500">${row.tv}</div>
 			</a>
 		</td>
 		<td class="hidden whitespace-nowrap text-sm sm:table-cell">
@@ -50,7 +50,7 @@
 
 	<!--
 	<Datatable classList="relative" data={languages} bind:dataRows={rows}>
-		<thead class="bg-gray-50 text-gray-600">
+		<thead class="bg-stone-50 text-stone-600">
 			<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">{translations?.thead?.title ?? 'title'}</th>
 			<th data-name="language" data-key="id" class="sortable hidden sm:table-cell">iso</th>
 			<th data-key="po" class="sortable">{translations?.thead?.population ?? 'population'}</th>
@@ -71,7 +71,7 @@
 
 	<!--
 		<Datatable classList="relative" data="{languages}" bind:dataRows="{rows}" settings={settings}>
-			<thead class="bg-gray-50 text-gray-600">
+			<thead class="bg-stone-50 text-stone-600">
 				<th data-key="(row) => row.tt + ' ' + row.iso" class="sortable">{translations?.thead?.title ?? 'title'}</th>
 				<th data-name="language" data-key="id" class="sortable hidden sm:table-cell">iso</th>
 				<th data-key="po" class="sortable">{translations?.thead?.population ?? 'population'}</th>
@@ -88,7 +88,7 @@
 
 	<noscript>
 		<table class="mx-auto w-4/5 pt-8">
-			<thead class="bg-gray-50 text-gray-600">
+			<thead class="bg-stone-50 text-stone-600">
 				<th class="sortable">{translations?.thead?.title ?? 'title'}</th>
 				<th class="sortable"></th>
 				<th class="sortable hidden sm:table-cell">iso</th>

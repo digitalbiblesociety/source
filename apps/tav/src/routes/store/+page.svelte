@@ -36,14 +36,14 @@ $: commitments = [
 
 <h2 class="sr-only">Our Commitments</h2>
 <div
-	class="mx-auto hidden max-w-7xl justify-center divide-x divide-gray-200 py-8 dark:divide-gray-500 md:flex">
+	class="mx-auto hidden max-w-7xl justify-center divide-x divide-stone-200 py-8 dark:divide-stone-500 md:flex">
 	{#each commitments as commitment}
 		<div class="w-1/3">
 			<div
 				class="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
 				{commitment.icon ?? ""}
 				<div
-					class="ml-4 flex flex-auto flex-col text-gray-900 dark:text-gray-200">
+					class="ml-4 flex flex-auto flex-col text-stone-900 dark:text-stone-200">
 					<h3 class="underline-offset-2 dark:underline">
 						{commitment.title}
 					</h3>
@@ -59,10 +59,10 @@ $: commitments = [
 {#each collections as collection}
 	<Disclosure>
 		<div
-			class="mx-auto mb-6 max-w-2xl rounded-xl border bg-gray-100 p-4 dark:border-gray-700
-			   dark:bg-gray-500 md:px-8 lg:max-w-6xl ">
+			class="mx-auto mb-6 max-w-2xl rounded-xl border bg-stone-100 p-4 dark:border-stone-700
+			   dark:bg-stone-500 md:px-8 lg:max-w-6xl ">
 			<div class="md:flex md:items-center md:justify-between">
-				<div class="text-gray-800 dark:text-gray-100">
+				<div class="text-stone-800 dark:text-stone-100">
 					<h2
 						class="mb-2 font-semibold tracking-tight md:text-lg lg:text-xl">
 						{collection?.title}
@@ -87,7 +87,7 @@ $: commitments = [
 					{#each collection.products as product}
 						<div class="group relative">
 							<div
-								class="overflow-hidden rounded-xl border bg-white dark:bg-gray-600 dark:border-gray-900 p-2 text-center group-hover:opacity-75 ">
+								class="overflow-hidden rounded-xl border bg-white dark:bg-stone-600 dark:border-stone-900 p-2 text-center group-hover:opacity-75 ">
 								<img
 									alt="{product.variants[0].image.alt}"
 									src="{product.variants[0].image.src}"
